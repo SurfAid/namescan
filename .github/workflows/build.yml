@@ -39,13 +39,13 @@ jobs:
           - os: macos-latest
             TARGET: macos
             CMD_BUILD: >
-              pipenv run pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns src/surfaid_namescan/ &&
+              pipenv run pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns src/surfaid_namescan.py &&
               cd dist/
             OUT_FILE_NAME: surfaid_namescan
             ASSET_MIME: application/octet-stream
           - os: windows-latest
             TARGET: windows
-            CMD_BUILD: pipenv run pyinstaller -F -w -n surfaid_namescan -i resources/surfaid_namescan.ico src/surfaid_namescan/
+            CMD_BUILD: pipenv run pyinstaller -F -w -n surfaid_namescan -i resources/surfaid_namescan.ico src/surfaid_namescan.py
             OUT_FILE_NAME: surfaid_namescan.exe
             ASSET_MIME: application/vnd.microsoft.portable-executable
     steps:
