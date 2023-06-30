@@ -1,0 +1,39 @@
+{
+  "date": "2023-06-30T16:45:47.099867+10:00",
+  "scan_id": "s11983430",
+  "number_of_matches": 1,
+  "number_of_pep_matches": 0,
+  "number_of_sip_matches": 1,
+  "persons": [
+    {
+      "update_at": "2020-06-26\n2018-06-12\n2017-06-16",
+      "category": "SIP",
+      "name": "Dr. Malek Ali",
+      "gender": "male",
+      "original_script_name": "Dr. مالك علي",
+      "dates_of_birth": [
+        {
+          "date": "1956"
+        }
+      ],
+      "reference_type": "Sanction",
+      "references": [
+        {
+          "name": "CH - SECO Sanction List",
+          "id_in_list": "28051"
+        }
+      ],
+      "program": "Syria",
+      "nationality": "",
+      "citizenship": "",
+      "other_names": [
+        {
+          "name": "Malik",
+          "type": "Also Known As"
+        }
+      ],
+      "summary": "Justification: Former Higher Education Minister in power after May 2011. As a former Government Minister, shares responsibility for the Syrian regime’s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-08-05",
+      "match_rate": 75.0
+    }
+  ]
+}

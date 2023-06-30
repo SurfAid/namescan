@@ -1,0 +1,253 @@
+{
+  "date": "2023-06-30T17:02:25.9742565+10:00",
+  "scan_id": "s11983517",
+  "number_of_matches": 4,
+  "number_of_pep_matches": 4,
+  "number_of_sip_matches": 0,
+  "persons": [
+    {
+      "update_at": "2021-11-06",
+      "category": "PEP",
+      "deceased": true,
+      "deceased_date": "1980-03-14",
+      "name": "Mohammad Hatta",
+      "first_name": "Mohammad",
+      "gender": "male",
+      "dates_of_birth": [
+        {
+          "date": "1902-08-12"
+        },
+        {
+          "date": "1960-03-09"
+        }
+      ],
+      "places_of_birth": [
+        {
+          "location": "Bukittinggi",
+          "country": "Indonesia"
+        }
+      ],
+      "reference_type": "PEP",
+      "nationality": "",
+      "citizenship": "Indonesia; Kingdom of the Netherlands; Dutch East Indies",
+      "other_names": [
+        {
+          "name": "Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "Bung Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "M Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "M. Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "Moch Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "Moh Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "Moh. Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "Muh Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "Muhammad Hatta",
+          "type": "Also Known As"
+        },
+        {
+          "name": "Mohammad Hatta",
+          "type": "name in native language"
+        }
+      ],
+      "roles": [
+        {
+          "title": "Vice President of Indonesia",
+          "since": "",
+          "to": ""
+        },
+        {
+          "title": "Prime Minister of Indonesia",
+          "since": "",
+          "to": ""
+        },
+        {
+          "title": "Minister of Foreign Affairs",
+          "since": "",
+          "to": ""
+        }
+      ],
+      "occupations": [
+        "politician"
+      ],
+      "spouse": "Rachmi Hatta",
+      "children": [
+        "Meuthia Hatta Swasono",
+        "Halida Hatta",
+        "Gemala Rabi'ah Hatta"
+      ],
+      "political_parties": [
+        {
+          "title": "Indonesian National Party",
+          "since": "",
+          "to": ""
+        },
+        {
+          "title": "Nasdem Party",
+          "since": "",
+          "to": ""
+        }
+      ],
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Mohammad%20Hatta%201950.jpg"
+      ],
+      "match_rate": 60.0
+    },
+    {
+      "update_at": "2023-03-07",
+      "category": "PEP",
+      "name": "Muhammad Hatta",
+      "first_name": "Mohammed",
+      "gender": "male",
+      "dates_of_birth": [
+        {
+          "date": "1973-08-17"
+        }
+      ],
+      "places_of_birth": [
+        {
+          "location": "Surakarta",
+          "country": "Indonesia"
+        }
+      ],
+      "reference_type": "PEP",
+      "nationality": "",
+      "citizenship": "Indonesia",
+      "occupations": [
+        "politician"
+      ],
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Gusti%20Muhammad%20Hatta%2C%202011.jpg",
+        "http://commons.wikimedia.org/wiki/Special:FilePath/KIBII%20Gusti%20Muhammad%20Hatta.jpg"
+      ],
+      "match_rate": 60.0
+    },
+    {
+      "update_at": "23/04/2019",
+      "category": "PEP",
+      "name": "MOHAMMAD HATTA",
+      "gender": "male",
+      "dates_of_birth": [
+        {
+          "date": "1973-08-17"
+        }
+      ],
+      "reference_type": "PEP",
+      "nationality": "",
+      "citizenship": "",
+      "places": [
+        {
+          "country": "Indonesia",
+          "type": "Legislature"
+        }
+      ],
+      "other_names": [
+        {
+          "name": "Muhammad Hatta",
+          "type": ""
+        }
+      ],
+      "roles": [
+        {
+          "title": "Member of Dewan Perwakilan Rakyat (National Mandate Party Faction)",
+          "since": "2014-10-01",
+          "type": ""
+        }
+      ],
+      "identities": [
+        {
+          "number": "1091",
+          "type": "EveryPolitician Legacy"
+        },
+        {
+          "number": "Q19745876",
+          "type": "Wiki Data"
+        }
+      ],
+      "images": [
+        "http://dpr.go.id/doksigota/photo/1091.jpg"
+      ],
+      "links": [
+        {
+          "url": "https://id.wikipedia.org/wiki/Muhammad_Hatta_(politisi)",
+          "type": "Wikipedia (id)"
+        }
+      ],
+      "match_rate": 60.0
+    },
+    {
+      "update_at": "2023-03-26",
+      "category": "PEP",
+      "name": "Hatta Rajasa",
+      "gender": "male",
+      "dates_of_birth": [
+        {
+          "date": "1953-09-18"
+        }
+      ],
+      "places_of_birth": [
+        {
+          "location": "Palembang",
+          "country": "Indonesia"
+        }
+      ],
+      "reference_type": "PEP",
+      "nationality": "",
+      "citizenship": "Indonesia",
+      "other_names": [
+        {
+          "name": "Ir. M. Hatta Rajasa",
+          "type": "Also Known As"
+        },
+        {
+          "name": "Muhammad Hatta Rajasa",
+          "type": "Also Known As"
+        }
+      ],
+      "occupations": [
+        "politician",
+        "statesperson"
+      ],
+      "children": [
+        "Siti Ruby Aliya Rajasa",
+        "Rasyid Rajasa"
+      ],
+      "siblings": [
+        "Hanna Gayatri"
+      ],
+      "political_parties": [
+        {
+          "title": "National Mandate Party",
+          "since": "",
+          "to": ""
+        }
+      ],
+      "images": [
+        "http://commons.wikimedia.org/wiki/Special:FilePath/Hatta%20Rajasa2.jpg"
+      ],
+      "match_rate": 51.0
+    }
+  ]
+}

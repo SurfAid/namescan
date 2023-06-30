@@ -1,0 +1,64 @@
+{
+  "date": "2023-06-30T16:51:48.7680334+10:00",
+  "scan_id": "s11983459",
+  "number_of_matches": 1,
+  "number_of_pep_matches": 1,
+  "number_of_sip_matches": 0,
+  "persons": [
+    {
+      "update_at": "2023-01-23",
+      "category": "PEP",
+      "name": "Gempar Soekarnoputra",
+      "gender": "male",
+      "dates_of_birth": [
+        {
+          "date": "1958-01-13"
+        }
+      ],
+      "places_of_birth": [
+        {
+          "location": "Minahasa",
+          "country": "Indonesia"
+        }
+      ],
+      "reference_type": "PEP",
+      "nationality": "",
+      "citizenship": "Indonesia",
+      "places": [
+        {
+          "country": "Indonesia",
+          "location": "Padurenan",
+          "type": "residence"
+        },
+        {
+          "country": "Indonesia",
+          "location": "Tangerang",
+          "type": "residence"
+        }
+      ],
+      "other_names": [
+        {
+          "name": "Gani",
+          "type": "Also Known As"
+        }
+      ],
+      "occupations": [
+        "politician"
+      ],
+      "father": "Sukarno",
+      "political_parties": [
+        {
+          "title": "National Mandate Party",
+          "since": "",
+          "to": ""
+        },
+        {
+          "title": "National Front Party",
+          "since": "",
+          "to": ""
+        }
+      ],
+      "match_rate": 100.0
+    }
+  ]
+}
