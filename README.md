@@ -1,4 +1,4 @@
-# namescan
+# Namescan validator ![./resources/nmbrs_hibob.png](./resources/surfaid_namescan_64x64.png)
 
 [![linting: pylint](https://img.shields.io/badge/linting-pylint-yellowgreen)](https://github.com/PyCQA/pylint)
 [![Checked with mypy](http://www.mypy-lang.org/static/mypy_badge.svg)](http://mypy-lang.org/)

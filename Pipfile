@@ -14,11 +14,14 @@ pylint = "==2.17.4"
 'black[d]' = "==23.3.0"
 pyinstaller = "==5.13.0"
 pandas-stubs = "==2.0.2.230605"
+pytest = "==7.4.0"
 
 [requires]
 python_version = "3.9"
 
 [scripts]
-cli = "python surfaid_namescan.py"
 build = "pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns src/surfaid_namescan.py"
+cli = "python surfaid_namescan.py"
+check-types = "mypy ."
 install-types = "mypy --install-types"
+test = "pytest -W ignore::pytest.PytestCollectionWarning"

@@ -12,4 +12,5 @@
 *.spec
 build/
 dist/
-*.csv
+
+__pycache__/
