@@ -1,3 +1,5 @@
+"""Entry point for the surfaid_namescan CLI."""
+
 from pathlib import Path
 
 import click
@@ -24,11 +26,18 @@ def create_console_logger() -> Console:
     type=click.Path(exists=True),
     help="Path to .xls file",
 )
-def check(file: str):
+@click.option(
+    "--output",
+    "-o",
+    required=True,
+    type=click.Path(exists=False),
+    help="Output path. Will be created if it does not exist.",
+)
+def check(file: str, output: str):
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console = create_console_logger()
-    validate_file(console, Path(file))
+    validate_file(console, Path(file), Path(output))
 
 
-if __name__ == '__main__':
-    check()
+if __name__ == "__main__":
+    check()  # pylint: disable = no-value-for-parameter

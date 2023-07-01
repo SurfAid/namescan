@@ -11,17 +11,21 @@ pandas = "==2.0.3"
 [dev-packages]
 mypy = "==1.4.1"
 pylint = "==2.17.4"
-'black[d]' = "==23.3.0"
+black = "==23.3.0"
 pyinstaller = "==5.13.0"
 pandas-stubs = "==2.0.2.230605"
 pytest = "==7.4.0"
 
 [requires]
-python_version = "3.9"
+python_version = "3.11"
 
 [scripts]
 build = "pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns src/surfaid_namescan.py"
 cli = "python surfaid_namescan.py"
 check-types = "mypy ."
 install-types = "mypy --install-types"
+lint = "pylint --rcfile .pylintrc *.py"
+format = "black --check --diff ."
+format-update = "black ."
 test = "pytest -W ignore::pytest.PytestCollectionWarning"
+validate = "bash -c 'black --check --diff . && mypy . && pytest -W ignore::pytest.PytestCollectionWarning && pylint *.py'"
