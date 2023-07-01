@@ -5,17 +5,20 @@ name = "pypi"
 
 [packages]
 rich = "==13.4.2"
+click = "==8.1.3"
+pandas = "==2.0.3"
 
 [dev-packages]
 mypy = "==1.4.1"
 pylint = "==2.17.4"
 'black[d]' = "==23.3.0"
 pyinstaller = "==5.13.0"
+pandas-stubs = "==2.0.2.230605"
 
 [requires]
 python_version = "3.9"
 
 [scripts]
-run = "python nmbrs_hibob.py"
-
-
+cli = "python surfaid_namescan.py"
+build = "pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns src/surfaid_namescan.py"
+install-types = "mypy --install-types"
