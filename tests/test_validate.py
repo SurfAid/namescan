@@ -1,19 +1,14 @@
-from pathlib import Path
-
-from surfaid_namescan import create_console_logger
 from tests import test_resource_path
-from validate import validate_file
+from validate import read_as_dataframe
 
 
 class TestValidate:
-    def test_validate(self):
-        console = create_console_logger()
-        validate_file(console, test_resource_path / "test_namescan.csv", Path("output"))
+    def test_read_csv_as_dataframe(self):
+        dataframe = read_as_dataframe(test_resource_path / "test_namescan.csv")
+        assert len(dataframe.keys()) == 7
 
-    def test_validate_xls(self):
-        console = create_console_logger()
-        validate_file(
-            console,
-            test_resource_path / "PersonBatchSample-input-synthetic.xlsx",
-            Path("output"),
+    def test_read_xls_as_dataframe(self):
+        dataframe = read_as_dataframe(
+            test_resource_path / "PersonBatchSample-input-synthetic.xlsx"
         )
+        assert len(dataframe.keys()) == 11
