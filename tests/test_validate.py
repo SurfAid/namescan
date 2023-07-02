@@ -9,3 +9,11 @@ class TestValidate:
     def test_validate(self):
         console = create_console_logger()
         validate_file(console, test_resource_path / "test_namescan.csv", Path("output"))
+
+    def test_validate_xls(self):
+        console = create_console_logger()
+        validate_file(
+            console,
+            test_resource_path / "PersonBatchSample-input-synthetic.xlsx",
+            Path("output"),
+        )
