@@ -36,7 +36,7 @@ class DateOfBirth:
 @dataclass(frozen=True)
 class Reference:
     name: str
-    id_in_list: str
+    id_in_list: Optional[str]
 
 
 @dataclass(frozen=True)
@@ -46,29 +46,50 @@ class OtherName:
 
 
 @dataclass(frozen=True)
+class PoliticalParty:
+    title: str
+
+
+@dataclass(frozen=True)
+class Role:
+    title: str
+
+
+@dataclass(frozen=True, eq=True)
 class Person:  # pylint: disable=too-many-instance-attributes
     update_at: Optional[str]
     category: str
     name: str
-    gender: str
+    deceased: bool
+    deceased_date: Optional[str]
+    gender: Optional[Gender]
     original_script_name: Optional[str]
     dates_of_birth: list[DateOfBirth]
     reference_type: str
     references: list[Reference]
     program: Optional[str]
+    occupations: list[str]
+    political_parties: list[PoliticalParty]
+    roles: list[Role]
     nationality: str
     citizenship: str
     other_names: list[OtherName]
     summary: Optional[str]
     match_rate: float
 
+    def __hash__(self):
+        return hash(tuple(self.references))
+
     @staticmethod
     def from_json(person: dict):
+        gender = person.get("gender", None)
         return Person(
             update_at=person.get("update_at", None),
             category=person["category"],
             name=person["name"],
-            gender=person["gender"],
+            deceased=person.get("deceased", False),
+            deceased_date=person.get("deceased_date"),
+            gender=None if not gender else Gender(gender.strip().lower()),
             original_script_name=person.get("original_script_name"),
             dates_of_birth=[
                 DateOfBirth(date=dob["date"])
@@ -76,10 +97,16 @@ class Person:  # pylint: disable=too-many-instance-attributes
             ],
             reference_type=person["reference_type"],
             references=[
-                Reference(name=ref["name"], id_in_list=ref["id_in_list"])
+                Reference(name=ref["name"], id_in_list=ref.get("id_in_list"))
                 for ref in person.get("references", [])
             ],
             program=person.get("program", None),
+            occupations=person.get("occupations", []),
+            political_parties=[
+                PoliticalParty(title=party["title"])
+                for party in person.get("political_parties", [])
+            ],
+            roles=[Role(title=role["title"]) for role in person.get("roles", [])],
             nationality=person["nationality"],
             citizenship=person["citizenship"],
             other_names=[
@@ -193,3 +220,96 @@ def validate_file(console: Console, file: Path, output: Path, key: str) -> None:
     for index, row in dataframe.iterrows():
         person = PersonToScan.from_dataframe(row)
         send_request(console, person, key, str(index), output_path)
+
+
+def false_positive(person: Person) -> Optional[str]:
+    """Gives a reason if this is considered a false positive."""
+    if person.deceased:
+        return f"Deceased {person.deceased_date}"
+
+    if person.original_script_name:
+        return f"Not an Indonesian name: {person.original_script_name}"
+
+    if person.program and "syr" in person.program.lower():
+        return "Syrian conflict"
+
+    if "politician" in person.occupations:
+        affiliation = (
+            f" for {person.political_parties[0].title}"
+            if person.political_parties
+            else ""
+        )
+        return f"Politician{affiliation}"
+
+    if person.roles:
+        return f"Public figure: {person.roles[0].title}"
+
+    return None
+
+
+@dataclass(frozen=True)
+class Rationale:
+    explanations: dict[Person, Optional[str]]
+
+    @property
+    def matches(self) -> int:
+        return len(self.explanations.keys())
+
+    @property
+    def explained(self) -> int:
+        return len(
+            [
+                explanation
+                for explanation in self.explanations.values()
+                if explanation is not None
+            ]
+        )
+
+    @property
+    def rationale(self):
+        return ", ".join(
+            [
+                f"{person.name}: {explanation}"
+                for person, explanation in self.explanations.items()
+                if explanation is not None
+            ]
+        )
+
+    @property
+    def icon(self):
+        return "🟢" if self.matches == self.explained else "🔴"
+
+
+def create_rationale(
+    console: Console, person: PersonToScan, index: str, output_path: Path
+) -> Rationale:
+    response_json_string = Path(output_path, f"{index}.resp.json").read_text(
+        encoding="utf-8"
+    )
+    json_object = json.loads(response_json_string)
+    scan_result = ScanResult.from_json(json_object)
+    rationale = Rationale(
+        {person: false_positive(person) for person in scan_result.persons}
+    )
+    console.log(
+        f"{rationale.icon} {index} {person.name} -> {rationale.matches} matches, {rationale.explained} filtered."
+        f" {rationale.rationale}"
+    )
+    return rationale
+
+
+def add_rationale(console: Console, file: Path, output: Path) -> None:
+    console.log(f"Reading {file}")
+    dataframe = read_as_dataframe(file)
+
+    output_path = Path(file.parent, output)
+
+    rationales = [
+        create_rationale(
+            console, PersonToScan.from_dataframe(row), str(index), output_path
+        )
+        for index, row in dataframe.iterrows()
+    ]
+    total_matches = sum(rationale.matches for rationale in rationales)
+    total_explained = sum(rationale.explained for rationale in rationales)
+    console.log(f"Total matches: {total_matches}, total explained: {total_explained}")
