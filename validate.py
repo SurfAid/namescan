@@ -29,7 +29,90 @@ REQUEST_TIMEOUT_IN_SECONDS = 10
 
 
 @dataclass(frozen=True)
+class DateOfBirth:
+    date: str
+
+
+@dataclass(frozen=True)
+class Reference:
+    name: str
+    id_in_list: str
+
+
+@dataclass(frozen=True)
+class OtherName:
+    name: str
+    type: str
+
+
+@dataclass(frozen=True)
 class Person:  # pylint: disable=too-many-instance-attributes
+    update_at: str
+    category: str
+    name: str
+    gender: str
+    original_script_name: str
+    dates_of_birth: list[DateOfBirth]
+    reference_type: str
+    references: list[Reference]
+    program: str
+    nationality: str
+    citizenship: str
+    other_names: list[OtherName]
+    summary: str
+    match_rate: float
+
+    @staticmethod
+    def from_json(person: dict):
+        return Person(
+            update_at=person["update_at"],
+            category=person["category"],
+            name=person["name"],
+            gender=person["gender"],
+            original_script_name=person["original_script_name"],
+            dates_of_birth=[
+                DateOfBirth(date=dob["date"]) for dob in person["dates_of_birth"]
+            ],
+            reference_type=person["reference_type"],
+            references=[
+                Reference(name=ref["name"], id_in_list=ref["id_in_list"])
+                for ref in person["references"]
+            ],
+            program=person["program"],
+            nationality=person["nationality"],
+            citizenship=person["citizenship"],
+            other_names=[
+                OtherName(name=other_name["name"], type=other_name["type"])
+                for other_name in person["other_names"]
+            ],
+            summary=person["summary"],
+            match_rate=person["match_rate"],
+        )
+
+
+@dataclass(frozen=True)
+class ScanResult:
+    date: str
+    scan_id: str
+    number_of_matches: int
+    number_of_pep_matches: int
+    number_of_sip_matches: int
+    persons: list[Person]
+
+    @staticmethod
+    def from_json(data: dict):
+        return ScanResult(
+            date=data["date"],
+            scan_id=data["scan_id"],
+            number_of_matches=data["number_of_matches"],
+            number_of_pep_matches=data["number_of_pep_matches"],
+            number_of_sip_matches=data["number_of_sip_matches"],
+            persons=[Person.from_json(person) for person in data["persons"]],
+        )
+
+
+@dataclass(frozen=True)
+class PersonToScan:  # pylint: disable=too-many-instance-attributes
     name: Optional[str]
     first_name: Optional[str]
     middle_name: Optional[str]
@@ -46,7 +129,7 @@ class Person:  # pylint: disable=too-many-instance-attributes
     def from_dataframe(framed: Series):
         frame = framed.to_dict()
         gender = frame.get("Gender", None)
-        return Person(
+        return PersonToScan(
             name=frame.get("Name", None),
             first_name=frame.get("FirstName"),
             middle_name=frame.get("MiddleName"),
@@ -68,7 +151,7 @@ def log_request(request_body: dict, output_file: Path):
 
 
 def send_request(
-    console: Console, person: Person, key: str, index: str, output_path: Path
+    console: Console, person: PersonToScan, key: str, index: str, output_path: Path
 ) -> None:
     """Send a request to the Namescan emerald API."""
     console.log(f"Sending request to Namescan API for {person.name}...")
@@ -107,5 +190,5 @@ def validate_file(console: Console, file: Path, output: Path, key: str) -> None:
     output_path.mkdir(parents=True, exist_ok=True)
 
     for index, row in dataframe.iterrows():
-        person = Person.from_dataframe(row)
+        person = PersonToScan.from_dataframe(row)
         send_request(console, person, key, str(index), output_path)
