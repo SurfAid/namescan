@@ -1,0 +1,88 @@
+{
+    "date": "2023-07-03T12:43:00.1381651+10:00",
+    "scan_id": "s11997770",
+    "number_of_matches": 2,
+    "number_of_pep_matches": 2,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2023-04-02",
+            "category": "PEP",
+            "name": "Amin Ak",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1965-07-06"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Sukolilo",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Semolowaru",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Surabaya",
+                    "type": "residence"
+                }
+            ],
+            "other_names": [
+                {
+                    "name": "Amin",
+                    "type": "Also Known As"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2019-10-01",
+                    "to": "2024-09-30"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Prosperous Justice Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "contacts": [
+                {
+                    "value": "aminakram_",
+                    "type": "Instagram username"
+                }
+            ],
+            "match_rate": 82.0
+        },
+        {
+            "update_at": "2023-04-08",
+            "category": "PEP",
+            "name": "M. Amin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1965-09-26"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 82.0
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "date": "2023-07-03T12:42:55.7181427+10:00",
+    "scan_id": "s11997764",
+    "number_of_matches": 2,
+    "number_of_pep_matches": 2,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2023-04-04",
+            "category": "PEP",
+            "name": "Sunardi",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1966-12-05"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Pondokgede",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Bekasi",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Prosperous Justice Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 90.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Sunardi",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1948-02-09"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 90.0
+        }
+    ]
+}

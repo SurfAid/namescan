@@ -1,0 +1,1420 @@
+{
+    "date": "2023-07-03T12:35:01.8744046+10:00",
+    "scan_id": "s11997696",
+    "number_of_matches": 19,
+    "number_of_pep_matches": 4,
+    "number_of_sip_matches": 15,
+    "persons": [
+        {
+            "update_at": "2019-04-11",
+            "category": "RCA",
+            "name": "Abdulla",
+            "dates_of_birth": [
+                {
+                    "date": "2000-11-11"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "country": ""
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Sheikh Tameem",
+                    "type": "Also Known As"
+                }
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Youngest%20Indian%20Shiekh.jpg"
+            ],
+            "match_rate": 90.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2014-06-23\n2013-11-06",
+            "category": "SIP",
+            "name": "Subhi Ahmad Al Abdallah",
+            "gender": "male",
+            "original_script_name": "\u0635\u0628\u062d\u064a \u0623\u062d\u0645\u062f \u0627\u0644\u0639\u0628\u062f\u0627\u0644\u0644\u0647",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "22383"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "al-Abdullah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Agriculture and Agrarian Reform. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 84.0
+        },
+        {
+            "update_at": "2020-06-26\n2017-06-16",
+            "category": "SIP",
+            "name": "Khalaf Souleymane Abdallah",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1960"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "29852"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Sleiman",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al-Abdullah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Labour in power after May 2011 (appointed 27.8.2014). As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-12-17",
+            "match_rate": 84.0
+        },
+        {
+            "category": "SIP",
+            "name": "Pak Ud",
+            "dates_of_birth": [
+                {
+                    "date": "1963-04-19"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "city": "Gebang village, Masaran, Sragen, Central Java",
+                    "location": "",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "BL - Financial Sanctions List",
+                    "id_in_list": "2922"
+                }
+            ],
+            "program": "TAQA",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "addresses": [
+                {
+                    "address1": "",
+                    "address3": "",
+                    "city": "Desa Gebang, Kecamatan Masaran, Kabupaten Sragen, Jawa Tengah",
+                    "region": "",
+                    "postal_code": "",
+                    "country": "Indonesia"
+                },
+                {
+                    "address1": "",
+                    "address3": "",
+                    "city": "Desa Taman Fajar, Kecamatan Probolinggo, Kabupaten Lampung Timur, Lampung",
+                    "region": "",
+                    "postal_code": "",
+                    "country": "Indonesia"
+                }
+            ],
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Ustad Daud Zulkarnaen",
+                    "first_name": "Ustad",
+                    "middle_name": "Daud",
+                    "last_name": "Zulkarnaen",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Aris Sunarso",
+                    "first_name": "Aris",
+                    "middle_name": "",
+                    "last_name": "Sunarso",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Aris Sumarsono",
+                    "first_name": "Aris",
+                    "middle_name": "",
+                    "last_name": "Sumarsono",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abdurrahman",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abdul",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abdullah Abdurrahman",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zul",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zainal Arifin",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Mbah Zul",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Murshid",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Daud",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zulkarnaen",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zulkarnan",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zulkarnain",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zulkarnin",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Arif Sunarso",
+                    "first_name": "Arif",
+                    "middle_name": "",
+                    "last_name": "Sunarso",
+                    "type": "strong"
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2022.152.01.0184.01.ENG&toc=OJ%3AL%3A2022%3A152%3ATOC"
+            ],
+            "summary": "Date of designation referred to in Article 7d(2)(i): 16.5.2005.",
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "7/1/2022",
+            "update_info": "Listed on: 16 May 2005 (amended on 17 Apr. 2019, 27 May 2022)",
+            "category": "SIP",
+            "name": "Aris Sumarsono",
+            "dates_of_birth": [
+                {
+                    "date": "19/4/1963"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "text": "Gebang village, Masaran, Sragen, Central Java, Indonesia"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "AU - DFAT Consolidated Sanction list",
+                    "id_in_list": "537"
+                }
+            ],
+            "program": "1267/1989/2253 (ISIL (Da'esh) and Al-Qaida)",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "addresses": [
+                {
+                    "text": "Desa Gebang, Kecamatan Masaran, Kabupaten Sragen, Jawa Tengah, Indonesia;"
+                },
+                {
+                    "text": "Desa Taman Fajar, Kecamatan Probolinggo, Kabupaten Lampung Timur, Lampung, Indonesia"
+                }
+            ],
+            "other_names": [
+                {
+                    "name": "Zulkarnan",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Zulkarnain",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Zulkarnin",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Arif Sunarso",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Zulkarnaen",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Aris Sunarso",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ustad Daud Zulkarnaen",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Murshid",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Daud",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Pak Ud",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Mbah Zul",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Zainal Arifin",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Zul",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdullah Abdurrahman",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdul",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdurrahman",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun. 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 7 Jun. 2018. Review pursuant to Security Council resolution 2368 (2017) was concluded on 15 November 2021.",
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "14/06/2022",
+            "category": "SIP",
+            "name": "ABDUL",
+            "last_name": "ABDUL",
+            "dates_of_birth": [
+                {
+                    "date": "19/04/1963"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "city": "Gebang village, Masaran, Sragen, Central Java",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UK - HMT Financial Sanctions List",
+                    "id_in_list": "8636"
+                }
+            ],
+            "program": "ISIL (Da'esh) and Al-Qaida",
+            "nationality": "Indonesia",
+            "citizenship": "",
+            "addresses": [
+                {
+                    "address1": "Desa Gebang",
+                    "address2": "Kecamatan Masaran",
+                    "address3": "Kabupaten Sragen Jawa Tengah",
+                    "postal_code": "",
+                    "country": "Indonesia"
+                },
+                {
+                    "address1": "Desa Taman Fajar",
+                    "address2": "Kecamatan Probolinggo",
+                    "address3": "Kabupaten Lampung Timur Lampung",
+                    "postal_code": "",
+                    "country": "Indonesia"
+                }
+            ],
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "ABDULLAH ABDURRAHMAN",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "ABDULLAH ABDURRAHMAN",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "ABDURRAHMAN",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "ABDURRAHMAN",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "DAUD",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "DAUD",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "MBAH ZUL",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "MBAH ZUL",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "MURSHID",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "MURSHID",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "PAK UD",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "PAK UD",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "ARIS SUMARSONO",
+                    "first_name": "ARIS",
+                    "middle_name": "",
+                    "last_name": "SUMARSONO",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Arif SUNARSO",
+                    "first_name": "Arif",
+                    "middle_name": "",
+                    "last_name": "SUNARSO",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Aris SUNARSO",
+                    "first_name": "Aris",
+                    "middle_name": "",
+                    "last_name": "SUNARSO",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "ZAINAL ARIFIN",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "ZAINAL ARIFIN",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "ZUL",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "ZUL",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ustad Daud ZULKARNAEN",
+                    "first_name": "Ustad",
+                    "middle_name": "Daud",
+                    "last_name": "ZULKARNAEN",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "ZULKARNAIN",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "ZULKARNAIN",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "ZULKARNAN",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "ZULKARNAN",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "ZULKARNEN",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "ZULKARNEN",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "ZULKARNIN",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "ZULKARNIN",
+                    "type": ""
+                }
+            ],
+            "summary": "(UK Sanctions List Ref):AQD0344. (UN Ref):QDi.187. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun. 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 7 Jun. 2018. Review pursuant to Security Council resolution 2368 (2017) was concluded on 15 November 2021. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals\nListed On: 18/05/2005;\nDate Designated: 16/05/2005;",
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "2022-06-03",
+            "category": "SIP",
+            "name": "Pak Ud",
+            "dates_of_birth": [
+                {
+                    "date": "1963-04-19"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "city": "Gebang village, Masaran, Sragen, Central Java",
+                    "region": "",
+                    "country": "INDONESIA"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "EU - Financial Sanctions List",
+                    "id_in_list": "2922"
+                }
+            ],
+            "program": "TAQA",
+            "nationality": "",
+            "citizenship": "INDONESIA",
+            "addresses": [
+                {
+                    "address1": "",
+                    "city": "Desa Gebang, Kecamatan Masaran, Kabupaten Sragen, Jawa Tengah",
+                    "region": "",
+                    "postal_code": "",
+                    "country": "INDONESIA"
+                },
+                {
+                    "address1": "",
+                    "city": "Desa Taman Fajar, Kecamatan Probolinggo, Kabupaten Lampung Timur, Lampung",
+                    "region": "",
+                    "postal_code": "",
+                    "country": "INDONESIA"
+                }
+            ],
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Ustad Daud Zulkarnaen",
+                    "first_name": "Ustad",
+                    "middle_name": "Daud",
+                    "last_name": "Zulkarnaen",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Aris Sunarso",
+                    "first_name": "Aris",
+                    "middle_name": "",
+                    "last_name": "Sunarso",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Aris Sumarsono",
+                    "first_name": "Aris",
+                    "middle_name": "",
+                    "last_name": "Sumarsono",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abdurrahman",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abdul",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abdullah Abdurrahman",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zul",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zainal Arifin",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Mbah Zul",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Murshid",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Daud",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zulkarnaen",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zulkarnan",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zulkarnain",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Zulkarnin",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Arif Sunarso",
+                    "first_name": "Arif",
+                    "middle_name": "",
+                    "last_name": "Sunarso",
+                    "type": "strong"
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2022.152.01.0184.01.ENG&toc=OJ%3AL%3A2022%3A152%3ATOC"
+            ],
+            "summary": "Date of designation referred to in Article 7d(2)(i): 16.5.2005.",
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "2023-03-28",
+            "category": "PEP",
+            "name": "Abdillah",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1955-05-19"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Medan",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "roles": [
+                {
+                    "title": "mayor of Medan",
+                    "since": "2000-04-01",
+                    "to": "2008-08-20"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Abdillah",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1965-05-26"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "13/05/2022",
+            "category": "SIP",
+            "name": "ABDALLAH",
+            "last_name": "ABDALLAH",
+            "dates_of_birth": [
+                {
+                    "date": "1952"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UK - HMT Financial Sanctions List",
+                    "id_in_list": "12211"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYOB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYOB",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYOUB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYOUB",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYUB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYUB",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYYOUB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYYOUB",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYYUB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYYUB",
+                    "type": ""
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Vice President of the Council of Ministers/Deputy Prime Minister and Minister of Defence"
+                }
+            ],
+            "summary": "(UK Sanctions List Ref):SYR0008. (UK Statement of Reasons):Vice President of the Council of Ministers/Deputy Prime Minister and Minister of Defence. Appointed in January 2018. Officer of the rank of General in the Syrian Army, in post after May 2011. Former Chief of General Staff of the Syrian Armed Forces. Person supporting the Syrian regime and responsible for repression of and violence against the civilian population in Syria.\nListed On: 15/11/2011;\nDate Designated: 31/12/2020;",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Abdullah Berri",
+            "gender": "male",
+            "original_script_name": "\u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0628\u0631\u064a",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11969"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Abdallah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Head of the Berri family militia. In charge of pro-government militia involved in the crackdown on the civilian population in Aleppo.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2018-06-12\n2017-06-16\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Abdullah Khaleel Hussein",
+            "gender": "male",
+            "original_script_name": "\u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u062e\u0644\u064a\u0644 \u062d\u0633\u064a\u0646",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "22455"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Abdallah",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Khalil",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Hussain",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former State Minister in power after May 2011. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-10-30\n2020-06-26\n2018-03-07\n2016-10-11\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Ali Abdullah Ayyub",
+            "gender": "male",
+            "original_script_name": "\u0639\u0644\u064a \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0623\u064a\u0648\u0628",
+            "dates_of_birth": [
+                {
+                    "date": "1952"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11951"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Abdallah",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ayyoub",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Vice President of the Council of Ministers and Minister of Defence. Appointed in Jan 2018. Officer of the rank of General in the Syrian Army, in post after May 2011. Former Chief of General Staff of the Syrian Armed Forces. Person supporting the Syrian regime and responsible for repression of and violence against the civilian population in Syria.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "14/3/2018",
+            "update_info": "Listed on: 25 Apr. 2006 (amended on 17 Oct. 2017, 14 Mar. 2018)",
+            "category": "SIP",
+            "name": "MUSA HILAL ABDALLA ALNSIEM",
+            "dates_of_birth": [
+                {
+                    "date": "1 Jan. 1964"
+                },
+                {
+                    "date": "1959"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "text": "Kutum"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "AU - DFAT Consolidated Sanction list",
+                    "id_in_list": "599"
+                }
+            ],
+            "program": "1591 (Sudan)",
+            "nationality": "",
+            "citizenship": "Sudan",
+            "addresses": [
+                {
+                    "text": "Kabkabiya, Sudan"
+                },
+                {
+                    "text": "Kutum, Sudan",
+                    "note": "Resides in Kabkabiya and the city of Kutum, Northern Darfur and has resided in Khartoum."
+                }
+            ],
+            "other_names": [
+                {
+                    "name": "Musa Hilal",
+                    "type": "aka - Sheikh"
+                },
+                {
+                    "name": "Abd Allah",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdallah",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "AlNasim",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al Nasim",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "AlNaseem",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al Naseem",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "AlNasseem",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al Nasseem",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Passport no: a) Diplomatic Passport D014433, issued on 21 Feb. 2013 (Expired on 21 Feb. 2015) b) Diplomatic Passport D009889, issued on 17 Feb. 2011 (Expired on 17 Feb. 2013). Designation: a) Formerly Member of the National Assembly of Sudan from Al-Waha district b) Formerly special adviser to the Ministry of Federal Affairs c) Paramount Chief of the Mahamid Tribe in North Darfur. Photo available for inclusion in the INTERPOL-UN\nSecurity Council Special Notice. ",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2023-06-30T00:12:24+00:00",
+            "category": "SIP",
+            "name": "FAKER BEN ABDELAZZIZ BOUSSORA",
+            "gender": "Male",
+            "dates_of_birth": [
+                {
+                    "date": "March 22, 1964"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "text": "Tunisia"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "US - Federal Bureau of Investigation (FBI) List",
+                    "id_in_list": "fc95b0cc4e5e520801c04dcda2e8c98a"
+                }
+            ],
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Fakr Abdul Aziz Bosura",
+                    "type": ""
+                },
+                {
+                    "name": "Boussoura",
+                    "type": ""
+                },
+                {
+                    "name": "Abdulaziz",
+                    "type": ""
+                },
+                {
+                    "name": "Fakeroun",
+                    "type": ""
+                },
+                {
+                    "name": "Abu Yusif Al-Tunisi",
+                    "type": ""
+                },
+                {
+                    "name": "Fakerrou",
+                    "type": ""
+                },
+                {
+                    "name": "Yusuf Al-Tunisi",
+                    "type": ""
+                },
+                {
+                    "name": "Faker Boussora",
+                    "type": ""
+                }
+            ],
+            "images": [
+                "https://www.fbi.gov/wanted/terrorinfo/faker-ben-abdelazziz-boussora/@@images/image/thumb"
+            ],
+            "sources": [
+                "https://www.fbi.gov/wanted/terrorinfo/faker-ben-abdelazziz-boussora/download.pdf"
+            ],
+            "summary": "Eyes: dark;\nHair: black;\nWeight: Between 160 and 170 Pounds;\nHeight: 67 Inches;\nWarning: SHOULD BE CONSIDERED ARMED AND DANGEROUS;\nReward: The Rewards For Justice Program, United States Department of State, is offering a reward of up to $5 million for information leading directly to the capture of Faker Ben Abdelazziz Boussora.;\nField Offices: newyork;\nPossible Countries: CAN, TUN, USA;\n[Remarks]: Boussora has predominately protruding ears and is believed to have a serious pituitary gland illness. He is a citizen of Canada.;\n[Details]: Faker Ben Abdelazziz Boussora is wanted for questioning in connection with possible terrorist activity within the United States.",
+            "match_rate": 58.0
+        },
+        {
+            "update_at": "2023-05-16",
+            "category": "PEP",
+            "name": "Edward \u011eabdullacanof",
+            "first_name": "Edvard",
+            "gender": "male",
+            "original_script_name": "Edvard Yunusovi\u010d",
+            "dates_of_birth": [
+                {
+                    "date": "1957-04-08"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Ol\u0131 \u00c4tn\u00e4",
+                    "country": "Russia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Russia; Soviet Union",
+            "places": [
+                {
+                    "country": "Russia",
+                    "location": "Kazan",
+                    "type": "residence"
+                }
+            ],
+            "other_names": [
+                {
+                    "name": "Abdullazyanov",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdullazyanov E.",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdullazyanov E.Y.",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdullazyanov Edvard Yunusovich",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdullazyanov Edward Yunusovich",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edvard Y. Abdullazyanov",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edvard Yunusovich",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edvard Yunusovich Abdullazyanov",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edward Abdullazyanov",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edward Y. Abdullazyanov",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edward Yunusovich",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edward Yunusovich Abdullazyanov",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edvard Yunusovi\u010d Abdullazyanov",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edward Yunusovi\u010d",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Edward Yunusovi\u010d Abdullazyanov",
+                    "type": "Also Known As"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "rector",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "occupations": [
+                "politician",
+                "scientist",
+                "industrialist"
+            ],
+            "political_parties": [
+                {
+                    "title": "Communist Party of the Soviet Union",
+                    "since": "",
+                    "to": "1991"
+                },
+                {
+                    "title": "United Russia",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "contacts": [
+                {
+                    "value": "edvard_abdullazyanov",
+                    "type": "Instagram username"
+                }
+            ],
+            "match_rate": 54.0
+        },
+        {
+            "update_at": "31/12/2020",
+            "category": "SIP",
+            "name": "AL-ABDALLAH",
+            "last_name": "AL-ABDALLAH",
+            "dates_of_birth": [
+                {
+                    "date": ""
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UK - HMT Financial Sanctions List",
+                    "id_in_list": "12714"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Saheil AL-ABDALLAH",
+                    "first_name": "Saheil",
+                    "middle_name": "",
+                    "last_name": "AL-ABDALLAH",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Suhail AL-ABDALLAH",
+                    "first_name": "Suhail",
+                    "middle_name": "",
+                    "last_name": "AL-ABDALLAH",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Saheil AL-ABDULLAH",
+                    "first_name": "Saheil",
+                    "middle_name": "",
+                    "last_name": "AL-ABDULLAH",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Suhail AL-ABDULLAH",
+                    "first_name": "Suhail",
+                    "middle_name": "",
+                    "last_name": "AL-ABDULLAH",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "SUHEIL",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "SUHEIL",
+                    "type": ""
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Head of the Latakia Branch of the Syrian Air Force Intelligence Service"
+                }
+            ],
+            "summary": "(UK Sanctions List Ref):SYR0223. (UK Statement of Reasons):Head of Latakia branch of the Air Force Intelligence Service. Responsible for the torture of opponents in custody. (Gender):Male\nListed On: 24/07/2012;\nDate Designated: 31/12/2020;",
+            "match_rate": 53.0
+        },
+        {
+            "update_at": "2020-06-26\n2019-08-13\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Suhail Al-Abdullah Brigadier General",
+            "gender": "male",
+            "original_script_name": "\u0633\u0647\u064a\u0644 \u0627\u0644\u0639\u0628\u062f\u0627\u0644\u0644\u0647",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12639"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Brigadier General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Suheil",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al-Abdallah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Head of the Latakia Branch of the Syrian Air Force Intelligence Service. Responsible for the torture of opponents in custody.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 53.0
+        },
+        {
+            "update_at": "2021-11-15",
+            "category": "SIP",
+            "name": "ARIS SUMARSONO",
+            "dates_of_birth": [
+                {
+                    "date": "1963-04-19",
+                    "note": "EXACT"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "city": "Gebang village, Masaran",
+                    "region": "Sragen, Central Java",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UN - United Nations Sanctions List",
+                    "id_in_list": "113444"
+                }
+            ],
+            "program": "Al-Qaida (QDi.187)",
+            "nationality": "Indonesia",
+            "citizenship": "",
+            "addresses": [
+                {
+                    "address1": "Desa Gebang, Kecamatan Masaran",
+                    "city": "Kabupaten Sragen",
+                    "region": "Jawa Tengah",
+                    "country": "Indonesia"
+                },
+                {
+                    "address1": "Desa Taman Fajar, Kecamatan Probolinggo",
+                    "city": "Kabupaten Lampung Timur",
+                    "region": "Lampung",
+                    "country": "Indonesia"
+                }
+            ],
+            "other_names": [
+                {
+                    "name": "Zulkarnan",
+                    "type": "good"
+                },
+                {
+                    "name": "Zulkarnain",
+                    "type": "good"
+                },
+                {
+                    "name": "Zulkarnin",
+                    "type": "good"
+                },
+                {
+                    "name": "Arif Sunarso",
+                    "type": "good"
+                },
+                {
+                    "name": "Zulkarnaen",
+                    "type": "good"
+                },
+                {
+                    "name": "Aris Sunarso",
+                    "type": "good"
+                },
+                {
+                    "name": "Ustad Daud Zulkarnaen",
+                    "type": "good"
+                },
+                {
+                    "name": "Murshid",
+                    "type": "low"
+                },
+                {
+                    "name": "Daud",
+                    "type": "low"
+                },
+                {
+                    "name": "Pak Ud",
+                    "type": "low"
+                },
+                {
+                    "name": "Mbah Zul",
+                    "type": "low"
+                },
+                {
+                    "name": "Zainal Arifin",
+                    "type": "low"
+                },
+                {
+                    "name": "Zul",
+                    "type": "low"
+                },
+                {
+                    "name": "Abdullah Abdurrahman",
+                    "type": "low"
+                },
+                {
+                    "name": "Abdul",
+                    "type": "low"
+                },
+                {
+                    "name": "Abdurrahman",
+                    "type": "low"
+                }
+            ],
+            "summary": "Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun. 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 7 June 2018. Review pursuant to Security Council resolution 2368 (2017) was concluded on 15 November 2021. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
+            "match_rate": 52.0
+        }
+    ]
+}

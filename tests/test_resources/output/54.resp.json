@@ -1,0 +1,61 @@
+{
+    "date": "2023-07-03T12:42:50.2088228+10:00",
+    "scan_id": "s11997755",
+    "number_of_matches": 2,
+    "number_of_pep_matches": 1,
+    "number_of_sip_matches": 1,
+    "persons": [
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Kh. M. Mansyur",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1947-06-10"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mansour Fadlallah Azzam",
+            "gender": "male",
+            "original_script_name": "\u0645\u0646\u0635\u0648\u0631 \u0641\u0636\u0644 \u0627\u0644\u0644\u0647 \u0639\u0632\u0627\u0645",
+            "dates_of_birth": [
+                {
+                    "date": "1960"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12188"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Mansur",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Fadl Allah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Minister for Presidency Affairs. As a Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 66.0
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "date": "2023-07-03T12:42:58.2215929+10:00",
+    "scan_id": "s11997767",
+    "number_of_matches": 2,
+    "number_of_pep_matches": 2,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2023-02-23",
+            "category": "PEP",
+            "name": "Syafrudin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1958-08-10"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Palibelo",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Nasdem Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2023-04-08",
+            "category": "PEP",
+            "name": "Syafruddin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1958-07-20"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician",
+                "civil servant"
+            ],
+            "match_rate": 93.0
+        }
+    ]
+}

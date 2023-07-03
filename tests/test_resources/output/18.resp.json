@@ -1,0 +1,154 @@
+{
+    "date": "2023-07-03T12:42:27.4747939+10:00",
+    "scan_id": "s11997718",
+    "number_of_matches": 5,
+    "number_of_pep_matches": 2,
+    "number_of_sip_matches": 3,
+    "persons": [
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Amar Ismael",
+            "gender": "male",
+            "original_script_name": "\u0639\u0645\u0627\u0631 \u0625\u0633\u0645\u0627\u0639\u064a\u0644",
+            "dates_of_birth": [
+                {
+                    "date": "3 Apr 1973",
+                    "note": "approximately"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11981"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Ammar",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ismail",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Civilian-Head of Syrian electronic army (territorial army intelligence service). Involved in the violent crackdown and call for violence against the civilian population across Syria.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-06-26\n2017-06-16\n2016-10-11\n2016-01-19",
+            "category": "SIP",
+            "name": "Ismael Ismael",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1955"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "28029"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Ismail",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ismail",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Finance Minister in power after May 2011. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-08-05",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2017-06-02\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Ezzedine Ismael",
+            "gender": "male",
+            "original_script_name": "\u0639\u0632\u0627\u0644\u062f\u064a\u0646 \u0625\u0633\u0645\u0627\u0639\u064a\u0644",
+            "dates_of_birth": [
+                {
+                    "date": "1947",
+                    "note": "approximately"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12711"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Ismail",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Retired general, longstanding member of the managerial staff of the Air Force Intelligence Service, of which he became the head in the early 2000s. Was appointed political and security adviser to the President in 2006. As political and security adviser to President Bashar al-Assad, Ezzedine Ismael is implicated in the political repression conducted by the Syrian regime against the opposition.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: DOB: middle of the 1940's (probably 1947).",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2023-02-26",
+            "category": "PEP",
+            "deceased": true,
+            "deceased_date": "2005-01-17",
+            "name": "M. M. Ismail",
+            "first_name": "M.",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1921-02-08"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Dominion of India; British Raj; India",
+            "roles": [
+                {
+                    "title": "Governor of Tamil Nadu",
+                    "since": "1980-10-27",
+                    "to": "1980-11-04"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Ismail",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1957-05-19"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 100.0
+        }
+    ]
+}

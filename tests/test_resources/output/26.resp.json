@@ -1,0 +1,132 @@
+{
+    "date": "2023-07-03T12:42:32.6592482+10:00",
+    "scan_id": "s11997726",
+    "number_of_matches": 4,
+    "number_of_pep_matches": 4,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "R. Sudirman",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1957-12-30"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Maros",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Makassar",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Nasdem Party",
+                    "since": "",
+                    "to": ""
+                },
+                {
+                    "title": "Ulema National Awakening Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2023-03-07",
+            "category": "PEP",
+            "name": "Sudirman",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1974-11-10"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "roles": [
+                {
+                    "title": "Member of Indonesia's Regional Representative Council",
+                    "since": "2014-10-01",
+                    "to": "2019-09-30"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Sudirman",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1979-10-28"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Sudarmanto",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1957-05-15"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "East Jakarta",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Great Indonesia Movement Party",
+                    "since": "",
+                    "to": ""
+                },
+                {
+                    "title": "Indonesian Democratic Party \u2013 Struggle",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 53.0
+        }
+    ]
+}

@@ -1,0 +1,143 @@
+{
+    "date": "2023-07-03T12:42:42.0025996+10:00",
+    "scan_id": "s11997742",
+    "number_of_matches": 3,
+    "number_of_pep_matches": 3,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2023-04-04",
+            "category": "PEP",
+            "name": "Nuryati",
+            "gender": "female",
+            "dates_of_birth": [
+                {
+                    "date": "1975-03-01"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Kedungtuban",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Rembang",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Prosperous Justice Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "2022-09-17",
+            "category": "PEP",
+            "name": "Nurhayati",
+            "gender": "female",
+            "dates_of_birth": [
+                {
+                    "date": "1969-11-20"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Tasikmalaya",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Kebayoran Baru",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Pondok Pinang",
+                    "type": "residence"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2014-10-01",
+                    "to": "2019-09-30"
+                },
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2019-10-01",
+                    "to": "2024-09-30"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "spouse": "Suharso Monoarfa",
+            "political_parties": [
+                {
+                    "title": "United Development Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "contacts": [
+                {
+                    "value": "nurhayati__center",
+                    "type": "Instagram username"
+                }
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Nurhayati%20DPR.jpg"
+            ],
+            "match_rate": 52.0
+        },
+        {
+            "update_at": "23/04/2019",
+            "category": "PEP",
+            "name": "Hj. NURHAYATI",
+            "gender": "female",
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "type": "Legislature"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of Dewan Perwakilan Rakyat (United Development Party Faction)",
+                    "since": "2014-10-01",
+                    "type": ""
+                }
+            ],
+            "identities": [
+                {
+                    "number": "1440",
+                    "type": "EveryPolitician Legacy"
+                }
+            ],
+            "images": [
+                "http://dpr.go.id/doksigota/photo/1440.jpg"
+            ],
+            "match_rate": 52.0
+        }
+    ]
+}

@@ -1,39 +1,798 @@
 {
-  "date": "2023-07-02T17:52:20.150466+10:00",
-  "scan_id": "s11994383",
-  "number_of_matches": 1,
-  "number_of_pep_matches": 0,
-  "number_of_sip_matches": 1,
-  "persons": [
-    {
-      "update_at": "2020-06-26\n2018-06-12\n2017-06-16",
-      "category": "SIP",
-      "name": "Dr. Malek Ali",
-      "gender": "male",
-      "original_script_name": "Dr. مالك علي",
-      "dates_of_birth": [
+    "date": "2023-07-03T12:44:00.4502228+10:00",
+    "scan_id": "s11997772",
+    "number_of_matches": 23,
+    "number_of_pep_matches": 4,
+    "number_of_sip_matches": 19,
+    "persons": [
         {
-          "date": "1956"
-        }
-      ],
-      "reference_type": "Sanction",
-      "references": [
+            "update_at": "2020-06-26\n2016-01-19\n2014-06-23\n2013-11-06",
+            "category": "SIP",
+            "name": "Mohammad Yahiya Moalla Dr.",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u064a\u062d\u064a\u0649 \u0645\u0639\u0644\u0627",
+            "dates_of_birth": [
+                {
+                    "date": "1951"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "22387"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Dr.",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Muhammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Yehya",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Mu'la",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Higher Education. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 100.0
+        },
         {
-          "name": "CH - SECO Sanction List",
-          "id_in_list": "28051"
-        }
-      ],
-      "program": "Syria",
-      "nationality": "",
-      "citizenship": "",
-      "other_names": [
+            "update_at": "2020-06-26\n2016-01-19\n2015-06-03",
+            "category": "SIP",
+            "name": "Amr Armanazi",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "7 Feb 1944"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "28789"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Amrou",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Muhammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Najib",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al-Armanazi",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Director-General of the Syrian Scientific Studies and Research Centre (SSRC), responsible for providing support to the Syrian army for the acquisition of equipment used for the surveillance and repression of demonstrators. Also responsible for the development and production of non-conventional weapons, including chemical weapons, and the missiles to deliver them.\r\nResponsible for the violent repression of the civilian population; supports the Syrian regime.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-09-10",
+            "match_rate": 100.0
+        },
         {
-          "name": "Malik",
-          "type": "Also Known As"
+            "update_at": "2020-06-26",
+            "category": "SIP",
+            "name": "Ahmad Ballul",
+            "gender": "male",
+            "original_script_name": "\u0623\u062d\u0645\u062f \u0628\u0627\u0644\u0648\u0644",
+            "dates_of_birth": [
+                {
+                    "date": "10 Oct 1954"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "36103"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Ahmed",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Muhammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Balol",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Holds the rank of Major General, a senior officer and Commander of the Syrian Arab Air and Air Defence Forces, in post after May 2011.\r\nOperates in the chemical weapons proliferation sector and, as a senior ranking officer of the Syrian Arab Air Force, is responsible for the violent repression of the civilian population, including the use of chemical weapons attacks by the Syrian regime identified in the report of the Joint Investigative Mechanism.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2017-03-28\r\nOther information: Rank: Major General; Commander of the Syrian Arab Air Force and Air Defence Forces",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mohammad Mufleh",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u0645\u0641\u0644\u062d",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11820"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Muhammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Muflih",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Head of Syrian Military Intelligence in the town of Hama; involved in the crackdown on demonstrators.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-10-30\n2020-06-26\n2018-06-12\n2017-06-16\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Imad Mohammad Deeb Khamis",
+            "gender": "male",
+            "original_script_name": "\u0639\u0645\u0627\u062f \u0645\u062d\u0645\u062f \u062f\u064a\u0628 \u062e\u0645\u064a\u0633",
+            "dates_of_birth": [
+                {
+                    "date": "1 Aug 1961"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12259"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Muhammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Dib",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Khamees",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Prime Minister and Former Minister of Electricity. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2021-06-11\n2020-06-26\n2019-08-13",
+            "category": "SIP",
+            "name": "Mohammed Bilal Brigadier General",
+            "gender": "male",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "29902"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Lieutenant Colonel",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Muhammad",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: As a senior officer in the Syrian Air Force Intelligence Service, he supports the Syrian regime and is responsible for the violent repression of the civilian population. He is also associated with the listed Scientific Studies Research Centre (SSRC).\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-12-17",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mohammed Ali Nasr General",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u0639\u0644\u064a \u0646\u0635\u0631",
+            "dates_of_birth": [
+                {
+                    "date": "1960",
+                    "note": "approximately"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12701"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Muhammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Naser",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Close to Maher al-Assad, younger brother of President Bashar al-Assad. Most of his career has been spent in the Republican Guard. In 2010 he joined the internal branch (Branch 251) of the General Intelligence Directorate which is responsible for combating the political opposition. As one of its senior officers, General Mohammed Ali Nasr is directly involved in the repression of opponents.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mohammad Abdul-Sattar Al Sayed Dr.",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u0639\u0628\u062f \u0627\u0644\u0633\u062a\u0627\u0631 \u0627\u0644\u0633\u064a\u062f",
+            "dates_of_birth": [
+                {
+                    "date": "1958"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "22371"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Dr.",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Muhammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abd al-Sattar",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al Sayyed",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Minister of Religious Endowments. As a Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "S. Muhammad",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1960-04-25"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Gresik",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Cipayung",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "East Jakarta",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "National Awakening Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2015-06-17\n2013-11-06",
+            "category": "SIP",
+            "name": "Muhammed Zamrini Brigadier-General",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u0632\u0645\u0631\u064a\u0646\u064a",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11894"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Brigadier-General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Muhamad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Zamreni",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Branch Chief for Syrian Military Intelligence (SMI) in Homs. Directly involved in repression of and violence against the civilian population in Homs.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 90.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Muhamad",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1964-04-06"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 90.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Muhammadong",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1969-01-09"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Sidosermo",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Surabaya",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Great Indonesia Movement Party",
+                    "since": "",
+                    "to": ""
+                },
+                {
+                    "title": "Ulema National Awakening Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 78.0
+        },
+        {
+            "update_at": "2022-09-28\n2020-06-26",
+            "category": "SIP",
+            "name": "Muhammad Yousef Hasouri Brigadier General",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u064a\u0648\u0633\u0641 \u062d\u0627\u0635\u0648\u0631\u064a",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "36645"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Brigadier General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Brigadier General Muhammad Hasouri is a senior officer of the Syrian Air Force, in post after May 2011. He held the position as Chief of Staff of Air Force Brigade 50 and Deputy Commander of the Shayrat Airbase. Brigadier General Muhammad Hasouri operates in the chemical weapons proliferation sector and was involved in the chemical massacre in \u201cKhan Sheikhoun\u201d of 4 Apr 2017. As a senior military officer he is responsible for the violent repression of the civilian population in Syria.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2017-08-03",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mohamed Maaruf Brigadier General",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u0645\u0639\u0631\u0648\u0641",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12114"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Brigadier General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Maarouf",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Commander of military operations in Homs. Gave orders to shoot protestors in Homs.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Position: Commander of the 45th Regiment",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2017-06-16",
+            "category": "SIP",
+            "name": "Mohamad Ghazi Jalali",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1969"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "29826"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al-Jalali",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Communications and Technology in power after May 2011 (appointed 27.8.2014). As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-12-17",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Jihad Mohamed Sultan Brigadier General",
+            "gender": "male",
+            "original_script_name": "\u062c\u0647\u0627\u062f \u0645\u062d\u0645\u062f \u0633\u0644\u0637\u0627\u0646",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12094"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Brigadier General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Gave orders to troops to shoot protestors in Douma.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Position: Commander of the 65th Brigade",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2019-08-13\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mohamed Khaddor Major General",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u062e\u0636\u0648\u0631",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12137"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Major General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Khaddour",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Gave orders to troops to beat protesters with sticks and then arrest them. Responsible for repression of peaceful protestors in Douma.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Position: Commander of the 106th Brigade, Presidential Guard",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Muhammad Ali Durgham Major General",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u0639\u0644\u064a",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12074"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Durgham Major General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Ordered troops to shoot at protestors in and around Damascus, including Mo\u2019adamiyeh, Douma, Abasiyeh, Duma.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Position: Commander of the 4th Division",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mohammed Jabir",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u062c\u0627\u0628\u0631",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11907"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Jaber",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Shabiha militia. Associate of Maher al-Assad for the Shabiha militia. Directly involved in repression of and violence against the civilian population, and in coordination of Shabiha militia groups.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2019-08-13\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mohamed Heikmat Ibrahim",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u062d\u0643\u0645\u062a \u0625\u0628\u0631\u0627\u0647\u064a\u0645",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12162"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Hikmat",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Head of the police of Al-Hassaka. Major General. As former Head of the Operations Branch of the Political Security Directorate, was responsible for detention and torture of detainees.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Position: Major General. Head of the police of Al-Hassaka",
+            "match_rate": 64.0
+        },
+        {
+            "category": "SIP",
+            "name": "Mohamad Fayez Barcha",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u062f \u0641\u0627\u064a\u0632 \u0628\u0631\u0634\u0629",
+            "dates_of_birth": [
+                {
+                    "date": "1955"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "43903"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al-Barsha",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Minister of State. Appointed in Aug 2020. As a Government Minister, shares responsibility for the Syrian regime\u2019s violent repression against the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2020-11-19",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2021-06-11\n2020-06-26\n2017-06-16",
+            "category": "SIP",
+            "name": "Mohamad Amer Mardini",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1959"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "29819"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Mohammad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al-Mardini",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Higher Education in power after May 2011 (appointed 27.8.2014). As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-12-17",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2023-07-01",
+            "category": "PEP",
+            "name": "MuhammadAriLaw",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1982-06-21"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "other_names": [
+                {
+                    "name": "Muhammad Ari Pratomo",
+                    "type": "Also Known As"
+                }
+            ],
+            "occupations": [
+                "writer",
+                "lawyer",
+                "politician",
+                "advocate",
+                "musician",
+                "singer"
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Foto%20MuhammadAriLaw.png",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Muhammad%20Ari%20Pratomo%20Dapil%202%20Kabupaten%20Bogor%20dari%20Partai%20Perindo.jpg",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Muhammad%20Ari%20Pratomo.png",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Muhammad%20Ari%20Pratomo.jpg",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Muhammad%20Ari%20Pratomo%20Caleg%20Dapil%202.png",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Wawancara%20Ekslusif%20Pengacara%20Muhammad%20Ari%20Pratomo.png",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Muhammad%20Ari%20pratomo%20Podcast%20Aksi%20Nyata%20perindo.png",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Muhammad%20Ari%20Pratomo%20atau%20muhammadAriLaw.png",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Caleg%20Dapil%202%20Kabupaten%20Bogor%202024%20Muhammad%20Ari%20Pratomo.png",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Muhammad%20Ari%20Pratomo%20anggota%20Peradi.jpg",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Pengacara%20Terbaik%20Muhammad%20Ari%20Pratomo.jpg",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Pengacara%20Terbaik%20Indonesia%20Muhammad%20Ari%20Pratomo.jpg",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/MuhammadAriLaw.jpg",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Pengacara%20Terbaik%20di%20Indonesia.jpg",
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Pengacara%20Terbaik.jpg"
+            ],
+            "match_rate": 62.0
         }
-      ],
-      "summary": "Justification: Former Higher Education Minister in power after May 2011. As a former Government Minister, shares responsibility for the Syrian regime’s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-08-05",
-      "match_rate": 75.0
-    }
-  ]
+    ]
 }

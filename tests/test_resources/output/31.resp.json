@@ -1,0 +1,109 @@
+{
+    "date": "2023-07-03T12:42:35.7567827+10:00",
+    "scan_id": "s11997731",
+    "number_of_matches": 3,
+    "number_of_pep_matches": 3,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2022-10-15",
+            "category": "PEP",
+            "name": "Firmandez",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1960-10-21"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Banda Aceh",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Syiah Kuala",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Lamgugob",
+                    "type": "residence"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2014-10-01",
+                    "to": "2019-09-30"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Golongan Karya Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 71.0
+        },
+        {
+            "update_at": "23/04/2019",
+            "category": "PEP",
+            "name": "H. FIRMANDEZ",
+            "gender": "male",
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "type": "Legislature"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of Dewan Perwakilan Rakyat (Golkar Party Faction)",
+                    "since": "2014-10-01",
+                    "type": ""
+                }
+            ],
+            "identities": [
+                {
+                    "number": "1326",
+                    "type": "EveryPolitician Legacy"
+                }
+            ],
+            "images": [
+                "http://dpr.go.id/doksigota/photo/1326.jpg"
+            ],
+            "match_rate": 71.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Firmansyah",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1966-03-11"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 64.0
+        }
+    ]
+}

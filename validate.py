@@ -47,45 +47,46 @@ class OtherName:
 
 @dataclass(frozen=True)
 class Person:  # pylint: disable=too-many-instance-attributes
-    update_at: str
+    update_at: Optional[str]
     category: str
     name: str
     gender: str
-    original_script_name: str
+    original_script_name: Optional[str]
     dates_of_birth: list[DateOfBirth]
     reference_type: str
     references: list[Reference]
-    program: str
+    program: Optional[str]
     nationality: str
     citizenship: str
     other_names: list[OtherName]
-    summary: str
+    summary: Optional[str]
     match_rate: float
 
     @staticmethod
     def from_json(person: dict):
         return Person(
-            update_at=person["update_at"],
+            update_at=person.get("update_at", None),
             category=person["category"],
             name=person["name"],
             gender=person["gender"],
-            original_script_name=person["original_script_name"],
+            original_script_name=person.get("original_script_name"),
             dates_of_birth=[
-                DateOfBirth(date=dob["date"]) for dob in person["dates_of_birth"]
+                DateOfBirth(date=dob["date"])
+                for dob in person.get("dates_of_birth", [])
             ],
             reference_type=person["reference_type"],
             references=[
                 Reference(name=ref["name"], id_in_list=ref["id_in_list"])
-                for ref in person["references"]
+                for ref in person.get("references", [])
             ],
-            program=person["program"],
+            program=person.get("program", None),
             nationality=person["nationality"],
             citizenship=person["citizenship"],
             other_names=[
                 OtherName(name=other_name["name"], type=other_name["type"])
-                for other_name in person["other_names"]
+                for other_name in person.get("other_names", [])
             ],
-            summary=person["summary"],
+            summary=person.get("summary", None),
             match_rate=person["match_rate"],
         )
 
@@ -158,7 +159,7 @@ def send_request(
     person_dict = dataclasses.asdict(person)
     log_request(person_dict, Path(output_path, f"{index}.req.json"))
 
-    output_file = Path(output_path, Path(output_path, f"{index}.resp.json"))
+    output_file = Path(output_path, f"{index}.resp.json")
     if not output_file.exists():
         response = requests.post(
             EMERALD_URL,
@@ -176,9 +177,9 @@ def send_request(
 
 def read_as_dataframe(file: Path) -> pd.DataFrame:
     extension = file.suffix
-    return (
-        pd.read_csv(file, nrows=10) if extension == ".csv" else pd.read_excel(file)
-    ).replace(np.nan, None)
+    return (pd.read_csv(file) if extension == ".csv" else pd.read_excel(file)).replace(
+        np.nan, None
+    )
 
 
 def validate_file(console: Console, file: Path, output: Path, key: str) -> None:
