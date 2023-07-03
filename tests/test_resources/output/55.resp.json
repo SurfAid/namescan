@@ -1,0 +1,91 @@
+{
+    "date": "2023-07-03T12:42:50.7927348+10:00",
+    "scan_id": "s11997756",
+    "number_of_matches": 2,
+    "number_of_pep_matches": 2,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2023-04-04",
+            "category": "PEP",
+            "name": "Nurhasanah",
+            "gender": "female",
+            "dates_of_birth": [
+                {
+                    "date": "1957-02-22"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Medan Denai",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Democratic Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-09-07",
+            "category": "PEP",
+            "name": "Norhasanah",
+            "gender": "female",
+            "dates_of_birth": [
+                {
+                    "date": "1962-11-09"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Martapura",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Langkai",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Palangkaraya",
+                    "type": "residence"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of Indonesia's Regional Representative Council",
+                    "since": "2009-10-01",
+                    "to": "2014-09-30"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "United Development Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 72.0
+        }
+    ]
+}

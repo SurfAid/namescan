@@ -1,0 +1,148 @@
+{
+    "date": "2023-07-03T12:42:37.1004+10:00",
+    "scan_id": "s11997733",
+    "number_of_matches": 3,
+    "number_of_pep_matches": 3,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2022-11-26",
+            "category": "PEP",
+            "deceased": true,
+            "deceased_date": "2020-03-28",
+            "name": "Imran",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1952-05-11"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Andoolo",
+                    "type": "residence"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2019-10-01",
+                    "to": "2020-03-28"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "children": [
+                "Siska Karina Imran"
+            ],
+            "political_parties": [
+                {
+                    "title": "Great Indonesia Movement Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-10-15",
+            "category": "PEP",
+            "name": "Amran",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1968-07-18"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "country": "Indonesia"
+                },
+                {
+                    "country": "Indonesia"
+                },
+                {
+                    "location": "Makassar"
+                },
+                {
+                    "location": "Ujung Pandang"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Mampang Prapatan",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "South Jakarta",
+                    "type": "residence"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2014-10-01",
+                    "to": "2019-09-30"
+                },
+                {
+                    "title": "Member of Indonesia's Regional Representative Council",
+                    "since": "2009-10-01",
+                    "to": "2014-09-30"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "National Mandate Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 69.0
+        },
+        {
+            "update_at": "23/04/2019",
+            "category": "PEP",
+            "name": "AMRAN, S.E.",
+            "gender": "male",
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "type": "Legislature"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of Dewan Perwakilan Rakyat (National Mandate Party Faction)",
+                    "since": "2014-10-01",
+                    "type": ""
+                }
+            ],
+            "identities": [
+                {
+                    "number": "40",
+                    "type": "EveryPolitician Legacy"
+                }
+            ],
+            "images": [
+                "http://dpr.go.id/doksigota/photo/40.jpg"
+            ],
+            "match_rate": 69.0
+        }
+    ]
+}

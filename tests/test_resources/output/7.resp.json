@@ -1,0 +1,502 @@
+{
+    "date": "2023-07-03T12:35:08.8735594+10:00",
+    "scan_id": "s11997700",
+    "number_of_matches": 13,
+    "number_of_pep_matches": 3,
+    "number_of_sip_matches": 10,
+    "persons": [
+        {
+            "update_at": "2020-06-26\n2016-10-11\n2016-01-19",
+            "category": "SIP",
+            "name": "Suhayl Hassan",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1970"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "28777"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Sohail",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Hasan",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "The Tiger",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Officer of the rank of Major-General in the Syrian Army after May 2011. Commander of army division known as \u2018Tiger Forces\u2019. Since Aug 2019, \u2018Tiger Forces\u2019 has been renamed \u2018Division 25 Special Mission Forces\u2019 and placed under the army\u2019s central command. Responsible for the violent repression of the civilian population in Syria.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-09-10\r\nOther information: Position: Commander of Qawat al-Nimr (Division 25 Special Mission Forces, formerly known as Tiger Forces)\r\nRank: Major-General",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-06-26",
+            "category": "SIP",
+            "name": "Malik Hasan",
+            "gender": "male",
+            "original_script_name": "\u0645\u0627\u0644\u0643 \u062d\u0633\u0646",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "36650"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Malek",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Hassan",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Holds the rank of Major General, a senior officer and Commander of the 22nd Division of the Syrian Air Force, in post after May 2011.\r\nAs a senior officer of the Syrian Air Force and in the chain of command of the 22nd Division, he is responsible for the violent repression of the civilian population in Syria, including the use of chemical weapons by aircraft operating from airbases under the control of the 22nd Division, such as the attack on Talmenas that the Joint Investigative Mechanism established by the United Nations reported was conducted by Hama airfield-based regime helicopters.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2017-08-03\r\nOther information: Rank: Major General",
+            "match_rate": 86.0
+        },
+        {
+            "update_at": "2020-06-26\n2018-06-12\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Hossein Taeb",
+            "gender": "male",
+            "original_script_name": "\u062d\u0633\u064a\u0646 \u0637\u0627\u0626\u0628",
+            "dates_of_birth": [
+                {
+                    "date": "1963"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11799"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Hassan",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ta\u2019eb",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Hojjatoleslam",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Director of the Islamic Revolutionary Guard Corps Intelligence Service. Former Deputy Commander for Intelligence of the Islamic Revolutionary Guard Corps, involved in providing equipment and support to help the Syrian regime suppress protests in Syria.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 86.0
+        },
+        {
+            "update_at": "2022-09-02",
+            "category": "PEP",
+            "deceased": true,
+            "deceased_date": "2018-02-17",
+            "name": "Hasani",
+            "dates_of_birth": [
+                {
+                    "date": "1955-08-10"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Sampang",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 86.0
+        },
+        {
+            "update_at": "2023-02-26",
+            "category": "PEP",
+            "name": "M. M. Hassan",
+            "first_name": "M.",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1947-05-14"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Thiruvananthapuram",
+                    "country": "India"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "British Raj; Dominion of India; India",
+            "other_names": [
+                {
+                    "name": "Malik Mohammed Hassan",
+                    "type": "Also Known As"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the Kerala Legislative Assembly",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Indian National Congress",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/M.%20M.%20Hassan%20BNC.jpg"
+            ],
+            "match_rate": 86.0
+        },
+        {
+            "update_at": "2020-06-26\n2019-08-13\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Bassam Al Hassan",
+            "gender": "male",
+            "original_script_name": "\u0628\u0633\u0627\u0645 \u0627\u0644\u062d\u0633\u0646",
+            "dates_of_birth": [
+                {
+                    "date": "1961"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11753"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Al Hasan",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Presidential Advisor for Strategic Affairs; head of the General Secretariat of the National Defence. Involved in violence against the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Rank: Major General",
+            "match_rate": 75.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Ibrahim Al-Hassan Major General",
+            "gender": "male",
+            "original_script_name": "\u0625\u0628\u0631\u0627\u0647\u064a\u0645 \u0627\u0644\u062d\u0633\u0646",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12033"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Major General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "al-Hasan",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Deputy Chief of Staff. Military official involved in the violence in Homs.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 75.0
+        },
+        {
+            "update_at": "31/12/2020",
+            "category": "SIP",
+            "name": "AL-HASAN",
+            "last_name": "AL-HASAN",
+            "dates_of_birth": [
+                {
+                    "date": ""
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UK - HMT Financial Sanctions List",
+                    "id_in_list": "12415"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Ibrahim AL-HASSAN",
+                    "first_name": "Ibrahim",
+                    "middle_name": "",
+                    "last_name": "AL-HASSAN",
+                    "type": ""
+                }
+            ],
+            "summary": "(UK Sanctions List Ref):SYR0094. (UK Statement of Reasons):Deputy Chief of Staff. Military official involved in the violence in Homs.\nListed On: 02/12/2011;\nDate Designated: 31/12/2020;",
+            "match_rate": 75.0
+        },
+        {
+            "update_at": "2020-06-26\n2019-08-13\n2016-10-11\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Jamil Hassan",
+            "gender": "male",
+            "original_script_name": "\u062c\u0645\u064a\u0644 \u062d\u0633\u0646",
+            "dates_of_birth": [
+                {
+                    "date": "7 Jul 1953"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11685"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Jameel",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al-Hassan",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Officer of the rank of Major-General in the Syrian Air Force in post after May 2011. Former head of the Syrian Air Force Intelligence in post after May 2011 and until Jul 2019. Responsible for violent repression of the civilian population in Syria.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Former Head of Syrian Air Force Intelligence",
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "2020-06-26\n2019-08-13\n2017-06-16",
+            "category": "SIP",
+            "name": "Nabil Al-Hasan",
+            "gender": "male",
+            "original_script_name": "\u0646\u0628\u064a\u0644 \u0627\u0644\u062d\u0633\u0646",
+            "dates_of_birth": [
+                {
+                    "date": "1963"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "35695"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "al-Hassan",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Water Resources. Appointed in Jul 2016. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2016-12-09",
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "31/12/2020",
+            "category": "SIP",
+            "name": "Nabil AL-HASAN",
+            "first_name": "Nabil",
+            "last_name": "AL-HASAN",
+            "original_script_name": "\u062d\u0633\u0646 \u0646\u0628\u064a\u0644",
+            "dates_of_birth": [
+                {
+                    "date": "1963"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "city": "Aleppo",
+                    "country": "Syria"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UK - HMT Financial Sanctions List",
+                    "id_in_list": "13405"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "AL-HASSAN",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "AL-HASSAN",
+                    "type": ""
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Former Minister of Water Resources"
+                }
+            ],
+            "summary": "(UK Sanctions List Ref):SYR0184. Links to Bashar Asad (UK Statement of Reasons):Former Minister of Water Resources. Appointed in July 2016. As a Former Government Minister, shares responsibility for the regime\u2019s violent repression against the civilian population. (Gender):Male\nListed On: 14/11/2016;\nDate Designated: 31/12/2020;",
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "2023-04-24",
+            "category": "SIP",
+            "name": "Ahmed Mahmoud Hassan",
+            "first_name": "Ahmed Mahmoud",
+            "last_name": "Hassan",
+            "gender": "male",
+            "original_script_name": "\u0161ejk Hassan",
+            "places_of_birth": [
+                {
+                    "city": "",
+                    "region": "Pwani Region",
+                    "country": "TANZANIA, UNITED REPUBLIC OF"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "EU - Financial Sanctions List",
+                    "id_in_list": "152704"
+                }
+            ],
+            "program": "EUAQ",
+            "nationality": "",
+            "citizenship": "TANZANIA, UNITED REPUBLIC OF",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Yaseer Hassan",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abu Qasim",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Sheikh Hassan",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abu Yasir HASSAN",
+                    "first_name": "Abu Yasir",
+                    "middle_name": "",
+                    "last_name": "HASSAN",
+                    "type": "strong"
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0845"
+            ],
+            "match_rate": 66.0
+        },
+        {
+            "update_at": "2023-02-10",
+            "category": "PEP",
+            "name": "Hassan Khan",
+            "first_name": "Hassan",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1936-12-11"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "India; British Raj; Dominion of India",
+            "other_names": [
+                {
+                    "name": "Haji Ghulam Hassan Khan",
+                    "type": "Also Known As"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the 13th Lok Sabha",
+                    "since": "",
+                    "to": ""
+                },
+                {
+                    "title": "Member of the 15th Lok Sabha",
+                    "since": "2009",
+                    "to": "2014"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Jammu & Kashmir National Conference",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "contacts": [
+                {
+                    "value": "16hassankhan",
+                    "type": "Twitter username"
+                }
+            ],
+            "match_rate": 66.0
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "date": "2023-07-03T12:42:32.0383404+10:00",
+    "scan_id": "s11997725",
+    "number_of_matches": 4,
+    "number_of_pep_matches": 4,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Samsudin S.",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1982-02-12"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Samsudin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1962-12-01"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-10-15",
+            "category": "PEP",
+            "name": "Syamsudin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1954-02-07"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 75.0
+        },
+        {
+            "update_at": "2023-04-04",
+            "category": "PEP",
+            "name": "Syamsuddin Hb.",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1974-07-07"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Tanralili",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Nasdem Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 69.0
+        }
+    ]
+}

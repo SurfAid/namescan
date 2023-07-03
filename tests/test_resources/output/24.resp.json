@@ -1,0 +1,134 @@
+{
+    "date": "2023-07-03T12:42:31.4499543+10:00",
+    "scan_id": "s11997724",
+    "number_of_matches": 4,
+    "number_of_pep_matches": 2,
+    "number_of_sip_matches": 2,
+    "persons": [
+        {
+            "update_at": "2021-06-11\n2020-06-26\n2018-06-12\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Amer al-Achi Major General",
+            "gender": "male",
+            "original_script_name": "\u0639\u0627\u0645\u0631 \u0627\u0644\u0639\u0634\u064a",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12694"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Major General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Amis",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ibrahim",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al Ashi",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Governor of the Sweida Governorate, appointed by President Bashar al-Assad in Jul 2016. Former Head of the intelligence branch of the Syrian Air Force Intelligence Service (2012-2016). Through his role in the Air Force Intelligence Service, Amer al-Achi is implicated in the repression of the Syrian opposition.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2020-06-26\n2017-06-16\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Mahmoud Ibraheem Sa\u2019iid Dr.",
+            "gender": "male",
+            "original_script_name": "\u0645\u062d\u0645\u0648\u062f \u0627\u0628\u0631\u0627\u0647\u064a\u0645 \u0633\u0639\u064a\u062f",
+            "dates_of_birth": [
+                {
+                    "date": "1953"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "22399"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Dr.",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Said",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ibrahim",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Transport in power after May 2011. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2023-02-04",
+            "category": "PEP",
+            "name": "B. Ibrahim",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1946-01-02"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2021-03-10",
+            "category": "PEP",
+            "name": "Mohammed Ibrahim",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1936"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Moh.Ibrahim",
+                    "type": "Also Known As"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the 1st Parliament of the 2nd Republic of Ghana",
+                    "since": "1969-10-01",
+                    "to": "1972-01-13"
+                }
+            ],
+            "occupations": [
+                "politician",
+                "barrister"
+            ],
+            "match_rate": 100.0
+        }
+    ]
+}

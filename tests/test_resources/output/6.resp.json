@@ -1,0 +1,487 @@
+{
+    "date": "2023-07-03T12:35:07.1137055+10:00",
+    "scan_id": "s11997699",
+    "number_of_matches": 12,
+    "number_of_pep_matches": 3,
+    "number_of_sip_matches": 9,
+    "persons": [
+        {
+            "update_at": "2020-10-30\n2020-06-26\n2018-03-07\n2016-10-11\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Ali Abdullah Ayyub",
+            "gender": "male",
+            "original_script_name": "\u0639\u0644\u064a \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0623\u064a\u0648\u0628",
+            "dates_of_birth": [
+                {
+                    "date": "1952"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11951"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Abdallah",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ayyoub",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Vice President of the Council of Ministers and Minister of Defence. Appointed in Jan 2018. Officer of the rank of General in the Syrian Army, in post after May 2011. Former Chief of General Staff of the Syrian Armed Forces. Person supporting the Syrian regime and responsible for repression of and violence against the civilian population in Syria.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2018-06-12\n2017-06-16\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Abdullah Khaleel Hussein",
+            "gender": "male",
+            "original_script_name": "\u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u062e\u0644\u064a\u0644 \u062d\u0633\u064a\u0646",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "22455"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Abdallah",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Khalil",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Hussain",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former State Minister in power after May 2011. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Abdullah Berri",
+            "gender": "male",
+            "original_script_name": "\u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0628\u0631\u064a",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "11969"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Abdallah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Head of the Berri family militia. In charge of pro-government militia involved in the crackdown on the civilian population in Aleppo.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "14/3/2018",
+            "update_info": "Listed on: 25 Apr. 2006 (amended on 17 Oct. 2017, 14 Mar. 2018)",
+            "category": "SIP",
+            "name": "MUSA HILAL ABDALLA ALNSIEM",
+            "dates_of_birth": [
+                {
+                    "date": "1 Jan. 1964"
+                },
+                {
+                    "date": "1959"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "text": "Kutum"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "AU - DFAT Consolidated Sanction list",
+                    "id_in_list": "599"
+                }
+            ],
+            "program": "1591 (Sudan)",
+            "nationality": "",
+            "citizenship": "Sudan",
+            "addresses": [
+                {
+                    "text": "Kabkabiya, Sudan"
+                },
+                {
+                    "text": "Kutum, Sudan",
+                    "note": "Resides in Kabkabiya and the city of Kutum, Northern Darfur and has resided in Khartoum."
+                }
+            ],
+            "other_names": [
+                {
+                    "name": "Musa Hilal",
+                    "type": "aka - Sheikh"
+                },
+                {
+                    "name": "Abd Allah",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abdallah",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "AlNasim",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al Nasim",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "AlNaseem",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al Naseem",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "AlNasseem",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Al Nasseem",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Passport no: a) Diplomatic Passport D014433, issued on 21 Feb. 2013 (Expired on 21 Feb. 2015) b) Diplomatic Passport D009889, issued on 17 Feb. 2011 (Expired on 17 Feb. 2013). Designation: a) Formerly Member of the National Assembly of Sudan from Al-Waha district b) Formerly special adviser to the Ministry of Federal Affairs c) Paramount Chief of the Mahamid Tribe in North Darfur. Photo available for inclusion in the INTERPOL-UN\nSecurity Council Special Notice. ",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "13/05/2022",
+            "category": "SIP",
+            "name": "ABDALLAH",
+            "last_name": "ABDALLAH",
+            "dates_of_birth": [
+                {
+                    "date": "1952"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UK - HMT Financial Sanctions List",
+                    "id_in_list": "12211"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYOB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYOB",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYOUB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYOUB",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYUB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYUB",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYYOUB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYYOUB",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ali Abdullah AYYUB",
+                    "first_name": "Ali",
+                    "middle_name": "Abdullah",
+                    "last_name": "AYYUB",
+                    "type": ""
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Vice President of the Council of Ministers/Deputy Prime Minister and Minister of Defence"
+                }
+            ],
+            "summary": "(UK Sanctions List Ref):SYR0008. (UK Statement of Reasons):Vice President of the Council of Ministers/Deputy Prime Minister and Minister of Defence. Appointed in January 2018. Officer of the rank of General in the Syrian Army, in post after May 2011. Former Chief of General Staff of the Syrian Armed Forces. Person supporting the Syrian regime and responsible for repression of and violence against the civilian population in Syria.\nListed On: 15/11/2011;\nDate Designated: 31/12/2020;",
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Abdillah",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1965-05-26"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2023-03-28",
+            "category": "PEP",
+            "name": "Abdillah",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1955-05-19"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Medan",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "roles": [
+                {
+                    "title": "mayor of Medan",
+                    "since": "2000-04-01",
+                    "to": "2008-08-20"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 64.0
+        },
+        {
+            "update_at": "2020-06-26\n2016-01-19\n2014-06-23\n2013-11-06",
+            "category": "SIP",
+            "name": "Subhi Ahmad Al Abdallah",
+            "gender": "male",
+            "original_script_name": "\u0635\u0628\u062d\u064a \u0623\u062d\u0645\u062f \u0627\u0644\u0639\u0628\u062f\u0627\u0644\u0644\u0647",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "22383"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "al-Abdullah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Agriculture and Agrarian Reform. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 53.0
+        },
+        {
+            "update_at": "2020-06-26\n2019-08-13\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Suhail Al-Abdullah Brigadier General",
+            "gender": "male",
+            "original_script_name": "\u0633\u0647\u064a\u0644 \u0627\u0644\u0639\u0628\u062f\u0627\u0644\u0644\u0647",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "12639"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Brigadier General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "Suheil",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al-Abdallah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Head of the Latakia Branch of the Syrian Air Force Intelligence Service. Responsible for the torture of opponents in custody.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 53.0
+        },
+        {
+            "update_at": "2020-06-26\n2017-06-16",
+            "category": "SIP",
+            "name": "Khalaf Souleymane Abdallah",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1960"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "29852"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Sleiman",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al-Abdullah",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Labour in power after May 2011 (appointed 27.8.2014). As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-12-17",
+            "match_rate": 53.0
+        },
+        {
+            "update_at": "31/12/2020",
+            "category": "SIP",
+            "name": "AL-ABDALLAH",
+            "last_name": "AL-ABDALLAH",
+            "dates_of_birth": [
+                {
+                    "date": ""
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UK - HMT Financial Sanctions List",
+                    "id_in_list": "12714"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Saheil AL-ABDALLAH",
+                    "first_name": "Saheil",
+                    "middle_name": "",
+                    "last_name": "AL-ABDALLAH",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Suhail AL-ABDALLAH",
+                    "first_name": "Suhail",
+                    "middle_name": "",
+                    "last_name": "AL-ABDALLAH",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Saheil AL-ABDULLAH",
+                    "first_name": "Saheil",
+                    "middle_name": "",
+                    "last_name": "AL-ABDULLAH",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Suhail AL-ABDULLAH",
+                    "first_name": "Suhail",
+                    "middle_name": "",
+                    "last_name": "AL-ABDULLAH",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "SUHEIL",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "SUHEIL",
+                    "type": ""
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Head of the Latakia Branch of the Syrian Air Force Intelligence Service"
+                }
+            ],
+            "summary": "(UK Sanctions List Ref):SYR0223. (UK Statement of Reasons):Head of Latakia branch of the Air Force Intelligence Service. Responsible for the torture of opponents in custody. (Gender):Male\nListed On: 24/07/2012;\nDate Designated: 31/12/2020;",
+            "match_rate": 53.0
+        },
+        {
+            "update_at": "2019-04-11",
+            "category": "RCA",
+            "name": "Abdulla",
+            "dates_of_birth": [
+                {
+                    "date": "2000-11-11"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "country": ""
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Sheikh Tameem",
+                    "type": "Also Known As"
+                }
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Youngest%20Indian%20Shiekh.jpg"
+            ],
+            "match_rate": 52.0
+        }
+    ]
+}

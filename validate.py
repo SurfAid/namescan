@@ -158,7 +158,7 @@ def send_request(
     person_dict = dataclasses.asdict(person)
     log_request(person_dict, Path(output_path, f"{index}.req.json"))
 
-    output_file = Path(output_path, Path(output_path, f"{index}.resp.json"))
+    output_file = Path(output_path, f"{index}.resp.json")
     if not output_file.exists():
         response = requests.post(
             EMERALD_URL,
@@ -176,9 +176,9 @@ def send_request(
 
 def read_as_dataframe(file: Path) -> pd.DataFrame:
     extension = file.suffix
-    return (
-        pd.read_csv(file, nrows=10) if extension == ".csv" else pd.read_excel(file)
-    ).replace(np.nan, None)
+    return (pd.read_csv(file) if extension == ".csv" else pd.read_excel(file)).replace(
+        np.nan, None
+    )
 
 
 def validate_file(console: Console, file: Path, output: Path, key: str) -> None:

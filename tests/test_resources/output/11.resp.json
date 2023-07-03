@@ -1,0 +1,269 @@
+{
+    "date": "2023-07-03T12:42:22.76235+10:00",
+    "scan_id": "s11997711",
+    "number_of_matches": 7,
+    "number_of_pep_matches": 2,
+    "number_of_sip_matches": 5,
+    "persons": [
+        {
+            "update_at": "2023-04-04",
+            "category": "PEP",
+            "name": "Ahmad Farhan Hamid",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1953-01-21"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Syiah Kuala",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "National Mandate Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 80.0
+        },
+        {
+            "update_at": "2023-04-03",
+            "category": "SIP",
+            "name": "Hamid Reza EMADI",
+            "first_name": "Hamid Reza",
+            "last_name": "EMADI",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1973"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "city": "Hamedan",
+                    "region": "",
+                    "country": "IRAN (ISLAMIC REPUBLIC OF)"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "EU - Financial Sanctions List",
+                    "id_in_list": "7226"
+                }
+            ],
+            "program": "IRN",
+            "nationality": "",
+            "citizenship": "",
+            "addresses": [
+                {
+                    "address1": "",
+                    "city": "Tehran",
+                    "region": "",
+                    "postal_code": "",
+                    "country": "IRAN (ISLAMIC REPUBLIC OF)"
+                }
+            ],
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Hamidreza Emadi",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Former Press TV Newsroom Director. Former Press TV Senior Producer."
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0721"
+            ],
+            "match_rate": 60.0
+        },
+        {
+            "update_at": "2022-11-27",
+            "category": "PEP",
+            "name": "Fathi Ahmad Hammad",
+            "first_name": "Fathi",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1961"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 57.0
+        },
+        {
+            "category": "SIP",
+            "name": "Najm Hamad AL AHMAD",
+            "gender": "Male",
+            "original_script_name": "\u0646\u062c\u0645 \u062d\u0645\u062f \u0627\u0644\u0623\u062d\u0645\u062f",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "BL - Financial Sanctions List",
+                    "id_in_list": "7144"
+                }
+            ],
+            "program": "SYR",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Nejm Hamad AL AHMAD",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Nejm Hamad AL-AHMED",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Najm Hamad AL-AHMED",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Former Minister of Justice in power after May 2011."
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
+            ],
+            "summary": "date of listing: 16.10.2012",
+            "match_rate": 55.0
+        },
+        {
+            "category": "SIP",
+            "name": "Najm Hamad Al Ahmad",
+            "first_name": "Najm Hamad",
+            "last_name": "Al Ahmad",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CA - Consolidated Canadian Autonomous Sanctions List",
+                    "id_in_list": "Najm Hamad Al Ahmad"
+                }
+            ],
+            "program": "Syria / Syrie",
+            "nationality": "",
+            "citizenship": "",
+            "match_rate": 55.0
+        },
+        {
+            "update_at": "2020-06-26\n2017-06-16\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Najm Hamad Al Ahmad",
+            "gender": "male",
+            "original_script_name": "\u0646\u062c\u0645 \u062d\u0645\u062f \u0627\u0644\u0623\u062d\u0645\u062f",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "id_in_list": "22431"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Nejm",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "al-Ahmed",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Minister of Justice in power after May 2011. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
+            "match_rate": 55.0
+        },
+        {
+            "update_at": "2020-05-29",
+            "category": "SIP",
+            "name": "Najm Hamad AL AHMAD",
+            "gender": "male",
+            "original_script_name": "\u0646\u062c\u0645 \u062d\u0645\u062f \u0627\u0644\u0623\u062d\u0645\u062f",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "EU - Financial Sanctions List",
+                    "id_in_list": "7144"
+                }
+            ],
+            "program": "SYR",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Nejm Hamad AL AHMAD",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Nejm Hamad AL-AHMED",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Najm Hamad AL-AHMED",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Former Minister of Justice in power after May 2011."
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
+            ],
+            "summary": "date of listing: 16.10.2012",
+            "match_rate": 55.0
+        }
+    ]
+}

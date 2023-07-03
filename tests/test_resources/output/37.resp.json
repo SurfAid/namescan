@@ -1,0 +1,126 @@
+{
+    "date": "2023-07-03T12:42:39.51232+10:00",
+    "scan_id": "s11997738",
+    "number_of_matches": 3,
+    "number_of_pep_matches": 3,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2023-04-04",
+            "category": "PEP",
+            "name": "Nasarudin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1982-07-12"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Pangkalan Lesung",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Golongan Karya Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 100.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Nasaruddin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1957-07-17"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Bebesen",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Great Indonesia Movement Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 93.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Nasrudin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1957-05-24"
+                },
+                {
+                    "date": "1958-05-24"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Brebes",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Jatirokeh",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Brebes",
+                    "type": "residence"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of Indonesia's Regional Representative Council",
+                    "since": "2009-10-01",
+                    "to": "2014-09-30"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "political_parties": [
+                {
+                    "title": "Golongan Karya Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 75.0
+        }
+    ]
+}

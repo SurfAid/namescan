@@ -1,0 +1,136 @@
+{
+    "date": "2023-07-03T12:42:35.1496127+10:00",
+    "scan_id": "s11997730",
+    "number_of_matches": 3,
+    "number_of_pep_matches": 3,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2019-06-15",
+            "category": "RCA",
+            "name": "Dewi Sukarno",
+            "first_name": "Dewi",
+            "gender": "female",
+            "dates_of_birth": [
+                {
+                    "date": "1940-02-06"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Tokyo",
+                    "country": "Japan"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Japan",
+                    "location": "Shibuya",
+                    "type": "residence"
+                }
+            ],
+            "other_names": [
+                {
+                    "name": "Naoko Nemoto",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ratna Sari Dewi Sukarno",
+                    "type": "Also Known As"
+                }
+            ],
+            "occupations": [
+                "businessperson",
+                "socialite",
+                "tarento",
+                "philanthropist"
+            ],
+            "spouse": "Sukarno",
+            "children": [
+                "Kartika Sari Dewi Soekarno"
+            ],
+            "contacts": [
+                {
+                    "value": "dewisukarno",
+                    "type": "Twitter username"
+                }
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Ratna%20Sari%20Dewi%20Sukarno%20%281970%29.jpg"
+            ],
+            "match_rate": 82.0
+        },
+        {
+            "update_at": "2022-06-11",
+            "category": "PEP",
+            "deceased": true,
+            "deceased_date": "2003-11-01",
+            "name": "Sri Oetari Ratna Dewi",
+            "gender": "female",
+            "dates_of_birth": [
+                {
+                    "date": "1960-09-26"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Semarang",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "spouse": "Sayogo Hendrosubroto",
+            "political_parties": [
+                {
+                    "title": "Indonesian Democratic Party \u2013 Struggle",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "match_rate": 67.0
+        },
+        {
+            "update_at": "2023-05-21",
+            "category": "RCA",
+            "name": "Kartika Sari Dewi Soekarno",
+            "first_name": "Kartika",
+            "gender": "female",
+            "dates_of_birth": [
+                {
+                    "date": "1967-03-11"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Tokyo",
+                    "country": "Japan"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "father": "Sukarno",
+            "mother": "Dewi Sukarno",
+            "spouse": "Frits Frederik Seegers",
+            "children": [
+                "Frederik Kiran Soekarno Seegers"
+            ],
+            "siblings": [
+                "Megawati Soekarnoputri",
+                "Guruh Sukarnoputra",
+                "Rachmawati Sukarnoputri",
+                "Sukmawati Soekarnoputri",
+                "Guntur Soekarnoputra"
+            ],
+            "match_rate": 60.0
+        }
+    ]
+}

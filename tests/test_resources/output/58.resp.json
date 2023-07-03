@@ -1,0 +1,72 @@
+{
+    "date": "2023-07-03T12:42:52.5402893+10:00",
+    "scan_id": "s11997759",
+    "number_of_matches": 2,
+    "number_of_pep_matches": 2,
+    "number_of_sip_matches": 0,
+    "persons": [
+        {
+            "update_at": "2023-02-03",
+            "category": "PEP",
+            "name": "Muhammad Syarifuddin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1954-10-17"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "location": "Baturaja",
+                    "country": "Indonesia"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "other_names": [
+                {
+                    "name": "M. Syarifuddin",
+                    "type": "Also Known As"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Chief Justice of the Supreme Court of Indonesia",
+                    "since": "2020-04-30",
+                    "to": ""
+                },
+                {
+                    "title": "Justice of the Supreme Court of Indonesia",
+                    "since": "2013-03-11",
+                    "to": "2016-05-03"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/M.%20Syarifuddin.jpg"
+            ],
+            "match_rate": 72.0
+        },
+        {
+            "update_at": "2022-09-18",
+            "category": "PEP",
+            "name": "Syarifuddin",
+            "gender": "male",
+            "dates_of_birth": [
+                {
+                    "date": "1965-10-19"
+                }
+            ],
+            "reference_type": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "match_rate": 72.0
+        }
+    ]
+}

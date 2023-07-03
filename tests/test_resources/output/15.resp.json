@@ -1,0 +1,374 @@
+{
+    "date": "2023-07-03T12:42:25.5218651+10:00",
+    "scan_id": "s11997715",
+    "number_of_matches": 7,
+    "number_of_pep_matches": 0,
+    "number_of_sip_matches": 7,
+    "persons": [
+        {
+            "update_at": "7/1/2022",
+            "update_info": "Listed on: 29 Sep. 2005 (amended on 13 Dec. 2011, 1 May 2019)",
+            "category": "SIP",
+            "name": "Abd Allah Mohamed Ragab Abdel Rahman",
+            "dates_of_birth": [
+                {
+                    "date": "3/11/1957"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "text": "Kafr Al-Shaykh; Egypt"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "AU - DFAT Consolidated Sanction list",
+                    "id_in_list": "544"
+                }
+            ],
+            "program": "1267/1989/2253 (ISIL (Da'esh) and Al-Qaida)",
+            "nationality": "",
+            "citizenship": "Egyptian",
+            "addresses": [
+                {
+                    "text": "Believed to be in Pakistan or Afghanistan"
+                }
+            ],
+            "other_names": [
+                {
+                    "name": "Abu Al-Khayr",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Ahmad Hasan",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Abu Jihad",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Member of Egyptian Islamic Jihad (Qde.003).Review pursuant to Security Council resolution 1822 (2008) was concluded on 1 Jun. 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 21 Feb. 2019. Review pursuant to Security Council resolution 2368 (2017) was concluded on 15 November 2021.",
+            "match_rate": 100.0
+        },
+        {
+            "category": "SIP",
+            "name": "Karimi Ahmad Hasan",
+            "original_script_name": "\u041a\u0430\u0440\u0438\u043c\u0438 \u0410\u0445\u043c\u0430\u0434 \u0425\u0430\u0441\u0430\u043d",
+            "dates_of_birth": [
+                {
+                    "date": "11.12.1962"
+                }
+            ],
+            "places_of_birth": [
+                {
+                    "text": "Qom, Iran",
+                    "note": "en"
+                },
+                {
+                    "text": "\u041a\u0443\u043c, \u0418\u0440\u0430\u043d",
+                    "note": "ru"
+                },
+                {
+                    "text": "\u041a\u0443\u043c, \u0406\u0440\u0430\u043d",
+                    "note": "uk"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UA - War Sanction",
+                    "id_in_list": "P26599"
+                }
+            ],
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "\u041a\u0430\u0440\u0456\u043c\u0456 \u0410\u0445\u043c\u0430\u0434 \u0425\u0430\u0441\u0430\u043d",
+                    "type": ""
+                }
+            ],
+            "roles": [
+                {
+                    "title": "member of the board of directors of the Islamic Revolutionary Guard Corps (IRGC) Cooperative Foundation"
+                },
+                {
+                    "title": "\u0447\u043b\u0435\u043d \u0440\u0430\u0434\u0438 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440\u0456\u0432 \u041a\u043e\u043e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0443 \u041a\u043e\u0440\u043f\u0443\u0441\u0443 \u0432\u0430\u0440\u0442\u043e\u0432\u0438\u0445 \u0456\u0441\u043b\u0430\u043c\u0441\u044c\u043a\u043e\u0457 \u0440\u0435\u0432\u043e\u043b\u044e\u0446\u0456\u0457 (\u041a\u0412\u0406\u0420)"
+                },
+                {
+                    "title": "\u0447\u043b\u0435\u043d \u0441\u043e\u0432\u0435\u0442\u0430 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440\u043e\u0432 \u041a\u043e\u043e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0430 \u041a\u043e\u0440\u043f\u0443\u0441\u0430 \u0441\u0442\u0440\u0430\u0436\u0435\u0439 \u0438\u0441\u043b\u0430\u043c\u0441\u043a\u043e\u0439 \u0440\u0435\u0432\u043e\u043b\u044e\u0446\u0438\u0438 (\u041a\u0421\u0418\u0420)"
+                }
+            ],
+            "identities": [
+                {
+                    "number": "0382947983",
+                    "type": "itn"
+                }
+            ],
+            "summary": "Sanctions (es): 2023-04-24 [https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32023D0849&qid=1682345472184];\nDescription (en): Ahmad Hasan Karimi is a member of the board of directors of the EU-listed Islamic Revolutionary Guard Corps (IRGC) Cooperative Foundation.\n\nThe IRGC has been at the forefront of the repression of the 2022/2023 protests in Iran which has seen more than 520 people killed, over 70 of whom were minors, and more than 22 000 arrests/imprisonments effected.\n\nThe IRGC Cooperative Foundation is the body responsible for managing the IRGC\u2019s investments and in that framework it is responsible for funnelling money into the regime\u2019s brutal repression.\n\nAs member of the board of directors of the IRGC Cooperative Foundation, Ahmad Hasan Karimi is therefore responsible for willingly and knowingly providing the instruments with which the brutal and ongoing repression has been carried out.\n\nHe is therefore responsible for serious human rights violations in Iran.;\nDescription (uk): \u0410\u0445\u043c\u0430\u0434 \u0425\u0430\u0441\u0430\u043d \u041a\u0430\u0440\u0456\u043c\u0456 \u0454 \u0447\u043b\u0435\u043d\u043e\u043c \u0440\u0430\u0434\u0438 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440\u0456\u0432 \u041a\u043e\u043e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0443 \u041a\u043e\u0440\u043f\u0443\u0441\u0443 \u0432\u0430\u0440\u0442\u043e\u0432\u0438\u0445 \u0456\u0441\u043b\u0430\u043c\u0441\u044c\u043a\u043e\u0457 \u0440\u0435\u0432\u043e\u043b\u044e\u0446\u0456\u0457 (\u041a\u0412\u0406\u0420), \u0437\u0430\u0440\u0435\u0454\u0441\u0442\u0440\u043e\u0432\u0430\u043d\u043e\u0433\u043e \u0432 \u0404\u0421.\r\n\r\n\u041a\u0412\u0406\u0420 \u0431\u0443\u0432 \u043d\u0430 \u043f\u0435\u0440\u0435\u0434\u043e\u0432\u0456\u0439 \u043f\u0440\u0438\u0434\u0443\u0448\u0435\u043d\u043d\u044f \u043f\u0440\u043e\u0442\u0435\u0441\u0442\u0456\u0432 2022/2023 \u0440\u043e\u043a\u0456\u0432 \u0432 \u0406\u0440\u0430\u043d\u0456, \u043f\u0456\u0434 \u0447\u0430\u0441 \u044f\u043a\u0438\u0445 \u0431\u0443\u043b\u043e \u0432\u0431\u0438\u0442\u043e \u043f\u043e\u043d\u0430\u0434 520 \u043e\u0441\u0456\u0431, \u043f\u043e\u043d\u0430\u0434 70 \u0437 \u044f\u043a\u0438\u0445 \u0431\u0443\u043b\u0438 \u043d\u0435\u043f\u043e\u0432\u043d\u043e\u043b\u0456\u0442\u043d\u0456\u043c\u0438, \u0442\u0430 \u0437\u0434\u0456\u0439\u0441\u043d\u0435\u043d\u043e \u043f\u043e\u043d\u0430\u0434 22 000 \u0430\u0440\u0435\u0448\u0442\u0456\u0432/\u0443\u0432'\u044f\u0437\u043d\u0435\u043d\u044c.\r\n\r\n\u041a\u043e\u043e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0438\u0439 \u0444\u043e\u043d\u0434 \u041a\u0412\u0406\u0420 \u0454 \u043e\u0440\u0433\u0430\u043d\u043e\u043c, \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0438\u043c \u0437\u0430 \u0443\u043f\u0440\u0430\u0432\u043b\u0456\u043d\u043d\u044f \u0456\u043d\u0432\u0435\u0441\u0442\u0438\u0446\u0456\u044f\u043c\u0438 \u041a\u0412\u0406\u0420, \u0456 \u0432 \u0446\u044c\u043e\u043c\u0443 \u043a\u043e\u043d\u0442\u0435\u043a\u0441\u0442\u0456 \u0432\u0456\u043d \u043d\u0435\u0441\u0435 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044c \u0437\u0430 \u0441\u043f\u0440\u044f\u043c\u0443\u0432\u0430\u043d\u043d\u044f \u0433\u0440\u043e\u0448\u0435\u0439 \u043d\u0430 \u0436\u043e\u0440\u0441\u0442\u043e\u043a\u0456 \u0440\u0435\u043f\u0440\u0435\u0441\u0456\u0457 \u0440\u0435\u0436\u0438\u043c\u0443.\r\n\r\n\u042f\u043a \u0447\u043b\u0435\u043d \u0440\u0430\u0434\u0438 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440\u0456\u0432 \u041a\u043e\u043e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0443 \u041a\u0412\u0406\u0420, \u0410\u0445\u043c\u0430\u0434 \u0425\u0430\u0441\u0430\u043d \u041a\u0430\u0440\u0456\u043c\u0456 \u043d\u0435\u0441\u0435 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044c \u0437\u0430 \u0434\u043e\u0431\u0440\u043e\u0432\u0456\u043b\u044c\u043d\u0435 \u0456 \u0441\u0432\u0456\u0434\u043e\u043c\u0435 \u043d\u0430\u0434\u0430\u043d\u043d\u044f \u0456\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0456\u0432, \u0437\u0430 \u0434\u043e\u043f\u043e\u043c\u043e\u0433\u043e\u044e \u044f\u043a\u0438\u0445 \u0437\u0434\u0456\u0439\u0441\u043d\u044e\u044e\u0442\u044c\u0441\u044f \u0436\u043e\u0440\u0441\u0442\u043e\u043a\u0456 \u0440\u0435\u043f\u0440\u0435\u0441\u0456\u0457, \u0449\u043e \u0442\u0440\u0438\u0432\u0430\u044e\u0442\u044c.\r\n\r\n\u0422\u0430\u043a\u0438\u043c \u0447\u0438\u043d\u043e\u043c, \u0432\u0456\u043d \u043d\u0435\u0441\u0435 \u0432\u0456\u0434\u043f\u043e\u0432\u0456\u0434\u0430\u043b\u044c\u043d\u0456\u0441\u0442\u044c \u0437\u0430 \u0441\u0435\u0440\u0439\u043e\u0437\u043d\u0456 \u043f\u043e\u0440\u0443\u0448\u0435\u043d\u043d\u044f \u043f\u0440\u0430\u0432 \u043b\u044e\u0434\u0438\u043d\u0438 \u0432 \u0406\u0440\u0430\u043d\u0456.;\nDescription (ru): \u0410\u0445\u043c\u0430\u0434 \u0425\u0430\u0441\u0430\u043d \u041a\u0430\u0440\u0438\u043c\u0438 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0447\u043b\u0435\u043d\u043e\u043c \u0441\u043e\u0432\u0435\u0442\u0430 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440\u043e\u0432 \u0437\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0433\u043e \u0432 \u0415\u0421 \u041a\u043e\u043e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0430 \u041a\u043e\u0440\u043f\u0443\u0441\u0430 \u0441\u0442\u0440\u0430\u0436\u0435\u0439 \u0438\u0441\u043b\u0430\u043c\u0441\u043a\u043e\u0439 \u0440\u0435\u0432\u043e\u043b\u044e\u0446\u0438\u0438 (\u041a\u0421\u0418\u0420).\r\n\r\n\u041a\u0421\u0418\u0420 \u0431\u044b\u043b \u0432 \u0430\u0432\u0430\u043d\u0433\u0430\u0440\u0434\u0435 \u043f\u043e\u0434\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u043f\u0440\u043e\u0442\u0435\u0441\u0442\u043e\u0432 \u0432 \u0418\u0440\u0430\u043d\u0435 \u0432 2022/2023 \u0433\u043e\u0434\u0430\u0445, \u0432 \u0445\u043e\u0434\u0435 \u043a\u043e\u0442\u043e\u0440\u044b\u0445 \u043f\u043e\u0433\u0438\u0431\u043b\u043e \u0431\u043e\u043b\u0435\u0435 520 \u0447\u0435\u043b\u043e\u0432\u0435\u043a, \u0438\u0437 \u043d\u0438\u0445 \u0431\u043e\u043b\u0435\u0435 70 \u043d\u0435\u0441\u043e\u0432\u0435\u0440\u0448\u0435\u043d\u043d\u043e\u043b\u0435\u0442\u043d\u0438\u0445, \u0438 \u0431\u044b\u043b\u043e \u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u043e \u0431\u043e\u043b\u0435\u0435 22 000 \u0430\u0440\u0435\u0441\u0442\u043e\u0432/\u0442\u044e\u0440\u0435\u043c\u043d\u044b\u0445 \u0437\u0430\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0439.\r\n\r\n\u041a\u043e\u043e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u044b\u0439 \u0444\u043e\u043d\u0434 \u041a\u0421\u0418\u0420 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u043e\u0440\u0433\u0430\u043d\u043e\u043c, \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u044b\u043c \u0437\u0430 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0438\u043d\u0432\u0435\u0441\u0442\u0438\u0446\u0438\u044f\u043c\u0438 \u041a\u0421\u0418\u0420, \u0438 \u0432 \u044d\u0442\u0438\u0445 \u0440\u0430\u043c\u043a\u0430\u0445 \u043e\u043d \u043e\u0442\u0432\u0435\u0447\u0430\u0435\u0442 \u0437\u0430 \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0434\u0435\u043d\u0435\u0433 \u043d\u0430 \u0436\u0435\u0441\u0442\u043e\u043a\u0438\u0435 \u0440\u0435\u043f\u0440\u0435\u0441\u0441\u0438\u0438 \u0440\u0435\u0436\u0438\u043c\u0430.\r\n\r\n\u0411\u0443\u0434\u0443\u0447\u0438 \u0447\u043b\u0435\u043d\u043e\u043c \u0441\u043e\u0432\u0435\u0442\u0430 \u0434\u0438\u0440\u0435\u043a\u0442\u043e\u0440\u043e\u0432 \u041a\u043e\u043e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u043e\u0433\u043e \u0444\u043e\u043d\u0434\u0430 \u041a\u0421\u0418\u0420, \u0410\u0445\u043c\u0430\u0434 \u0425\u0430\u0441\u0430\u043d \u041a\u0430\u0440\u0438\u043c\u0438 \u043d\u0435\u0441\u0435\u0442 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0437\u0430 \u0434\u043e\u0431\u0440\u043e\u0432\u043e\u043b\u044c\u043d\u043e\u0435 \u0438 \u0441\u043e\u0437\u043d\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u043f\u0440\u0435\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u0438\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u043e\u0432, \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u043a\u043e\u0442\u043e\u0440\u044b\u0445 \u043e\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043b\u044f\u043b\u0438\u0441\u044c \u0436\u0435\u0441\u0442\u043e\u043a\u0438\u0435 \u0438 \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0430\u044e\u0449\u0438\u0435\u0441\u044f \u0440\u0435\u043f\u0440\u0435\u0441\u0441\u0438\u0438.\r\n\r\n\u0422\u0430\u043a\u0438\u043c \u043e\u0431\u0440\u0430\u0437\u043e\u043c, \u043e\u043d \u043d\u0435\u0441\u0435\u0442 \u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0441\u0442\u044c \u0437\u0430 \u0441\u0435\u0440\u044c\u0435\u0437\u043d\u044b\u0435 \u043d\u0430\u0440\u0443\u0448\u0435\u043d\u0438\u044f \u043f\u0440\u0430\u0432 \u0447\u0435\u043b\u043e\u0432\u0435\u043a\u0430 \u0432 \u0418\u0440\u0430\u043d\u0435.;",
+            "match_rate": 80.0
+        },
+        {
+            "update_at": "31/12/2020",
+            "category": "SIP",
+            "name": "Ahmed Salem HASSAN",
+            "first_name": "Ahmed",
+            "middle_name": "Salem",
+            "last_name": "HASSAN",
+            "dates_of_birth": [
+                {
+                    "date": "01/02/1948"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "UK - HMT Financial Sanctions List",
+                    "id_in_list": "12725"
+                }
+            ],
+            "program": "Syria",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Michel KASOUHA",
+                    "first_name": "Michel",
+                    "middle_name": "",
+                    "last_name": "KASOUHA",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Michel KASSOUHA",
+                    "first_name": "Michel",
+                    "middle_name": "",
+                    "last_name": "KASSOUHA",
+                    "type": ""
+                },
+                {
+                    "title": "",
+                    "name": "Ahmed SALEM",
+                    "first_name": "Ahmed",
+                    "middle_name": "",
+                    "last_name": "SALEM",
+                    "type": ""
+                }
+            ],
+            "roles": [
+                {
+                    "title": "General Intelligence Directorate Brigadier General"
+                }
+            ],
+            "summary": "(UK Sanctions List Ref):SYR0247. (UK Statement of Reasons):Brigadier General in the General Intelligence Directorate. (Gender):Male\nListed On: 24/07/2012;\nDate Designated: 31/12/2020;",
+            "match_rate": 63.0
+        },
+        {
+            "category": "SIP",
+            "name": "Michel KASSOUHA",
+            "gender": "Male",
+            "original_script_name": "\u0645\u064a\u0634\u0627\u0644 \u0643\u0633\u0648\u062d\u0629",
+            "dates_of_birth": [
+                {
+                    "date": "1948-02-01"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "BL - Financial Sanctions List",
+                    "id_in_list": "7088"
+                }
+            ],
+            "program": "SYR",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Ahmed Salem",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Ahmed Salem Hassan",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Michel Kasouha",
+                    "first_name": "Michel",
+                    "middle_name": "",
+                    "last_name": "Kasouha",
+                    "type": "strong"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the Syrian security services since the early 1970s. Since March 2006, has been responsible for public re\u00adlations of Branch 273 of the Syrian General Intelligence Di\u00adrectorate."
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
+            ],
+            "match_rate": 57.0
+        },
+        {
+            "category": "SIP",
+            "name": "Michel Kassouha",
+            "first_name": "Michel",
+            "last_name": "Kassouha",
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "CA - Consolidated Canadian Autonomous Sanctions List",
+                    "id_in_list": "Michel Kassouha"
+                }
+            ],
+            "program": "Syria / Syrie",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "name": "Ahmed Salem",
+                    "type": ""
+                },
+                {
+                    "name": "Ahmed Salem Hassan",
+                    "type": ""
+                }
+            ],
+            "match_rate": 57.0
+        },
+        {
+            "update_at": "2023-04-24",
+            "category": "SIP",
+            "name": "Ahmed Mahmoud Hassan",
+            "first_name": "Ahmed Mahmoud",
+            "last_name": "Hassan",
+            "gender": "male",
+            "original_script_name": "\u0161ejk Hassan",
+            "places_of_birth": [
+                {
+                    "city": "",
+                    "region": "Pwani Region",
+                    "country": "TANZANIA, UNITED REPUBLIC OF"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "EU - Financial Sanctions List",
+                    "id_in_list": "152704"
+                }
+            ],
+            "program": "EUAQ",
+            "nationality": "",
+            "citizenship": "TANZANIA, UNITED REPUBLIC OF",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Yaseer Hassan",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abu Qasim",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Sheikh Hassan",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Abu Yasir HASSAN",
+                    "first_name": "Abu Yasir",
+                    "middle_name": "",
+                    "last_name": "HASSAN",
+                    "type": "strong"
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R0845"
+            ],
+            "match_rate": 57.0
+        },
+        {
+            "update_at": "2020-05-29",
+            "category": "SIP",
+            "name": "Michel KASSOUHA",
+            "gender": "male",
+            "original_script_name": "\u0645\u064a\u0634\u0627\u0644 \u0643\u0633\u0648\u062d\u0629",
+            "dates_of_birth": [
+                {
+                    "date": "1948-02-01"
+                }
+            ],
+            "reference_type": "Sanction",
+            "references": [
+                {
+                    "name": "EU - Financial Sanctions List",
+                    "id_in_list": "7088"
+                }
+            ],
+            "program": "SYR",
+            "nationality": "",
+            "citizenship": "",
+            "other_names": [
+                {
+                    "title": "",
+                    "name": "Ahmed Salem",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Ahmed Salem Hassan",
+                    "first_name": "",
+                    "middle_name": "",
+                    "last_name": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Michel Kasouha",
+                    "first_name": "Michel",
+                    "middle_name": "",
+                    "last_name": "Kasouha",
+                    "type": "strong"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the Syrian security services since the early 1970s. Since March 2006, has been responsible for public re\u00adlations of Branch 273 of the Syrian General Intelligence Di\u00adrectorate."
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
+            ],
+            "match_rate": 57.0
+        }
+    ]
+}
