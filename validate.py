@@ -1,6 +1,7 @@
 """Validation logic for the Namescan emerald API."""
 import dataclasses
 import json
+import sys
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -76,6 +77,14 @@ class Person:  # pylint: disable=too-many-instance-attributes
     other_names: list[OtherName]
     summary: Optional[str]
     match_rate: float
+
+    @property
+    def bla(self):
+        if self.summary:
+            return self.summary
+        if other_names := self.other_names:
+            return ", ".join([b.name for b in other_names])
+        return ""
 
     def __hash__(self):
         return hash(tuple(self.references))
@@ -153,6 +162,13 @@ class PersonToScan:  # pylint: disable=too-many-instance-attributes
     excluded_lists: Optional[str]
     match_rate: int = 50
 
+    @property
+    def hash(self) -> str:
+        hash_number = hash(
+            tuple([self.name, self.dob, self.first_name, self.last_name, self.gender])
+        )
+        return str(hash_number + sys.maxsize + 1)
+
     @staticmethod
     def from_dataframe(framed: Series):
         frame = framed.to_dict()
@@ -222,7 +238,9 @@ def validate_file(console: Console, file: Path, output: Path, key: str) -> None:
         send_request(console, person, key, str(index), output_path)
 
 
-def false_positive(person: Person) -> Optional[str]:
+def false_positive(  # pylint: disable=too-many-return-statements
+    person: Person,
+) -> Optional[str]:
     """Gives a reason if this is considered a false positive."""
     if person.deceased:
         return f"Deceased {person.deceased_date}"
@@ -244,23 +262,27 @@ def false_positive(person: Person) -> Optional[str]:
     if person.roles:
         return f"Public figure: {person.roles[0].title}"
 
+    if person.citizenship != "" and "indonesia" not in person.citizenship.lower():
+        return f"Foreigner: {person.citizenship}"
+
     return None
 
 
 @dataclass(frozen=True)
 class Rationale:
-    explanations: dict[Person, Optional[str]]
+    person_to_scan: PersonToScan
+    matches_with_explanations: dict[Person, Optional[str]]
 
     @property
     def matches(self) -> int:
-        return len(self.explanations.keys())
+        return len(self.matches_with_explanations.keys())
 
     @property
     def explained(self) -> int:
         return len(
             [
                 explanation
-                for explanation in self.explanations.values()
+                for explanation in self.matches_with_explanations.values()
                 if explanation is not None
             ]
         )
@@ -270,8 +292,18 @@ class Rationale:
         return ", ".join(
             [
                 f"{person.name}: {explanation}"
-                for person, explanation in self.explanations.items()
+                for person, explanation in self.matches_with_explanations.items()
                 if explanation is not None
+            ]
+        )
+
+    @property
+    def no_rationale(self):
+        return ", ".join(
+            [
+                f"{person.name}: {person.bla}"
+                for person, explanation in self.matches_with_explanations.items()
+                if explanation is None
             ]
         )
 
@@ -289,11 +321,14 @@ def create_rationale(
     json_object = json.loads(response_json_string)
     scan_result = ScanResult.from_json(json_object)
     rationale = Rationale(
-        {person: false_positive(person) for person in scan_result.persons}
+        person_to_scan=person,
+        matches_with_explanations={
+            match: false_positive(match) for match in scan_result.persons
+        },
     )
     console.log(
-        f"{rationale.icon} {index} {person.name} -> {rationale.matches} matches, {rationale.explained} filtered."
-        f" {rationale.rationale}"
+        f"{rationale.icon} {index} {person.hash} {person.name} -> {rationale.matches} matches,"
+        f" {rationale.explained} false positive."
     )
     return rationale
 
@@ -304,12 +339,27 @@ def add_rationale(console: Console, file: Path, output: Path) -> None:
 
     output_path = Path(file.parent, output)
 
-    rationales = [
+    rationales: list[Rationale] = [
         create_rationale(
             console, PersonToScan.from_dataframe(row), str(index), output_path
         )
         for index, row in dataframe.iterrows()
     ]
+    with_explanations = dataframe.assign(
+        UniqueId=[rationale.person_to_scan.hash for rationale in rationales],
+        Matched=[rationale.matches > 0 for rationale in rationales],
+        Verdict=[
+            "False positive"
+            if rationale.explained == rationale.matches
+            else "Needs explanation"
+            for rationale in rationales
+        ],
+        Explanation=[rationale.rationale for rationale in rationales],
+        NeedExplanation=[rationale.no_rationale for rationale in rationales],
+    )
+    with_explanations.to_excel(
+        Path(output_path, f"{file.stem}-explained{file.suffix}"), index=True
+    )
     total_matches = sum(rationale.matches for rationale in rationales)
     total_explained = sum(rationale.explained for rationale in rationales)
     console.log(f"Total matches: {total_matches}, total explained: {total_explained}")
