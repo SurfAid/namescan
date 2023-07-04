@@ -1,5 +1,6 @@
 """Entry point for the surfaid_namescan CLI."""
-
+import sys
+from contextlib import redirect_stderr
 from pathlib import Path
 
 import click
@@ -73,9 +74,10 @@ def main_group():
 
 
 if __name__ == "__main__":
-    main_group.help = (
-        "Validate an Excel sheet with persons against the Namescan emerald API"
-    )
-    main_group.add_command(check)
-    main_group.add_command(rationale)
-    main_group()  # pylint: disable = no-value-for-parameter
+    with redirect_stderr(sys.stdout):
+        main_group.help = (
+            "Validate an Excel sheet with persons against the Namescan emerald API"
+        )
+        main_group.add_command(check)
+        main_group.add_command(rationale)
+        main_group()  # pylint: disable = no-value-for-parameter
