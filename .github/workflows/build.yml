@@ -15,21 +15,21 @@ jobs:
           - os: macos-latest
             TARGET: macos
             CMD_BUILD: >
-              pipenv run pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns src/surfaid_namescan.py &&
+              pipenv run pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns surfaid_namescan.py &&
               cd dist/
             OUT_FILE_NAME: surfaid_namescan
             ASSET_MIME: application/octet-stream
           - os: windows-latest
             TARGET: windows
-            CMD_BUILD: pipenv run pyinstaller -F -w -n surfaid_namescan -i resources/surfaid_namescan.ico src/surfaid_namescan.py
+            CMD_BUILD: pipenv run pyinstaller -F -w -n surfaid_namescan -i resources/surfaid_namescan.ico surfaid_namescan.py
             OUT_FILE_NAME: surfaid_namescan.exe
             ASSET_MIME: application/vnd.microsoft.portable-executable
     steps:
       - uses: actions/checkout@v1
-      - name: Set up Python 3.9
+      - name: Set up Python 3.11
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: 3.11
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
