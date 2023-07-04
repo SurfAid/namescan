@@ -5,3 +5,23 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Validate suppliers against namescan emerald API 
+
+### Usage
+In your terminal, run the following command:
+```bash
+surfaid_namescan --help
+```
+
+### Development instructions
+Install
+```shell
+pipenv install --dev
+```
+Execute local cli
+```shell
+pipenv run cli --help
+```
+Run tests
+```shell
+pipven run validate
+```
