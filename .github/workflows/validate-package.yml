@@ -56,7 +56,18 @@ jobs:
         run: pipenv run test
 
   Build_Package:
-    runs-on: windows-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        include:
+          - os: macos-latest
+            ARTIFACT_NAME: surfaid_namescan_mac
+            SPEC_FILE: surfaid_namescan_mac.spec
+            EXECUTABLE_FILE: surfaid_namescan
+          - os: windows-latest
+            ARTIFACT_NAME: surfaid_namescan_windows
+            SPEC_FILE: surfaid_namescan_windows.spec
+            EXECUTABLE_FILE: surfaid_namescan.exe
 
     needs: [TypeCheck, Test]
     steps:
@@ -79,9 +90,9 @@ jobs:
           pipenv install pyinstaller
 
       - name: PyInstaller Windows
-        run: pipenv run pyinstaller surfaid_namescan.spec
+        run: pipenv run pyinstaller ${{ matrix.SPEC_FILE }}
 
       - uses: actions/upload-artifact@v2
         with:
-          name: surfaid_namescan
-          path: dist/surfaid_namescan.exe # or path/to/artifact
+          name: ${{matrix.ARTIFACT_NAME}}
+          path: dist/${{matrix.EXECUTABLE_FILE}}
