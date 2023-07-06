@@ -3,6 +3,10 @@ import sys
 from contextlib import redirect_stderr
 from pathlib import Path
 
+print(  # pylint: disable=wrong-import-position
+    "Surfaid Namescan CLI © 2023. Starting up..."
+)
+
 import click
 from rich.console import Console
 

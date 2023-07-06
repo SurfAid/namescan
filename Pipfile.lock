@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5787a412f4e244ffd916f55d81cd3e5ed9e53dc0fd85f35e66ca5cf7968ac56d"
+            "sha256": "1d34c7036520b21ea185fe9359ad9e2814eaa41509eeedfbe6caf7ee6917ae2a"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -547,11 +547,11 @@
         },
         "pyinstaller-hooks-contrib": {
             "hashes": [
-                "sha256:9c11197653de9605a81975325a60b9369e9cdc37c009b6aeb0221a57211f9388",
-                "sha256:fc9892e46fa19d05725205413fb21a764f2f6ff1e70ba95322fb02420a665a45"
+                "sha256:cca6cdc31e739954b5bbbf05ef3f71fe448e9cdacad3a2197243bcf99bea2c00",
+                "sha256:e60185332a6b56691f471d364e9e9405b03091ca27c96e0dbebdedb7624457fd"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==2023.4"
+            "version": "==2023.5"
         },
         "pylint": {
             "hashes": [
@@ -568,6 +568,14 @@
             ],
             "index": "pypi",
             "version": "==7.4.0"
+        },
+        "pywin32-ctypes": {
+            "hashes": [
+                "sha256:3426e063bdd5fd4df74a14fa3cf80a0b42845a87e1d1e81f6549f9daec593a60",
+                "sha256:bf490a1a709baf35d688fe0ecf980ed4de11d2b3e37b51e5442587a75d9957e7"
+            ],
+            "index": "pypi",
+            "version": "==0.2.2"
         },
         "setuptools": {
             "hashes": [
@@ -609,11 +617,11 @@
         },
         "typing-extensions": {
             "hashes": [
-                "sha256:5d8c9dac95c27d20df12fb1d97b9793ab8b2af8a3a525e68c80e21060c161771",
-                "sha256:935ccf31549830cda708b42289d44b6f74084d616a00be651601a4f968e77c82"
+                "sha256:440d5dd3af93b060174bf433bccd69b0babc3b15b1a8dca43789fd7f61514b36",
+                "sha256:b75ddc264f0ba5615db7ba217daeb99701ad295353c45f9e95963337ceeeffb2"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==4.7.0"
+            "version": "==4.7.1"
         },
         "wrapt": {
             "hashes": [

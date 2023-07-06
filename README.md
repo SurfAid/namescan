@@ -6,13 +6,25 @@
 
 Validate suppliers against namescan emerald API 
 
-### Usage
+## Usage
+
+###  💻 Windows
+
+###  🍏 Mac 
+Download the latest version of the installer and run.
+```shell
+xattr -d com.apple.quarantine surfaid_namescan
+chmod u+x surfaid_namescan
+./surfaid_namescan
+````
+
+
 In your terminal, run the following command:
 ```bash
 surfaid_namescan --help
 ```
 
-### Development instructions
+## Development instructions
 Install
 ```shell
 pipenv install --dev
