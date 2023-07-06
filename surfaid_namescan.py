@@ -45,10 +45,18 @@ def create_console_logger() -> Console:
     type=click.STRING,
     help="The namescan API key https://api.namescan.io/doc/index.html",
 )
-def check(file: str, output: str, key: str):
+@click.option(
+    "--entity",
+    "-e",
+    required=False,
+    type=click.Choice(["organization", "person"]),
+    default="person",
+    help="The type of scan to do. Default is person.",
+)
+def check(file: str, output: str, key: str, entity: str):
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console = create_console_logger()
-    validate_file(console, Path(file), Path(output), key)
+    validate_file(console, Path(file), Path(output), key, entity)
 
 
 @click.command()
