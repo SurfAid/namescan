@@ -147,7 +147,7 @@ class ScanResult:
             number_of_matches=data["number_of_matches"],
             number_of_pep_matches=data["number_of_pep_matches"],
             number_of_sip_matches=data["number_of_sip_matches"],
-            persons=[Person.from_json(person) for person in data["persons"]],
+            persons=[Person.from_json(person) for person in data.get("persons", [])],
         )
 
 
@@ -402,15 +402,18 @@ def add_rationale(console: Console, file: Path, output: Path) -> None:
         )
         for index, row in dataframe.iterrows()
     ]
+
+    def to_verdict(rationale: Rationale) -> str:
+        if rationale.explained == rationale.matches:
+            return "False positive"
+        if rationale.matches == 0:
+            return "No match"
+        return "Needs explanation"
+
     with_explanations = dataframe.assign(
         UniqueId=[rationale.person_to_scan.hash for rationale in rationales],
         Matched=[rationale.matches > 0 for rationale in rationales],
-        Verdict=[
-            "False positive"
-            if rationale.explained == rationale.matches
-            else "Needs explanation"
-            for rationale in rationales
-        ],
+        Verdict=[to_verdict(rationale) for rationale in rationales],
         Explanation=[rationale.rationale for rationale in rationales],
         NeedExplanation=[rationale.no_rationale for rationale in rationales],
     )
