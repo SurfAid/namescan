@@ -10,7 +10,9 @@ from typing import Optional
 import numpy as np
 import pandas as pd
 import requests
+from click import BadParameter
 from pandas import Series
+from requests import Response
 from rich.console import Console
 
 
@@ -25,7 +27,8 @@ class ListType(str, Enum):
 
 
 NAME_SCAN_URL = "https://api.namescan.io/v2"
-EMERALD_URL = f"{NAME_SCAN_URL}/person-scans/emerald"
+EMERALD_PERSON_URL = f"{NAME_SCAN_URL}/person-scans/emerald"
+EMERALD_ORGANIZATION_URL = f"{NAME_SCAN_URL}/organisation-scans/emerald"
 REQUEST_TIMEOUT_IN_SECONDS = 10
 
 
@@ -79,7 +82,7 @@ class Person:  # pylint: disable=too-many-instance-attributes
     match_rate: float
 
     @property
-    def bla(self):
+    def identifier(self):
         if self.summary:
             return self.summary
         if other_names := self.other_names:
@@ -144,8 +147,18 @@ class ScanResult:
             number_of_matches=data["number_of_matches"],
             number_of_pep_matches=data["number_of_pep_matches"],
             number_of_sip_matches=data["number_of_sip_matches"],
-            persons=[Person.from_json(person) for person in data["persons"]],
+            persons=[Person.from_json(person) for person in data.get("persons", [])],
         )
+
+
+@dataclass(frozen=True)
+class OrganizationToScan:
+    name: str
+    country: str = "Indonesia"
+
+    @staticmethod
+    def from_dataframe(frame: Series):
+        return OrganizationToScan(name=frame["Name"], country=frame["Country"])
 
 
 @dataclass(frozen=True)
@@ -194,27 +207,49 @@ def log_request(request_body: dict, output_file: Path):
         file.write(json.dumps(request_body, indent=4))
 
 
+def file_response(file_path: Path) -> Response:
+    response = Response()
+    response.status_code = 201
+    response._content = bytes(  # pylint: disable=protected-access
+        file_path.read_text("utf-8"), "utf-8"
+    )
+    return response
+
+
 def send_request(
-    console: Console, person: PersonToScan, key: str, index: str, output_path: Path
+    console: Console,
+    api_url: str,
+    entity_dict: dict,
+    key: str,
+    index: str,
+    output_path: Path,
 ) -> None:
     """Send a request to the Namescan emerald API."""
-    console.log(f"Sending request to Namescan API for {person.name}...")
-    person_dict = dataclasses.asdict(person)
-    log_request(person_dict, Path(output_path, f"{index}.req.json"))
-
-    output_file = Path(output_path, f"{index}.resp.json")
-    if not output_file.exists():
-        response = requests.post(
-            EMERALD_URL,
-            json=person_dict,
-            headers={"api-key": key},
-            timeout=REQUEST_TIMEOUT_IN_SECONDS,
+    entity_name = entity_dict.get("name", "unknown")
+    status_prefix = f"{index} checking {entity_name}..."
+    with console.status(status_prefix) as status:
+        log_request(entity_dict, Path(output_path, f"{index}.req.json"))
+        output_file = Path(output_path, f"{index}.resp.json")
+        response = (
+            requests.post(
+                api_url,
+                json=entity_dict,
+                headers={"api-key": key},
+                timeout=REQUEST_TIMEOUT_IN_SECONDS,
+            )
+            if not output_file.exists()
+            else file_response(output_file)
         )
         if response.status_code < 300:
-            log_request(response.json(), output_file)
+            response_json = response.json()
+            status.console.log(
+                f"{index} checked {entity_name} - {response_json.get('number_of_matches', 'Error')} matches"
+            )
+            log_request(response_json, output_file)
         else:
             console.log(
-                f"[red]Error while sending request to Namescan API: {response.status_code} - {response.text}[/red]"
+                f"[red]Error while sending request {index}, {entity_name} to Namescan API: {response.status_code}"
+                f" - {response.text}[/red]"
             )
 
 
@@ -225,7 +260,9 @@ def read_as_dataframe(file: Path) -> pd.DataFrame:
     )
 
 
-def validate_file(console: Console, file: Path, output: Path, key: str) -> None:
+def validate_file(
+    console: Console, file: Path, output: Path, key: str, entity: str
+) -> None:
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console.log(f"Reading {file}")
     dataframe = read_as_dataframe(file)
@@ -234,8 +271,28 @@ def validate_file(console: Console, file: Path, output: Path, key: str) -> None:
     output_path.mkdir(parents=True, exist_ok=True)
 
     for index, row in dataframe.iterrows():
-        person = PersonToScan.from_dataframe(row)
-        send_request(console, person, key, str(index), output_path)
+        if entity == "organization":
+            org = OrganizationToScan.from_dataframe(row)
+            send_request(
+                console,
+                EMERALD_ORGANIZATION_URL,
+                dataclasses.asdict(org),
+                key,
+                str(index),
+                output_path,
+            )
+        elif entity == "person":
+            person = PersonToScan.from_dataframe(row)
+            send_request(
+                console,
+                EMERALD_PERSON_URL,
+                dataclasses.asdict(person),
+                key,
+                str(index),
+                output_path,
+            )
+        else:
+            raise BadParameter(f"Unknown scan type: {entity}")
 
 
 def false_positive(  # pylint: disable=too-many-return-statements
@@ -301,7 +358,7 @@ class Rationale:
     def no_rationale(self):
         return ", ".join(
             [
-                f"{person.name}: {person.bla}"
+                f"{person.name}: {person.identifier}"
                 for person, explanation in self.matches_with_explanations.items()
                 if explanation is None
             ]
@@ -345,15 +402,18 @@ def add_rationale(console: Console, file: Path, output: Path) -> None:
         )
         for index, row in dataframe.iterrows()
     ]
+
+    def to_verdict(rationale: Rationale) -> str:
+        if rationale.explained == rationale.matches:
+            return "False positive"
+        if rationale.matches == 0:
+            return "No match"
+        return "Needs explanation"
+
     with_explanations = dataframe.assign(
         UniqueId=[rationale.person_to_scan.hash for rationale in rationales],
         Matched=[rationale.matches > 0 for rationale in rationales],
-        Verdict=[
-            "False positive"
-            if rationale.explained == rationale.matches
-            else "Needs explanation"
-            for rationale in rationales
-        ],
+        Verdict=[to_verdict(rationale) for rationale in rationales],
         Explanation=[rationale.rationale for rationale in rationales],
         NeedExplanation=[rationale.no_rationale for rationale in rationales],
     )
