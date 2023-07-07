@@ -2,6 +2,7 @@
 import dataclasses
 import hashlib
 import json
+import time
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -266,6 +267,7 @@ def send_request(
     with console.status(status_prefix) as status:
         log_request(entity_dict, Path(output_path, f"{index}.req.json"))
         output_file = Path(output_path, f"{index}.resp.json")
+        time.sleep(0.5)
         response = (
             requests.post(
                 api_url,
@@ -323,7 +325,7 @@ def validate_file(
                 EMERALD_PERSON_URL,
                 dataclasses.asdict(person),
                 key,
-                str(index),
+                person.hash,
                 output_path,
             )
         else:
