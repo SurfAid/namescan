@@ -1,7 +1,7 @@
 """Validation logic for the Namescan emerald API."""
 import dataclasses
+import hashlib
 import json
-import sys
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -207,10 +207,16 @@ class PersonToScan:  # pylint: disable=too-many-instance-attributes
 
     @property
     def hash(self) -> str:
-        hash_number = hash(
-            tuple([self.name, self.dob, self.first_name, self.last_name, self.gender])
+        joined = "".join(
+            [
+                self.name or "",
+                self.dob or "",
+                self.first_name or "",
+                self.last_name or "",
+                self.gender or "",
+            ]
         )
-        return str(hash_number + sys.maxsize + 1)
+        return hashlib.md5(joined.encode("utf-8")).hexdigest()
 
     @staticmethod
     def from_dataframe(framed: Series):

@@ -3,7 +3,7 @@ from pathlib import Path
 
 from surfaid_namescan import create_console_logger, to_output_path
 from tests import test_resource_path
-from validate import read_as_dataframe, ScanResult, add_rationale
+from validate import read_as_dataframe, ScanResult, add_rationale, PersonToScan, Gender
 
 
 class TestValidate:
@@ -54,3 +54,19 @@ class TestValidate:
         input_file = Path(test_resource_path / "test_namescan.xlsx")
         output_path = to_output_path(input_file, None)
         add_rationale(console, input_file, output_path, "csv")
+
+    def test_person_to_scan_hash_is_stable(self):
+        person = PersonToScan(
+            name="Muhammad Ali",
+            first_name="Muhammad",
+            middle_name=None,
+            last_name="Ali",
+            gender=Gender("male"),
+            dob=None,
+            country="Indonesia",
+            list_type=None,
+            included_lists=None,
+            excluded_lists=None,
+            match_rate=50,
+        )
+        assert person.hash == "fded17b8481e0691f4a96e3af2938a41"
