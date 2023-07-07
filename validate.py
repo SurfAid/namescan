@@ -261,13 +261,12 @@ def read_as_dataframe(file: Path) -> pd.DataFrame:
 
 
 def validate_file(
-    console: Console, file: Path, output: Path, key: str, entity: str
+    console: Console, file: Path, output_path: Path, key: str, entity: str
 ) -> None:
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console.log(f"Reading {file}")
     dataframe = read_as_dataframe(file)
 
-    output_path = Path(file.parent, output)
     output_path.mkdir(parents=True, exist_ok=True)
 
     for index, row in dataframe.iterrows():
@@ -390,11 +389,9 @@ def create_rationale(
     return rationale
 
 
-def add_rationale(console: Console, file: Path, output: Path) -> None:
-    console.log(f"Reading {file}")
-    dataframe = read_as_dataframe(file)
-
-    output_path = Path(file.parent, output)
+def add_rationale(console: Console, input_file: Path, output_path: Path) -> None:
+    console.log(f"Reading {input_file}")
+    dataframe = read_as_dataframe(input_file)
 
     rationales: list[Rationale] = [
         create_rationale(
@@ -418,7 +415,7 @@ def add_rationale(console: Console, file: Path, output: Path) -> None:
         NeedExplanation=[rationale.no_rationale for rationale in rationales],
     )
     with_explanations.to_excel(
-        Path(output_path, f"{file.stem}-explained{file.suffix}"), index=True
+        Path(output_path, f"{input_file.stem}-explained{input_file.suffix}"), index=True
     )
     total_matches = sum(rationale.matches for rationale in rationales)
     total_explained = sum(rationale.explained for rationale in rationales)
