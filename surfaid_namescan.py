@@ -2,6 +2,7 @@
 import sys
 from contextlib import redirect_stderr
 from pathlib import Path
+from typing import Optional
 
 print(  # pylint: disable=wrong-import-position
     "Surfaid Namescan CLI © 2023. Starting up..."
@@ -23,6 +24,14 @@ def create_console_logger() -> Console:
     )
 
 
+def to_output_path(input_file: Path, output: Optional[str]) -> Path:
+    return (
+        Path(input_file.parent, output)
+        if output
+        else Path(input_file.parent, input_file.stem)
+    )
+
+
 @click.command()
 @click.option(
     "--file",
@@ -34,9 +43,9 @@ def create_console_logger() -> Console:
 @click.option(
     "--output",
     "-o",
-    required=True,
+    required=False,
     type=click.Path(exists=False),
-    help="Output path. Will be created if it does not exist.",
+    help="Optional output path. Same as input file name by default. Will be created if it does not exist.",
 )
 @click.option(
     "--key",
@@ -53,11 +62,15 @@ def create_console_logger() -> Console:
     default="person",
     help="The type of scan to do. Default is person.",
 )
-def check(file: str, output: str, key: str, entity: str):
+def check(file: str, output: Optional[str], key: str, entity: str):
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console = create_console_logger()
-    validate_file(console, Path(file), Path(output), key, entity)
-    add_rationale(console, Path(file), Path(output))
+
+    input_file = Path(file)
+    output_path = to_output_path(input_file, output)
+
+    validate_file(console, input_file, output_path, key, entity)
+    add_rationale(console, input_file, output_path)
 
 
 @click.command()
@@ -71,14 +84,18 @@ def check(file: str, output: str, key: str, entity: str):
 @click.option(
     "--output",
     "-o",
-    required=True,
+    required=False,
     type=click.Path(exists=False),
     help="Output path. Will be created if it does not exist.",
 )
-def rationale(file: str, output: str):
+def rationale(file: str, output: Optional[str]):
     """Process the output of the check command and generate a rationale for each match"""
     console = create_console_logger()
-    add_rationale(console, Path(file), Path(output))
+
+    input_file = Path(file)
+    output_path = to_output_path(input_file, output)
+
+    add_rationale(console, input_file, output_path)
 
 
 @click.group(name="namescan")
