@@ -13,43 +13,44 @@ jobs:
       matrix:
         include:
           - os: macos-latest
-            TARGET: macos
-            CMD_BUILD: >
-              pipenv run pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns surfaid_namescan.py &&
-              cd dist/
-            OUT_FILE_NAME: surfaid_namescan
+            ARTIFACT_NAME: surfaid_namescan_mac
+            SPEC_FILE: surfaid_namescan_mac.spec
+            EXECUTABLE_FILE: surfaid_namescan
             ASSET_MIME: application/octet-stream
           - os: windows-latest
-            TARGET: windows
-            CMD_BUILD: pipenv run pyinstaller -F -w -n surfaid_namescan -i resources/surfaid_namescan.ico surfaid_namescan.py
-            OUT_FILE_NAME: surfaid_namescan.exe
+            ARTIFACT_NAME: surfaid_namescan_windows
+            SPEC_FILE: surfaid_namescan_windows.spec
+            EXECUTABLE_FILE: surfaid_namescan.exe
             ASSET_MIME: application/vnd.microsoft.portable-executable
     steps:
-      - uses: actions/checkout@v1
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        id: cache-dependencies
         with:
-          python-version: 3.11
+          python-version: '3.11'
+          cache: 'pipenv'
+          cache-dependency-path: |
+            Pipfile.lock
+
+      - name: Install pipenv
+        run: pip install pipenv
+
       - name: Install dependencies
+        if: steps.cache-dependencies.outputs.cache-hit != 'true'
         run: |
-          python -m pip install --upgrade pip
-          python -m pip install pipenv
-          pipenv install
+          pipenv install -d --deploy
           pipenv install pyinstaller
-      - name: Build with pyinstaller for ${{matrix.TARGET}}
-        run: ${{matrix.CMD_BUILD}}
-      - name: Get release
-        id: get_release
-        uses: bruceadams/get-release@v1.3.2
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: PyInstaller Windows
+        run: pipenv run pyinstaller ${{ matrix.SPEC_FILE }}
+
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          upload_url: ${{ steps.get_release.outputs.upload_url }}
+          upload_url: ${{ github.event.release.upload_url }}
           asset_path: ./dist/${{ matrix.OUT_FILE_NAME}}
           asset_name: ${{ matrix.OUT_FILE_NAME}}
           asset_content_type: ${{ matrix.ASSET_MIME}}
