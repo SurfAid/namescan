@@ -57,6 +57,7 @@ def check(file: str, output: str, key: str, entity: str):
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console = create_console_logger()
     validate_file(console, Path(file), Path(output), key, entity)
+    add_rationale(console, Path(file), Path(output))
 
 
 @click.command()
