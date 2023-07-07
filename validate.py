@@ -335,7 +335,7 @@ def false_positive(  # pylint: disable=too-many-return-statements
         return f"Not an Indonesian name: {person.original_script_name}"
 
     if person.program and "syr" in person.program.lower():
-        return "Syrian conflict"
+        return "Suspect in Syrian conflict"
 
     if "politician" in person.occupations:
         return person.politician_summary
@@ -414,7 +414,9 @@ def create_rationale(
     return rationale
 
 
-def add_rationale(console: Console, input_file: Path, output_path: Path) -> None:
+def add_rationale(
+    console: Console, input_file: Path, output_path: Path, file_format: str = "xlsx"
+) -> None:
     console.log(f"Reading {input_file}")
     dataframe = read_as_dataframe(input_file)
 
@@ -439,9 +441,10 @@ def add_rationale(console: Console, input_file: Path, output_path: Path) -> None
         Explanation=[rationale.rationale for rationale in rationales],
         NeedExplanation=[rationale.no_rationale for rationale in rationales],
     )
-    with_explanations.to_excel(
-        Path(output_path, f"{input_file.stem}-explained{input_file.suffix}"), index=True
-    )
+    output_path = Path(output_path, f"{input_file.stem}-explained.{file_format}")
+    with_explanations.to_excel(  # pylint: disable=expression-not-assigned
+        output_path, index=True
+    ) if file_format == "xlsx" else with_explanations.to_csv(output_path, index=True)
     total_matches = sum(rationale.matches for rationale in rationales)
     total_explained = sum(rationale.explained for rationale in rationales)
     console.log(f"Total matches: {total_matches}, total explained: {total_explained}")

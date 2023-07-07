@@ -53,4 +53,4 @@ class TestValidate:
         console = create_console_logger()
         input_file = Path(test_resource_path / "test_namescan.xlsx")
         output_path = to_output_path(input_file, None)
-        add_rationale(console, input_file, output_path)
+        add_rationale(console, input_file, output_path, "csv")
