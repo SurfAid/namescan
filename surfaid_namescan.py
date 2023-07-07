@@ -79,11 +79,6 @@ def check(file: str, output: Optional[str], key: str, entity: str, skip: bool):
     validate_file(console, input_file, output_path, key, entity)
 
 
-@click.group(name="namescan")
-def main_group():
-    """Command Line Interface for MPyL"""
-
-
 if __name__ == "__main__":
     with redirect_stderr(sys.stdout):
         check.help = (
