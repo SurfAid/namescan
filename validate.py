@@ -430,7 +430,10 @@ def add_rationale(
 
     rationales: list[Rationale] = [
         create_rationale(
-            console, PersonToScan.from_dataframe(row), str(index), output_path
+            console,
+            PersonToScan.from_dataframe(row),
+            PersonToScan.from_dataframe(row).hash,
+            output_path,
         )
         for index, row in dataframe.iterrows()
     ]
