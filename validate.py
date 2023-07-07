@@ -15,6 +15,7 @@ from click import BadParameter
 from pandas import Series
 from requests import Response
 from rich.console import Console
+from rich.markdown import Markdown
 
 
 class Gender(str, Enum):
@@ -255,18 +256,19 @@ def file_response(file_path: Path) -> Response:
 
 def send_request(
     console: Console,
+    index: str,
     api_url: str,
     entity_dict: dict,
     key: str,
-    index: str,
+    hash_code: str,
     output_path: Path,
 ) -> None:
     """Send a request to the Namescan emerald API."""
     entity_name = entity_dict.get("name", "unknown")
     status_prefix = f"{index} checking {entity_name}..."
     with console.status(status_prefix) as status:
-        log_request(entity_dict, Path(output_path, f"{index}.req.json"))
-        output_file = Path(output_path, f"{index}.resp.json")
+        log_request(entity_dict, Path(output_path, f"{hash_code}.req.json"))
+        output_file = Path(output_path, f"{hash_code}.resp.json")
         time.sleep(0.5)
         response = (
             requests.post(
@@ -286,7 +288,7 @@ def send_request(
             log_request(response_json, output_file)
         else:
             console.log(
-                f"[red]Error while sending request {index}, {entity_name} to Namescan API: {response.status_code}"
+                f"[red]Error while sending request {hash_code}, {entity_name} to Namescan API: {response.status_code}"
                 f" - {response.text}[/red]"
             )
 
@@ -302,7 +304,7 @@ def validate_file(
     console: Console, file: Path, output_path: Path, key: str, entity: str
 ) -> None:
     """Validate an Excel sheet with persons against the Namescan emerald API."""
-    console.log(f"Reading {file}")
+    console.log(Markdown(f"Reading `{file}`"))
     dataframe = read_as_dataframe(file)
 
     output_path.mkdir(parents=True, exist_ok=True)
@@ -312,6 +314,7 @@ def validate_file(
             org = OrganizationToScan.from_dataframe(row)
             send_request(
                 console,
+                str(index),
                 EMERALD_ORGANIZATION_URL,
                 dataclasses.asdict(org),
                 key,
@@ -322,6 +325,7 @@ def validate_file(
             person = PersonToScan.from_dataframe(row)
             send_request(
                 console,
+                str(index),
                 EMERALD_PERSON_URL,
                 dataclasses.asdict(person),
                 key,
@@ -402,9 +406,13 @@ class Rationale:
 
 
 def create_rationale(
-    console: Console, person: PersonToScan, index: str, output_path: Path
+    console: Console,
+    index: str,
+    person: PersonToScan,
+    person_hash: str,
+    output_path: Path,
 ) -> Rationale:
-    response_json_string = Path(output_path, f"{index}.resp.json").read_text(
+    response_json_string = Path(output_path, f"{person_hash}.resp.json").read_text(
         encoding="utf-8"
     )
     json_object = json.loads(response_json_string)
@@ -416,7 +424,7 @@ def create_rationale(
         },
     )
     console.log(
-        f"{rationale.icon} {index} {person.hash} {person.name} -> {rationale.matches} matches,"
+        f"{rationale.icon} {index} {person.name} -> {rationale.matches} matches,"
         f" {rationale.explained} false positive."
     )
     return rationale
@@ -425,12 +433,14 @@ def create_rationale(
 def add_rationale(
     console: Console, input_file: Path, output_path: Path, file_format: str = "xlsx"
 ) -> None:
-    console.log(f"Reading {input_file}")
+    output_sheet = Path(output_path, f"{input_file.stem}-explained.{file_format}")
+    console.log(Markdown(f"Writing `{output_sheet}`"))
     dataframe = read_as_dataframe(input_file)
 
     rationales: list[Rationale] = [
         create_rationale(
             console,
+            str(index),
             PersonToScan.from_dataframe(row),
             PersonToScan.from_dataframe(row).hash,
             output_path,
@@ -452,10 +462,9 @@ def add_rationale(
         Explanation=[rationale.rationale for rationale in rationales],
         NeedExplanation=[rationale.no_rationale for rationale in rationales],
     )
-    output_path = Path(output_path, f"{input_file.stem}-explained.{file_format}")
     with_explanations.to_excel(  # pylint: disable=expression-not-assigned
-        output_path, index=True
-    ) if file_format == "xlsx" else with_explanations.to_csv(output_path, index=True)
+        output_sheet, index=True
+    ) if file_format == "xlsx" else with_explanations.to_csv(output_sheet, index=True)
     total_matches = sum(rationale.matches for rationale in rationales)
     total_explained = sum(rationale.explained for rationale in rationales)
     console.log(f"Total matches: {total_matches}, total explained: {total_explained}")
