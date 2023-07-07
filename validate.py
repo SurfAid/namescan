@@ -269,7 +269,6 @@ def send_request(
     with console.status(status_prefix) as status:
         log_request(entity_dict, Path(output_path, f"{hash_code}.req.json"))
         output_file = Path(output_path, f"{hash_code}.resp.json")
-        time.sleep(0.5)
         response = (
             requests.post(
                 api_url,
