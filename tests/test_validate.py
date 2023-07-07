@@ -19,7 +19,9 @@ class TestValidate:
 
     def test_construct_scan_result(self):
         json_string = Path(
-            test_resource_path / "test_namescan" / "1.resp.json"
+            test_resource_path
+            / "test_namescan"
+            / "f4eb24399e2dc1183eba801996fe7c9f.resp.json"
         ).read_text(encoding="utf-8")
 
         json_object = json.loads(json_string)

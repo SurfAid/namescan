@@ -41,7 +41,7 @@ jobs:
           pipenv install -d --deploy
           pipenv install pyinstaller
 
-      - name: PyInstaller Windows
+      - name: PyInstaller ${{ matrix.ARTIFACT_NAME }}
         run: pipenv run pyinstaller ${{ matrix.SPEC_FILE }}
 
       - name: Upload Release Asset

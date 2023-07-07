@@ -24,7 +24,7 @@ pywin32-ctypes = "==0.2.2"
 python_version = "3.11"
 
 [scripts]
-build = "pyinstaller -F --console -n surfaid_namescan -i resources/surfaid_namescan.icns src/surfaid_namescan.py"
+build = "pyinstaller surfaid_namescan_mac.spec"
 cli = "python surfaid_namescan.py"
 check-types = "mypy ."
 install-types = "mypy --install-types"

@@ -62,52 +62,29 @@ def to_output_path(input_file: Path, output: Optional[str]) -> Path:
     default="person",
     help="The type of scan to do. Default is person.",
 )
-def check(file: str, output: Optional[str], key: str, entity: str):
+@click.option(
+    "--skip",
+    is_flag=True,
+    help="Skip the namescan API call and only add the rationale to the output file.",
+)
+def check(file: str, output: Optional[str], key: str, entity: str, skip: bool):
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console = create_console_logger()
 
     input_file = Path(file)
     output_path = to_output_path(input_file, output)
 
-    validate_file(console, input_file, output_path, key, entity)
+    if not skip:
+        validate_file(console, input_file, output_path, key, entity)
     add_rationale(console, input_file, output_path)
-
-
-@click.command()
-@click.option(
-    "--file",
-    "-f",
-    required=True,
-    type=click.Path(exists=True),
-    help="Path to .xls file",
-)
-@click.option(
-    "--output",
-    "-o",
-    required=False,
-    type=click.Path(exists=False),
-    help="Output path. Will be created if it does not exist.",
-)
-def rationale(file: str, output: Optional[str]):
-    """Process the output of the check command and generate a rationale for each match"""
-    console = create_console_logger()
-
-    input_file = Path(file)
-    output_path = to_output_path(input_file, output)
-
-    add_rationale(console, input_file, output_path)
-
-
-@click.group(name="namescan")
-def main_group():
-    """Command Line Interface for MPyL"""
 
 
 if __name__ == "__main__":
     with redirect_stderr(sys.stdout):
-        main_group.help = (
+        check.help = (
             "Validate an Excel sheet with persons against the Namescan emerald API"
         )
-        main_group.add_command(check)
-        main_group.add_command(rationale)
-        main_group()  # pylint: disable = no-value-for-parameter
+        if len(sys.argv) == 1:
+            check.main(["--help"])
+        else:
+            check()  # pylint: disable=no-value-for-parameter
