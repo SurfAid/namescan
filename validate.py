@@ -59,6 +59,12 @@ class Role:
     title: str
 
 
+@dataclass(frozen=True)
+class PlaceOfBirth:
+    location: str
+    country: Optional[str]
+
+
 @dataclass(frozen=True, eq=True)
 class Person:  # pylint: disable=too-many-instance-attributes
     update_at: Optional[str]
@@ -69,6 +75,7 @@ class Person:  # pylint: disable=too-many-instance-attributes
     gender: Optional[Gender]
     original_script_name: Optional[str]
     dates_of_birth: list[DateOfBirth]
+    places_of_birth: list[PlaceOfBirth]
     reference_type: str
     references: list[Reference]
     program: Optional[str]
@@ -82,12 +89,29 @@ class Person:  # pylint: disable=too-many-instance-attributes
     match_rate: float
 
     @property
-    def identifier(self):
+    def politician_summary(self):
+        summary = self.person_summary
+        affiliation = (
+            f" for {self.political_parties[0].title}" if self.political_parties else ""
+        )
+        return f"Politician, {summary}{affiliation}"
+
+    @property
+    def person_summary(self):
         if self.summary:
             return self.summary
-        if other_names := self.other_names:
-            return ", ".join([b.name for b in other_names])
-        return ""
+
+        name = (
+            ", ".join([other.name for other in self.other_names])
+            if self.other_names
+            else self.name
+        )
+        origin = (
+            f", in {self.places_of_birth[0].location}" if self.places_of_birth else ""
+        )
+        born = f", born {self.dates_of_birth[0].date}" if self.dates_of_birth else ""
+        gender = f", {self.gender.value}" if self.gender else ""
+        return f"{name}{gender}{born}{origin}"
 
     def __hash__(self):
         return hash(tuple(self.references))
@@ -106,6 +130,12 @@ class Person:  # pylint: disable=too-many-instance-attributes
             dates_of_birth=[
                 DateOfBirth(date=dob["date"])
                 for dob in person.get("dates_of_birth", [])
+            ],
+            places_of_birth=[
+                PlaceOfBirth(
+                    location=pob.get("location", ""), country=pob.get("country")
+                )
+                for pob in person.get("places_of_birth", [])
             ],
             reference_type=person["reference_type"],
             references=[
@@ -308,12 +338,7 @@ def false_positive(  # pylint: disable=too-many-return-statements
         return "Syrian conflict"
 
     if "politician" in person.occupations:
-        affiliation = (
-            f" for {person.political_parties[0].title}"
-            if person.political_parties
-            else ""
-        )
-        return f"Politician{affiliation}"
+        return person.politician_summary
 
     if person.roles:
         return f"Public figure: {person.roles[0].title}"
@@ -357,7 +382,7 @@ class Rationale:
     def no_rationale(self):
         return ", ".join(
             [
-                f"{person.name}: {person.identifier}"
+                f"{person.name}: {person.person_summary}"
                 for person, explanation in self.matches_with_explanations.items()
                 if explanation is None
             ]

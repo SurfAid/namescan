@@ -1,8 +1,9 @@
 import json
 from pathlib import Path
 
+from surfaid_namescan import create_console_logger, to_output_path
 from tests import test_resource_path
-from validate import read_as_dataframe, ScanResult
+from validate import read_as_dataframe, ScanResult, add_rationale
 
 
 class TestValidate:
@@ -34,3 +35,22 @@ class TestValidate:
         reference = first_person.references[0]
         assert reference.name == "CH - SECO Sanction List"
         assert reference.id_in_list == "22387"
+
+    def test_rationale_for_politician(self):
+        json_string = Path(test_resource_path / "politician.json").read_text(
+            encoding="utf-8"
+        )
+
+        json_object = json.loads(json_string)
+        scan_result = ScanResult.from_json(json_object)
+        person = scan_result.persons[0]
+        assert person.name == "Dahlan M. Noer"
+        summary = "Dahlan M. Noer, male, born 1957-10-10, in Bima"
+        assert person.person_summary == summary
+        assert person.politician_summary == f"Politician, {summary}"
+
+    def test_roundtrip_all_persons(self):
+        console = create_console_logger()
+        input_file = Path(test_resource_path / "test_namescan.xlsx")
+        output_path = to_output_path(input_file, None)
+        add_rationale(console, input_file, output_path)
