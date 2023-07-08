@@ -2,6 +2,7 @@
 import dataclasses
 import hashlib
 import json
+from abc import abstractmethod
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -183,9 +184,20 @@ class ScanResult:
 
 
 @dataclass(frozen=True)
-class OrganizationToScan:
+class EntityToScan:
     name: str
-    country: str = "Indonesia"
+    country: str
+
+    @property
+    @abstractmethod
+    def hash(self) -> str:
+        pass
+
+
+@dataclass(frozen=True)
+class OrganizationToScan(EntityToScan):
+    name: str
+    country: str
 
     @property
     def hash(self) -> str:
@@ -198,14 +210,14 @@ class OrganizationToScan:
 
 
 @dataclass(frozen=True)
-class PersonToScan:  # pylint: disable=too-many-instance-attributes
-    name: Optional[str]
+class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attributes
+    name: str
     first_name: Optional[str]
     middle_name: Optional[str]
     last_name: Optional[str]
     gender: Optional[Gender]
     dob: Optional[str]
-    country: Optional[str]
+    country: str
     list_type: Optional[ListType]
     included_lists: Optional[str]
     excluded_lists: Optional[str]
@@ -215,7 +227,7 @@ class PersonToScan:  # pylint: disable=too-many-instance-attributes
     def hash(self) -> str:
         joined = "".join(
             [
-                self.name or "",
+                self.name,
                 self.dob or "",
                 self.first_name or "",
                 self.last_name or "",
@@ -229,13 +241,13 @@ class PersonToScan:  # pylint: disable=too-many-instance-attributes
         frame = framed.to_dict()
         gender = frame.get("Gender", None)
         return PersonToScan(
-            name=frame.get("Name", None),
+            name=frame["Name"],
             first_name=frame.get("FirstName"),
             middle_name=frame.get("MiddleName"),
             last_name=frame.get("LastName"),
             gender=None if not gender else Gender(gender.strip().lower()),
             dob=frame.get("DOB"),
-            country=frame.get("Country"),
+            country=frame.get("Country", "Indonesia"),
             list_type=None,
             included_lists=None,
             excluded_lists=None,
@@ -260,19 +272,18 @@ def file_response(file_path: Path) -> Response:
 
 def send_request(
     console: Console,
+    entity: EntityToScan,
     index: str,
     api_url: str,
     entity_dict: dict,
     key: str,
-    hash_code: str,
     output_path: Path,
 ) -> None:
     """Send a request to the Namescan emerald API."""
-    entity_name = entity_dict.get("name", "unknown")
-    status_prefix = f"{index} checking {entity_name}..."
+    status_prefix = f"{index} checking {entity.name}..."
     with console.status(status_prefix) as status:
-        log_request(entity_dict, Path(output_path, f"{hash_code}.req.json"))
-        output_file = Path(output_path, f"{hash_code}.resp.json")
+        log_request(entity_dict, Path(output_path, f"{entity.hash}.req.json"))
+        output_file = Path(output_path, f"{entity.hash}.resp.json")
         response = (
             requests.post(
                 api_url,
@@ -286,12 +297,12 @@ def send_request(
         if response.status_code < 300:
             response_json = response.json()
             status.console.log(
-                f"{index} checked {entity_name} - {response_json.get('number_of_matches', 'Error')} matches"
+                f"{index} checked {entity.name} - {response_json.get('number_of_matches', 'Error')} matches"
             )
             log_request(response_json, output_file)
         else:
             console.log(
-                f"[red]Error while sending request {hash_code}, {entity_name} to Namescan API: {response.status_code}"
+                f"[red]Error while sending request {entity.hash}, {entity.name} to Namescan API: {response.status_code}"
                 f" - {response.text}[/red]"
             )
 
@@ -317,22 +328,22 @@ def validate_file(
             org = OrganizationToScan.from_dataframe(row)
             send_request(
                 console,
+                org,
                 str(index),
                 EMERALD_ORGANIZATION_URL,
                 dataclasses.asdict(org),
                 key,
-                org.hash,
                 output_path,
             )
         elif entity == "person":
             person = PersonToScan.from_dataframe(row)
             send_request(
                 console,
+                person,
                 str(index),
                 EMERALD_PERSON_URL,
                 dataclasses.asdict(person),
                 key,
-                person.hash,
                 output_path,
             )
         else:

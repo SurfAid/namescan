@@ -1,11 +1,11 @@
 {
     "name": "Abu Bakar",
+    "country": "Indonesia",
     "first_name": "Abu",
     "middle_name": null,
     "last_name": "Bakar",
     "gender": "male",
     "dob": null,
-    "country": "Indonesia",
     "list_type": null,
     "included_lists": null,
     "excluded_lists": null,

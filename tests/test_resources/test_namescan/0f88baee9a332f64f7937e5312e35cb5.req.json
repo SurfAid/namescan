@@ -1,11 +1,11 @@
 {
     "name": "Muslim",
+    "country": "Indonesia",
     "first_name": "Muslim",
     "middle_name": null,
     "last_name": null,
     "gender": "male",
     "dob": null,
-    "country": "Indonesia",
     "list_type": null,
     "included_lists": null,
     "excluded_lists": null,
