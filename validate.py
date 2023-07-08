@@ -67,8 +67,23 @@ class PlaceOfBirth:
     country: Optional[str]
 
 
+@dataclass(frozen=True)
+class Entity:
+    name: str
+
+    @property
+    @abstractmethod
+    def rationale(self) -> Optional[str]:
+        pass
+
+    @property
+    @abstractmethod
+    def entity_summary(self) -> str:
+        pass
+
+
 @dataclass(frozen=True, eq=True)
-class Person:  # pylint: disable=too-many-instance-attributes
+class Person(Entity):  # pylint: disable=too-many-instance-attributes
     update_at: Optional[str]
     category: str
     name: str
@@ -91,15 +106,37 @@ class Person:  # pylint: disable=too-many-instance-attributes
     match_rate: float
 
     @property
+    def rationale(self) -> Optional[str]:  # pylint: disable=too-many-return-statements
+        if self.deceased:
+            return f"Deceased {self.deceased_date}"
+
+        if self.original_script_name:
+            return f"Not an Indonesian name: {self.original_script_name}"
+
+        if self.program and "syr" in self.program.lower():
+            return "Suspect in Syrian conflict"
+
+        if "politician" in self.occupations:
+            return self.politician_summary
+
+        if self.roles:
+            return f"Public figure: {self.roles[0].title}"
+
+        if self.citizenship != "" and "indonesia" not in self.citizenship.lower():
+            return f"Foreigner: {self.citizenship}"
+
+        return None
+
+    @property
     def politician_summary(self):
-        summary = self.person_summary
+        summary = self.entity_summary
         affiliation = (
             f" for {self.political_parties[0].title}" if self.political_parties else ""
         )
         return f"Politician, {summary}{affiliation}"
 
     @property
-    def person_summary(self):
+    def entity_summary(self):
         if self.summary:
             return self.summary
 
@@ -169,11 +206,15 @@ class ScanResult:
     number_of_matches: int
     number_of_pep_matches: int
     number_of_sip_matches: int
+
+
+@dataclass(frozen=True)
+class PersonScanResult(ScanResult):
     persons: list[Person]
 
     @staticmethod
     def from_json(data: dict):
-        return ScanResult(
+        return PersonScanResult(
             date=data["date"],
             scan_id=data["scan_id"],
             number_of_matches=data["number_of_matches"],
@@ -237,17 +278,17 @@ class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attribute
         return hashlib.md5(joined.encode("utf-8")).hexdigest()
 
     @staticmethod
-    def from_dataframe(framed: Series):
-        frame = framed.to_dict()
-        gender = frame.get("Gender", None)
+    def from_dataframe(frame: Series):
+        frame_dict = frame.to_dict()
+        gender = frame_dict.get("Gender", None)
         return PersonToScan(
-            name=frame["Name"],
-            first_name=frame.get("FirstName"),
-            middle_name=frame.get("MiddleName"),
-            last_name=frame.get("LastName"),
+            name=frame_dict["Name"],
+            first_name=frame_dict.get("FirstName"),
+            middle_name=frame_dict.get("MiddleName"),
+            last_name=frame_dict.get("LastName"),
             gender=None if not gender else Gender(gender.strip().lower()),
-            dob=frame.get("DOB"),
-            country=frame.get("Country", "Indonesia"),
+            dob=frame_dict.get("DOB"),
+            country=frame_dict.get("Country", "Indonesia"),
             list_type=None,
             included_lists=None,
             excluded_lists=None,
@@ -350,35 +391,10 @@ def validate_file(
             raise BadParameter(f"Unknown scan type: {entity}")
 
 
-def false_positive(  # pylint: disable=too-many-return-statements
-    person: Person,
-) -> Optional[str]:
-    """Gives a reason if this is considered a false positive."""
-    if person.deceased:
-        return f"Deceased {person.deceased_date}"
-
-    if person.original_script_name:
-        return f"Not an Indonesian name: {person.original_script_name}"
-
-    if person.program and "syr" in person.program.lower():
-        return "Suspect in Syrian conflict"
-
-    if "politician" in person.occupations:
-        return person.politician_summary
-
-    if person.roles:
-        return f"Public figure: {person.roles[0].title}"
-
-    if person.citizenship != "" and "indonesia" not in person.citizenship.lower():
-        return f"Foreigner: {person.citizenship}"
-
-    return None
-
-
 @dataclass(frozen=True)
 class Rationale:
-    person_to_scan: PersonToScan
-    matches_with_explanations: dict[Person, Optional[str]]
+    entity_to_scan: EntityToScan
+    matches_with_explanations: dict[Entity, Optional[str]]
 
     @property
     def matches(self) -> int:
@@ -398,8 +414,8 @@ class Rationale:
     def rationale(self):
         return ", ".join(
             [
-                f"{person.name}: {explanation}"
-                for person, explanation in self.matches_with_explanations.items()
+                f"{entity.name}: {explanation}"
+                for entity, explanation in self.matches_with_explanations.items()
                 if explanation is not None
             ]
         )
@@ -408,8 +424,8 @@ class Rationale:
     def no_rationale(self):
         return ", ".join(
             [
-                f"{person.name}: {person.person_summary}"
-                for person, explanation in self.matches_with_explanations.items()
+                f"{entity.name}: {entity.entity_summary}"
+                for entity, explanation in self.matches_with_explanations.items()
                 if explanation is None
             ]
         )
@@ -419,47 +435,36 @@ class Rationale:
         return "🟢" if self.matches == self.explained else "🔴"
 
 
-def create_rationale(
-    console: Console,
-    index: str,
-    person: PersonToScan,
-    person_hash: str,
-    output_path: Path,
-) -> Rationale:
-    response_json_string = Path(output_path, f"{person_hash}.resp.json").read_text(
-        encoding="utf-8"
-    )
-    json_object = json.loads(response_json_string)
-    scan_result = ScanResult.from_json(json_object)
-    rationale = Rationale(
-        person_to_scan=person,
-        matches_with_explanations={
-            match: false_positive(match) for match in scan_result.persons
-        },
-    )
-    console.log(
-        f"{rationale.icon} {index} {person.name} -> {rationale.matches} matches,"
-        f" {rationale.explained} false positive."
-    )
-    return rationale
-
-
 def add_rationale(
-    console: Console, input_file: Path, output_path: Path, file_format: str = "xlsx"
+    console: Console,
+    input_file: Path,
+    entity: str,
+    output_path: Path,
+    file_format: str = "xlsx",
 ) -> None:
     output_sheet = Path(output_path, f"{input_file.stem}-explained.{file_format}")
     console.log(Markdown(f"Writing `{output_sheet}`"))
     dataframe = read_as_dataframe(input_file)
 
+    entities = [
+        (
+            index,
+            PersonToScan.from_dataframe(row)
+            if entity == "person"
+            else OrganizationToScan.from_dataframe(row),
+        )
+        for index, row in dataframe.iterrows()
+    ]
+
     rationales: list[Rationale] = [
         create_rationale(
             console,
             str(index),
-            PersonToScan.from_dataframe(row),
-            PersonToScan.from_dataframe(row).hash,
+            entity,
+            entity.hash,
             output_path,
         )
-        for index, row in dataframe.iterrows()
+        for index, entity in entities
     ]
 
     def to_verdict(rationale: Rationale) -> str:
@@ -470,7 +475,7 @@ def add_rationale(
         return "Needs explanation"
 
     with_explanations = dataframe.assign(
-        UniqueId=[rationale.person_to_scan.hash for rationale in rationales],
+        UniqueId=[rationale.entity_to_scan.hash for rationale in rationales],
         Matched=[rationale.matches > 0 for rationale in rationales],
         Verdict=[to_verdict(rationale) for rationale in rationales],
         Explanation=[rationale.rationale for rationale in rationales],
@@ -482,3 +487,28 @@ def add_rationale(
     total_matches = sum(rationale.matches for rationale in rationales)
     total_explained = sum(rationale.explained for rationale in rationales)
     console.log(f"Total matches: {total_matches}, total explained: {total_explained}")
+
+
+def create_rationale(
+    console: Console,
+    index: str,
+    entity: EntityToScan,
+    person_hash: str,
+    output_path: Path,
+) -> Rationale:
+    response_json_string = Path(output_path, f"{person_hash}.resp.json").read_text(
+        encoding="utf-8"
+    )
+    json_object = json.loads(response_json_string)
+    scan_result = PersonScanResult.from_json(json_object)
+    rationale = Rationale(
+        entity_to_scan=entity,
+        matches_with_explanations={
+            match: match.rationale for match in scan_result.persons
+        },
+    )
+    console.log(
+        f"{rationale.icon} {index} {entity.name} -> {rationale.matches} matches,"
+        f" {rationale.explained} false positive."
+    )
+    return rationale

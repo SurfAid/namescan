@@ -76,7 +76,7 @@ def check(file: str, output: Optional[str], key: str, entity: str, skip: bool):
 
     if not skip:
         validate_file(console, input_file, output_path, key, entity)
-    add_rationale(console, input_file, output_path)
+    add_rationale(console, input_file, entity, output_path)
 
 
 if __name__ == "__main__":
