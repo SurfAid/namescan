@@ -6,7 +6,7 @@
 
 Validate suppliers against namescan emerald API
 
-[![asciicast](https://asciinema.org/a/N66A8Q2CA0MbbB8MfCRQmBhgN.svg)](https://asciinema.org/a/N66A8Q2CA0MbbB8MfCRQmBhgN)
+![cli example](namescan.svg)
 
 ## Usage
 
