@@ -187,6 +187,11 @@ class OrganizationToScan:
     name: str
     country: str = "Indonesia"
 
+    @property
+    def hash(self) -> str:
+        joined = "".join([self.name, self.country])
+        return hashlib.md5(joined.encode("utf-8")).hexdigest()
+
     @staticmethod
     def from_dataframe(frame: Series):
         return OrganizationToScan(name=frame["Name"], country=frame["Country"])
@@ -316,7 +321,7 @@ def validate_file(
                 EMERALD_ORGANIZATION_URL,
                 dataclasses.asdict(org),
                 key,
-                str(index),
+                org.hash,
                 output_path,
             )
         elif entity == "person":
