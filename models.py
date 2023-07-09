@@ -5,8 +5,6 @@ from dataclasses import dataclass
 from enum import Enum
 from typing import Optional
 
-from pandas import Series
-
 
 class Gender(str, Enum):
     MALE = "male"
@@ -302,7 +300,7 @@ class OrganizationToScan(EntityToScan):
         return hashlib.md5(joined.encode("utf-8")).hexdigest()
 
     @staticmethod
-    def from_dataframe(frame: Series):
+    def from_dataframe(frame: dict):
         return OrganizationToScan(name=frame["Name"], country=frame["Country"])
 
 
@@ -334,8 +332,7 @@ class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attribute
         return hashlib.md5(joined.encode("utf-8")).hexdigest()
 
     @staticmethod
-    def from_dataframe(frame: Series):
-        frame_dict = frame.to_dict()
+    def from_dataframe(frame_dict: dict):
         gender = frame_dict.get("Gender", None)
         return PersonToScan(
             name=frame_dict["Name"],

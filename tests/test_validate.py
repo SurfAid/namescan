@@ -15,13 +15,15 @@ from validate import (
 class TestValidate:
     def test_read_csv_as_dataframe(self):
         dataframe = read_as_dataframe(test_resource_path / "test_namescan.csv")
-        assert len(dataframe.keys()) == 7
+        first_row = dataframe[0]
+        assert len(first_row) == 7
 
     def test_read_xls_as_dataframe(self):
         dataframe = read_as_dataframe(
             test_resource_path / "PersonBatchSample-input-synthetic.xlsx"
         )
-        assert len(dataframe.keys()) == 11
+        first_row = dataframe[0]
+        assert len(first_row) == 11
 
     def test_construct_scan_result(self):
         json_string = Path(
