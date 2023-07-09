@@ -1,0 +1,75 @@
+{
+  "date": "2023-07-08T07:42:57.673Z",
+  "scanId": "s120226784",
+  "numberOfMatches": 0,
+  "organisations": [
+    {
+      "uid": "string",
+      "status": "string",
+      "updateAt": "2023-07-03",
+      "updateInfo": "string",
+      "category": "PEP",
+      "name": "string",
+      "originalScriptName": "string",
+      "sortKeyName": "string",
+      "referenceType": "string",
+      "references": [
+        {
+          "name": "string",
+          "since": "string",
+          "to": "string",
+          "idInList": "string"
+        }
+      ],
+      "program": "string",
+      "addresses": [
+        {
+          "address1": "string",
+          "address2": "string",
+          "address3": "string",
+          "city": "string",
+          "region": "string",
+          "postalCode": "string",
+          "country": "string",
+          "text": "string",
+          "note": "string"
+        }
+      ],
+      "otherNames": [
+        {
+          "name": "string",
+          "type": "string"
+        }
+      ],
+      "identities": [
+        {
+          "number": "string",
+          "country": "string",
+          "note": "string",
+          "type": "string"
+        }
+      ],
+      "contacts": [
+        {
+          "value": "string",
+          "type": "string"
+        }
+      ],
+      "images": [
+        "string"
+      ],
+      "links": [
+        {
+          "url": "string",
+          "type": "string"
+        }
+      ],
+      "sources": [
+        "string"
+      ],
+      "basis": "string",
+      "summary": "string",
+      "matchRate": 50
+    }
+  ]
+}
