@@ -1,6 +1,7 @@
 import json
 from pathlib import Path
 
+from models import OrganisationScanResult, Gender
 from surfaid_namescan import create_console_logger, to_output_path
 from tests import test_resource_path
 from validate import (
@@ -8,7 +9,6 @@ from validate import (
     PersonScanResult,
     add_rationale,
     PersonToScan,
-    Gender,
 )
 
 
@@ -56,6 +56,19 @@ class TestValidate:
         summary = "Dahlan M. Noer, male, born 1957-10-10, in Bima"
         assert person.entity_summary == summary
         assert person.politician_summary == f"Politician, {summary}"
+
+    def test_rationale_for_organization(self):
+        json_string = Path(test_resource_path / "organization.json").read_text(
+            encoding="utf-8"
+        )
+
+        json_object = json.loads(json_string)
+        scan_result = OrganisationScanResult.from_json(json_object)
+        organisation = scan_result.organisations[0]
+        assert organisation.name == "string"
+        summary = "string"
+        assert organisation.entity_summary == summary
+        assert organisation.rationale is None
 
     def test_roundtrip_all_persons(self):
         console = create_console_logger()

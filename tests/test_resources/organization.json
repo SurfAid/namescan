@@ -1,33 +1,75 @@
 {
-  "date": "2023-07-06T19:57:48.2730988+10:00",
-  "scan_id": "s12022672",
-  "number_of_matches": 1,
-  "number_of_pep_matches": 1,
-  "number_of_sip_matches": 0,
-  "persons": [
+  "date": "2023-07-08T07:42:57.673Z",
+  "scanId": "s120226784",
+  "numberOfMatches": 0,
+  "organisations": [
     {
-      "update_at": "2023-07-03",
+      "uid": "string",
+      "status": "string",
+      "updateAt": "2023-07-03",
+      "updateInfo": "string",
       "category": "PEP",
-      "name": "Dahlan M. Noer",
-      "gender": "male",
-      "dates_of_birth": [
+      "name": "string",
+      "originalScriptName": "string",
+      "sortKeyName": "string",
+      "referenceType": "string",
+      "references": [
         {
-          "date": "1957-10-10"
+          "name": "string",
+          "since": "string",
+          "to": "string",
+          "idInList": "string"
         }
       ],
-      "places_of_birth": [
+      "program": "string",
+      "addresses": [
         {
-          "location": "Bima",
-          "country": "Indonesia"
+          "address1": "string",
+          "address2": "string",
+          "address3": "string",
+          "city": "string",
+          "region": "string",
+          "postalCode": "string",
+          "country": "string",
+          "text": "string",
+          "note": "string"
         }
       ],
-      "reference_type": "PEP",
-      "nationality": "",
-      "citizenship": "Indonesia",
-      "occupations": [
-        "politician"
+      "otherNames": [
+        {
+          "name": "string",
+          "type": "string"
+        }
       ],
-      "match_rate": 100.0
+      "identities": [
+        {
+          "number": "string",
+          "country": "string",
+          "note": "string",
+          "type": "string"
+        }
+      ],
+      "contacts": [
+        {
+          "value": "string",
+          "type": "string"
+        }
+      ],
+      "images": [
+        "string"
+      ],
+      "links": [
+        {
+          "url": "string",
+          "type": "string"
+        }
+      ],
+      "sources": [
+        "string"
+      ],
+      "basis": "string",
+      "summary": "string",
+      "matchRate": 50
     }
   ]
 }
