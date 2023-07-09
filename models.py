@@ -255,14 +255,18 @@ class Organisation(Entity):  # pylint: disable=too-many-instance-attributes
         return None
 
 
-@dataclass
-class PersonScanResult:
+@dataclass(frozen=True, eq=True)
+class ResultEntity:
     date: str
     scan_id: str
     number_of_matches: int
+    entities: list[Entity]
+
+
+@dataclass(frozen=True, eq=True)
+class PersonScanResult(ResultEntity):
     number_of_pep_matches: int
     number_of_sip_matches: int
-    persons: list[Person]
 
     @staticmethod
     def from_json(data: dict):
@@ -272,7 +276,7 @@ class PersonScanResult:
             number_of_matches=data["numberOfMatches"],
             number_of_pep_matches=data["numberOfPepMatches"],
             number_of_sip_matches=data["numberOfSipMatches"],
-            persons=[Person.from_json(person) for person in data.get("persons", [])],
+            entities=[Person.from_json(person) for person in data.get("persons", [])],
         )
 
 
@@ -348,20 +352,15 @@ class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attribute
         )
 
 
-@dataclass(frozen=True)
-class OrganisationScanResult:
-    date: str
-    scan_id: str
-    number_of_matches: int
-    organisations: list[Organisation]
-
+@dataclass(frozen=True, eq=True)
+class OrganisationScanResult(ResultEntity):
     @staticmethod
     def from_json(data: dict):
         return OrganisationScanResult(
             date=data["date"],
             scan_id=data["scanId"],
             number_of_matches=data["numberOfMatches"],
-            organisations=[
+            entities=[
                 Organisation(
                     uid=org["uid"],
                     status=org["status"],
@@ -423,6 +422,6 @@ class OrganisationScanResult:
                     summary=org["summary"],
                     match_rate=org["matchRate"],
                 )
-                for org in data["organisations"]
+                for org in data.get("organisations", [])
             ],
         )

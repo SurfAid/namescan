@@ -240,7 +240,7 @@ def create_rationale(
     rationale = Rationale(
         entity_to_scan=entity,
         matches_with_explanations={
-            match: match.rationale for match in scan_result.persons
+            match: match.rationale for match in scan_result.entities
         },
     )
     console.log(

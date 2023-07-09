@@ -36,7 +36,7 @@ class TestValidate:
         assert scan_result.number_of_matches == 23
         assert scan_result.number_of_pep_matches == 4
         assert scan_result.number_of_sip_matches == 19
-        first_person = scan_result.persons[0]
+        first_person = scan_result.entities[0]
         assert first_person.name == "Mohammed Bilal Brigadier General"
         assert first_person.gender == "male"
         assert first_person.citizenship == ""
@@ -51,7 +51,7 @@ class TestValidate:
 
         json_object = json.loads(json_string)
         scan_result = PersonScanResult.from_json(json_object)
-        person = scan_result.persons[0]
+        person = scan_result.entities[0]
         assert person.name == "Dahlan M. Noer"
         summary = "Dahlan M. Noer, male, born 1957-10-10, in Bima"
         assert person.entity_summary == summary
@@ -64,7 +64,7 @@ class TestValidate:
 
         json_object = json.loads(json_string)
         scan_result = OrganisationScanResult.from_json(json_object)
-        organisation = scan_result.organisations[0]
+        organisation = scan_result.entities[0]
         assert organisation.name == "string"
         summary = "string"
         assert organisation.entity_summary == summary
