@@ -6,7 +6,7 @@
 
 Validate suppliers against namescan emerald API
 
-![cli example](namescan.svg)
+[![cli example](namescan.svg)](https://github.com/SurfAid/namescan/releases)
 
 ## Usage
 
