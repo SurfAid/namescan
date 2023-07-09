@@ -1,14 +1,15 @@
 """Validation logic for the Namescan emerald API."""
+import csv
 import dataclasses
 import json
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Any
 
-import numpy as np
-import pandas as pd
+import openpyxl
 import requests
 from click import BadParameter
+from openpyxl.worksheet.worksheet import Worksheet
 from requests import Response
 from rich.console import Console
 from rich.markdown import Markdown
@@ -70,7 +71,7 @@ def send_request(
         if response.status_code < 300:
             response_json = response.json()
             status.console.log(
-                f"{index} checked {entity.name} - {response_json.get('number_of_matches', 'Error')} matches"
+                f"{index} checked {entity.name} - {response_json.get('numberOfMatches', 'Error')} matches"
             )
             log_request(response_json, output_file)
         else:
@@ -80,11 +81,29 @@ def send_request(
             )
 
 
-def read_as_dataframe(file: Path) -> pd.DataFrame:
+def read_as_dataframe(file: Path) -> list[dict[str, Any]]:
     extension = file.suffix
-    return (pd.read_csv(file) if extension == ".csv" else pd.read_excel(file)).replace(
-        np.nan, None
+    list_of_dicts = []
+    worksheet: Worksheet = (
+        read_csv_as_worksheet(file)
+        if extension == ".csv"
+        else openpyxl.load_workbook(file).worksheets[0]
     )
+    headers = [str(header.value) for header in worksheet[1] if header.value is not None]
+    for row in worksheet.iter_rows(min_row=2, values_only=True):
+        res = dict(zip(headers, list(row)))
+        list_of_dicts.append(res)
+    return list_of_dicts
+
+
+def read_csv_as_worksheet(file_path: Path) -> Worksheet:
+    workbook = openpyxl.Workbook()
+    worksheet = workbook.worksheets[0]
+    with open(file_path, encoding="utf-8") as csv_file:
+        reader = csv.reader(csv_file)
+        for row in reader:
+            worksheet.append(row)
+    return worksheet
 
 
 def validate_file(
@@ -96,7 +115,7 @@ def validate_file(
 
     output_path.mkdir(parents=True, exist_ok=True)
 
-    for index, row in dataframe.iterrows():
+    for index, row in enumerate(dataframe):
         if entity == "organization":
             org = OrganizationToScan.from_dataframe(row)
             send_request(
@@ -167,7 +186,7 @@ class Rationale:
         return "🟢" if self.matches == self.explained else "🔴"
 
 
-def add_rationale(
+def add_rationale(  # pylint: disable=too-many-locals
     console: Console,
     input_file: Path,
     entity: str,
@@ -185,7 +204,7 @@ def add_rationale(
             if entity == "person"
             else OrganizationToScan.from_dataframe(row),
         )
-        for index, row in dataframe.iterrows()
+        for index, row in enumerate(dataframe)
     ]
 
     rationales: list[Rationale] = [
@@ -206,19 +225,97 @@ def add_rationale(
             return "No match"
         return "Needs explanation"
 
-    with_explanations = dataframe.assign(
-        UniqueId=[rationale.entity_to_scan.hash for rationale in rationales],
-        Matched=[rationale.matches > 0 for rationale in rationales],
-        Verdict=[to_verdict(rationale) for rationale in rationales],
-        Explanation=[rationale.rationale for rationale in rationales],
-        NeedExplanation=[rationale.no_rationale for rationale in rationales],
-    )
-    with_explanations.to_excel(  # pylint: disable=expression-not-assigned
-        output_sheet, index=True
-    ) if file_format == "xlsx" else with_explanations.to_csv(output_sheet, index=True)
+    unique_id = [rationale.entity_to_scan.hash for rationale in rationales]
+    matched = [rationale.matches > 0 for rationale in rationales]
+    verdict = [to_verdict(rationale) for rationale in rationales]
+    explanation = [rationale.rationale for rationale in rationales]
+    need_explanation = [rationale.no_rationale for rationale in rationales]
+
+    headers = list(dataframe[0].keys()) + [
+        "UniqueId",
+        "Matched",
+        "Verdict",
+        "Explanation",
+        "NeedExplanation",
+    ]
+
+    if file_format == "xlsx":
+        write_excel_sheet(
+            dataframe,
+            output_sheet,
+            headers,
+            explanation,
+            matched,
+            need_explanation,
+            unique_id,
+            verdict,
+        )
+    else:
+        write_csv(
+            dataframe,
+            output_sheet,
+            headers,
+            explanation,
+            matched,
+            need_explanation,
+            unique_id,
+            verdict,
+        )
+
     total_matches = sum(rationale.matches for rationale in rationales)
     total_explained = sum(rationale.explained for rationale in rationales)
     console.log(f"Total matches: {total_matches}, total explained: {total_explained}")
+
+
+def write_excel_sheet(
+    dataframe,
+    output_sheet,
+    headers,
+    explanation,
+    matched,
+    need_explanation,
+    unique_id,
+    verdict,
+) -> None:
+    workbook = openpyxl.Workbook()
+    worksheet = workbook.worksheets[0]
+    worksheet.append(headers)
+    for index, row in enumerate(dataframe):
+        with_it = list(row.values()) + [
+            unique_id[index],
+            matched[index],
+            verdict[index],
+            explanation[index],
+            need_explanation[index],
+        ]
+        worksheet.append(list(with_it))
+    workbook.save(output_sheet)
+
+
+def write_csv(
+    dataframe,
+    output_sheet,
+    headers,
+    explanation,
+    matched,
+    need_explanation,
+    unique_id,
+    verdict,
+):
+    with open(output_sheet, "w", newline="", encoding="utf-8") as csvfile:
+        writer = csv.writer(
+            csvfile, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
+        )
+        writer.writerow(headers)
+        for index, row in enumerate(dataframe):
+            with_it = list(row.values()) + [
+                unique_id[index],
+                matched[index],
+                verdict[index],
+                explanation[index],
+                need_explanation[index],
+            ]
+            writer.writerow(list(with_it))
 
 
 def create_rationale(
