@@ -1,32 +1,66 @@
 {
-    "date": "2023-07-03T12:35:10.5429131+10:00",
-    "scan_id": "s11997701",
-    "number_of_matches": 12,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 10,
+    "date": "2023-07-09T14:59:30.7908616+10:00",
+    "scanId": "s12038876",
+    "numberOfMatches": 12,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 10,
     "persons": [
         {
-            "update_at": "2021-06-11\n2020-06-26\n2019-08-13\n2016-01-19\n2013-11-06",
+            "updateAt": "2023-06-09",
+            "category": "SIP",
+            "name": "Ahmed Khalil Khalil",
+            "gender": "male",
+            "originalScriptName": "\u0627\u062d\u0645\u062f \u062e\u0644\u064a\u0644 \u062e\u0644\u064a\u0644",
+            "datesOfBirth": [
+                {
+                    "date": "1969"
+                }
+            ],
+            "referenceType": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "idInList": "56622"
+                }
+            ],
+            "program": "Syrien",
+            "nationality": "",
+            "citizenship": "",
+            "otherNames": [
+                {
+                    "name": "Ahmad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Khalil",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Ahmed Khalil Khalil is the co-owner of Sanad Protection and Security Services, a Syrian private security company established in 2017 and supervised by the Wagner Group in Syria, active in the protection of Russian interests (phosphates, gas and securing oil sites) in Syria. The exploitation of natural resources provides revenues to the Syrian regime. In addition, the company is active in the recruitment of Syrian mercenaries to Libya and Ukraine.\r\nAs such, Ahmed Khalil Khalil supports the Syrian regime and benefits from it.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)\r\nListed: 2022-09-28",
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "2021-06-11\n2020-06-26\n2019-08-13\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Ahmed al-Jarroucheh Major General",
             "gender": "male",
-            "original_script_name": "\u0623\u062d\u0645\u062f \u0627\u0644\u062c\u0627\u0631\u0648\u0634\u0629",
-            "dates_of_birth": [
+            "originalScriptName": "\u0623\u062d\u0645\u062f \u0627\u0644\u062c\u0627\u0631\u0648\u0634\u0629",
+            "datesOfBirth": [
                 {
                     "date": "1957"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12675"
+                    "idInList": "12675"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Major General",
                     "type": "Spelling Variation"
@@ -40,59 +74,54 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Former head of the foreign branch of General Intelligence (Branch 279). As such, responsible for General Intelligence arrangements in Syrian embassies.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 100.0
+            "summary": "Justification: Former head of the foreign branch of General Intelligence (Branch 279). As such, responsible for General Intelligence arrangements in Syrian embassies.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-06-09",
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06",
             "category": "SIP",
-            "name": "Ahmed Khalil Khalil",
+            "name": "Ahmed Dibe",
             "gender": "male",
-            "original_script_name": "\u0627\u062d\u0645\u062f \u062e\u0644\u064a\u0644 \u062e\u0644\u064a\u0644",
-            "dates_of_birth": [
-                {
-                    "date": "1969"
-                }
-            ],
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0623\u062d\u0645\u062f \u062f\u064a\u0628",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "56622"
+                    "idInList": "12152"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Ahmad",
                     "type": "Also Known As"
                 },
                 {
-                    "name": "Khalil",
+                    "name": "Dib",
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Ahmed Khalil Khalil is the co-owner of Sanad Protection and Security Services, a Syrian private security company established in 2017 and supervised by the Wagner Group in Syria, active in the protection of Russian interests (phosphates, gas and securing oil sites) in Syria. The exploitation of natural resources provides revenues to the Syrian regime. In addition, the company is active in the recruitment of Syrian mercenaries to Libya and Ukraine.\r\nAs such, Ahmed Khalil Khalil supports the Syrian regime and benefits from it.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2022-09-28",
-            "match_rate": 100.0
+            "summary": "Justification: As Head of the Deraa Regional Branch of the General Security Directorate, responsible for arbitrary detention and torture of detainees in Deraa.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)\r\nOther information: Head of Deraa Regional Branch (General Security Directorate)",
+            "matchRate": 100.0
         },
         {
-            "update_at": "2021-11-25\n2021-06-11\n2020-06-26\n2016-10-11",
+            "updateAt": "2021-11-25\n2021-06-11\n2020-06-26\n2016-10-11",
             "category": "SIP",
             "name": "Ghassan Ahmed Ghannam",
             "gender": "male",
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "29895"
+                    "idInList": "29895"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Ahmad",
                     "type": "Also Known As"
@@ -110,68 +139,21 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Member of the Syrian Armed Forces of the rank of Colonel and the equivalent or higher in post after May 2011. Major General and Commander of the 155th Missile Brigade. Associated with Maher al-Assad through his role in the 155th Missile Brigade. As Commander of the 155th Missile Brigade, he is supporting the Syrian regime and he is responsible for the violent repression of the civilian population. Responsible for firing scud missiles at various civilian sites between Jan and Mar 2013.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2014-12-17\r\nOther information: Position: Commander of the 155th Missile Brigade\r\nRank: Major General",
-            "match_rate": 100.0
+            "summary": "Justification: Member of the Syrian Armed Forces of the rank of Colonel and the equivalent or higher in post after May 2011. Major General and Commander of the 155th Missile Brigade. Associated with Maher al-Assad through his role in the 155th Missile Brigade. As Commander of the 155th Missile Brigade, he is supporting the Syrian regime and he is responsible for the violent repression of the civilian population. Responsible for firing scud missiles at various civilian sites between Jan and Mar 2013.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)\r\nListed: 2014-12-17\r\nOther information: Position: Commander of the 155th Missile Brigade\r\nRank: Major General",
+            "matchRate": 100.0
         },
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
-            "category": "SIP",
-            "name": "Ahmed Dibe",
-            "gender": "male",
-            "original_script_name": "\u0623\u062d\u0645\u062f \u062f\u064a\u0628",
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "CH - SECO Sanction List",
-                    "id_in_list": "12152"
-                }
-            ],
-            "program": "Syria",
-            "nationality": "",
-            "citizenship": "",
-            "other_names": [
-                {
-                    "name": "Ahmad",
-                    "type": "Also Known As"
-                },
-                {
-                    "name": "Dib",
-                    "type": "Also Known As"
-                }
-            ],
-            "summary": "Justification: As Head of the Deraa Regional Branch of the General Security Directorate, responsible for arbitrary detention and torture of detainees in Deraa.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Head of Deraa Regional Branch (General Security Directorate)",
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2022-09-18",
-            "category": "PEP",
-            "name": "Ahmad",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1966-11-27"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "occupations": [
-                "politician"
-            ],
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2023-03-16",
+            "updateAt": "2023-03-16",
             "category": "PEP",
             "name": "Ahmad Tohari",
-            "first_name": "Ahmad",
+            "firstName": "Ahmad",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1948-06-13"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "country": "Indonesia"
                 },
@@ -191,10 +173,10 @@
                     "location": "Banyumas"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Ahmad",
                     "type": "Also Known As"
@@ -204,54 +186,135 @@
                 "writer",
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Ahmad",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1966-11-27"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06",
+            "category": "SIP",
+            "name": "Jawdat al-Ahmed Brigadier General",
+            "gender": "male",
+            "originalScriptName": "\u062c\u0648\u062f\u062a \u0627\u0644\u0623\u062d\u0645\u062f",
+            "referenceType": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "idInList": "12631"
+                }
+            ],
+            "program": "Syrien",
+            "nationality": "",
+            "citizenship": "",
+            "otherNames": [
+                {
+                    "name": "Brigadier General",
+                    "type": "Spelling Variation"
+                },
+                {
+                    "name": "al-Ahmad",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Head of the Homs Branch of the Syrian Air Force Intelligence Service. Responsible for the torture of opponents in custody as well as killings of peaceful protesters.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 75.0
+        },
+        {
+            "updateAt": "2020-10-30\n2020-06-26\n2019-08-13",
+            "category": "SIP",
+            "name": "Mohammed al-Ahmed",
+            "gender": "male",
+            "originalScriptName": "\u0645\u062d\u0645\u062f \u0627\u0644\u0623\u062d\u0645\u062f",
+            "datesOfBirth": [
+                {
+                    "date": "1961"
+                }
+            ],
+            "referenceType": "Sanction",
+            "references": [
+                {
+                    "name": "CH - SECO Sanction List",
+                    "idInList": "35663"
+                }
+            ],
+            "program": "Syrien",
+            "nationality": "",
+            "citizenship": "",
+            "otherNames": [
+                {
+                    "name": "al-Ahmad",
+                    "type": "Also Known As"
+                },
+                {
+                    "name": "Mohamed",
+                    "type": "Also Known As"
+                }
+            ],
+            "summary": "Justification: Former Culture Minister. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)\r\nListed: 2016-12-09",
+            "matchRate": 75.0
         },
         {
             "category": "SIP",
             "name": "Ahmad Sayyed",
             "gender": "male",
-            "original_script_name": "\u0623\u062d\u0645\u062f \u0627\u0644\u0633\u064a\u062f",
-            "dates_of_birth": [
+            "originalScriptName": "\u0623\u062d\u0645\u062f \u0627\u0644\u0633\u064a\u062f",
+            "datesOfBirth": [
                 {
                     "date": "1965"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "43797"
+                    "idInList": "43797"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Alsyed",
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Minister of Justice. Appointed in Aug 2020. As a Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2020-10-30",
-            "match_rate": 75.0
+            "summary": "Justification: Minister of Justice. Appointed in Aug 2020. As a Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)\r\nListed: 2020-10-30",
+            "matchRate": 75.0
         },
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Riad al-Ahmed Major General",
             "gender": "male",
-            "original_script_name": "\u0631\u064a\u0627\u0636 \u0627\u0644\u0623\u062d\u0645\u062f",
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0631\u064a\u0627\u0636 \u0627\u0644\u0623\u062d\u0645\u062f",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12623"
+                    "idInList": "12623"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Major General",
                     "type": "Spelling Variation"
@@ -265,172 +328,109 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Deputy Head of Latakia Branch of the army\u2019s intelligence service. Responsible for the torture and murder of opponents in custody.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 75.0
+            "summary": "Justification: Deputy Head of Latakia Branch of the army\u2019s intelligence service. Responsible for the torture and murder of opponents in custody.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 75.0
         },
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
-            "category": "SIP",
-            "name": "Jawdat al-Ahmed Brigadier General",
-            "gender": "male",
-            "original_script_name": "\u062c\u0648\u062f\u062a \u0627\u0644\u0623\u062d\u0645\u062f",
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "CH - SECO Sanction List",
-                    "id_in_list": "12631"
-                }
-            ],
-            "program": "Syria",
-            "nationality": "",
-            "citizenship": "",
-            "other_names": [
-                {
-                    "name": "Brigadier General",
-                    "type": "Spelling Variation"
-                },
-                {
-                    "name": "al-Ahmad",
-                    "type": "Also Known As"
-                }
-            ],
-            "summary": "Justification: Head of the Homs Branch of the Syrian Air Force Intelligence Service. Responsible for the torture of opponents in custody as well as killings of peaceful protesters.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 75.0
-        },
-        {
-            "update_at": "2020-10-30\n2020-06-26\n2019-08-13",
-            "category": "SIP",
-            "name": "Mohammed al-Ahmed",
-            "gender": "male",
-            "original_script_name": "\u0645\u062d\u0645\u062f \u0627\u0644\u0623\u062d\u0645\u062f",
-            "dates_of_birth": [
-                {
-                    "date": "1961"
-                }
-            ],
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "CH - SECO Sanction List",
-                    "id_in_list": "35663"
-                }
-            ],
-            "program": "Syria",
-            "nationality": "",
-            "citizenship": "",
-            "other_names": [
-                {
-                    "name": "al-Ahmad",
-                    "type": "Also Known As"
-                },
-                {
-                    "name": "Mohamed",
-                    "type": "Also Known As"
-                }
-            ],
-            "summary": "Justification: Former Culture Minister. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2016-12-09",
-            "match_rate": 75.0
-        },
-        {
-            "update_at": "31/12/2020",
+            "updateAt": "31/12/2020",
             "category": "SIP",
             "name": "Ahmad AL-SAYED",
-            "first_name": "Ahmad",
-            "last_name": "AL-SAYED",
-            "dates_of_birth": [
+            "firstName": "Ahmad",
+            "lastName": "AL-SAYED",
+            "datesOfBirth": [
                 {
                     "date": "1965"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "UK - HMT Financial Sanctions List",
-                    "id_in_list": "13979"
+                    "idInList": "13979"
                 }
             ],
             "program": "Syria",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Ahmad AL-SAYYED",
-                    "first_name": "Ahmad",
-                    "middle_name": "",
-                    "last_name": "AL-SAYYED",
+                    "firstName": "Ahmad",
+                    "middleName": "",
+                    "lastName": "AL-SAYYED",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Ahmad ALSYED",
-                    "first_name": "Ahmad",
-                    "middle_name": "",
-                    "last_name": "ALSYED",
+                    "firstName": "Ahmad",
+                    "middleName": "",
+                    "lastName": "ALSYED",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Ahmad SAYYED",
-                    "first_name": "Ahmad",
-                    "middle_name": "",
-                    "last_name": "SAYYED",
+                    "firstName": "Ahmad",
+                    "middleName": "",
+                    "lastName": "SAYYED",
                     "type": ""
                 }
             ],
             "summary": "(UK Sanctions List Ref):SYR0363. (UK Statement of Reasons):Minister of Justice. Appointed in August 2020. As a Government Minister, shares responsibility for the Syrian regime's violent repression against the civilian population. (Gender):Male\nListed On: 16/10/2020;\nDate Designated: 31/12/2020;",
-            "match_rate": 75.0
+            "matchRate": 75.0
         },
         {
             "category": "SIP",
             "name": "Khalil Yusif HARB",
-            "first_name": "Khalil Yusif",
-            "last_name": "HARB",
-            "dates_of_birth": [
+            "firstName": "Khalil Yusif",
+            "lastName": "HARB",
+            "datesOfBirth": [
                 {
                     "date": "09 Oct 1958",
                     "note": "main"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "US - OFAC Specially Designated Nationals (SDN) List",
-                    "id_in_list": "15515"
+                    "idInList": "15515"
                 }
             ],
             "program": "SDGT",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Sayyid AHMAD",
-                    "first_name": "Sayyid",
-                    "last_name": "AHMAD",
+                    "firstName": "Sayyid",
+                    "lastName": "AHMAD",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Abu MUSTAFA",
-                    "first_name": "Abu",
-                    "last_name": "MUSTAFA",
+                    "firstName": "Abu",
+                    "lastName": "MUSTAFA",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Mustafa Khalil HARB",
-                    "first_name": "Mustafa Khalil",
-                    "last_name": "HARB",
+                    "firstName": "Mustafa Khalil",
+                    "lastName": "HARB",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Khalil Yusuf HARB",
-                    "first_name": "Khalil Yusuf",
-                    "last_name": "HARB",
+                    "firstName": "Khalil Yusuf",
+                    "lastName": "HARB",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Hajj Ya'taqad Khalil HARB",
-                    "first_name": "Hajj Ya'taqad Khalil",
-                    "last_name": "HARB",
+                    "firstName": "Hajj Ya'taqad Khalil",
+                    "lastName": "HARB",
                     "type": "Also Known As"
                 }
             ],
@@ -440,7 +440,7 @@
                     "type": "Additional Sanctions Information -"
                 }
             ],
-            "match_rate": 75.0
+            "matchRate": 75.0
         }
     ]
 }

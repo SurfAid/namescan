@@ -1,28 +1,28 @@
 {
-    "date": "2023-07-03T12:42:35.1496127+10:00",
-    "scan_id": "s11997730",
-    "number_of_matches": 3,
-    "number_of_pep_matches": 3,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:46.9197581+10:00",
+    "scanId": "s12038899",
+    "numberOfMatches": 5,
+    "numberOfPepMatches": 5,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2019-06-15",
+            "updateAt": "2019-06-15",
             "category": "RCA",
             "name": "Dewi Sukarno",
-            "first_name": "Dewi",
+            "firstName": "Dewi",
             "gender": "female",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1940-02-06"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Tokyo",
                     "country": "Japan"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -32,7 +32,7 @@
                     "type": "residence"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Naoko Nemoto",
                     "type": "Also Known As"
@@ -61,76 +61,149 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Ratna%20Sari%20Dewi%20Sukarno%20%281970%29.jpg"
             ],
-            "match_rate": 82.0
+            "matchRate": 83.0
         },
         {
-            "update_at": "2022-06-11",
+            "updateAt": "2022-06-11",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2003-11-01",
+            "deceasedDate": "2003-11-01",
             "name": "Sri Oetari Ratna Dewi",
             "gender": "female",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1960-09-26"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Semarang",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
             "spouse": "Sayogo Hendrosubroto",
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Indonesian Democratic Party \u2013 Struggle",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 67.0
+            "matchRate": 70.0
         },
         {
-            "update_at": "2023-05-21",
-            "category": "RCA",
-            "name": "Kartika Sari Dewi Soekarno",
-            "first_name": "Kartika",
+            "updateAt": "2023-07-03",
+            "category": "PEP",
+            "name": "Ratna Juwita Sari",
             "gender": "female",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
-                    "date": "1967-03-11"
+                    "date": "1984-03-29"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
-                    "location": "Tokyo",
-                    "country": "Japan"
+                    "location": "Tuban",
+                    "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
-            "father": "Sukarno",
-            "mother": "Dewi Sukarno",
-            "spouse": "Frits Frederik Seegers",
-            "children": [
-                "Frederik Kiran Soekarno Seegers"
+            "roles": [
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2019-10-01",
+                    "to": "2024-09-30"
+                }
             ],
-            "siblings": [
-                "Megawati Soekarnoputri",
-                "Guruh Sukarnoputra",
-                "Rachmawati Sukarnoputri",
-                "Sukmawati Soekarnoputri",
-                "Guntur Soekarnoputra"
+            "occupations": [
+                "politician"
             ],
-            "match_rate": 60.0
+            "politicalParties": [
+                {
+                    "title": "National Awakening Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "contacts": [
+                {
+                    "value": "iya_juwitasari",
+                    "type": "Instagram username"
+                }
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/RATNA%20JUWITA%20SARI.jpg"
+            ],
+            "matchRate": 64.0
+        },
+        {
+            "updateAt": "2022-12-07",
+            "category": "PEP",
+            "name": "Dr. Ratna De",
+            "gender": "female",
+            "datesOfBirth": [
+                {
+                    "date": "1948-09-06"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 54.0
+        },
+        {
+            "updateAt": "2023-04-04",
+            "category": "PEP",
+            "name": "Ratna Sarah Ayu",
+            "gender": "female",
+            "datesOfBirth": [
+                {
+                    "date": "1974-09-05"
+                }
+            ],
+            "placesOfBirth": [
+                {
+                    "location": "Jakarta",
+                    "country": "Indonesia"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Pamulang Barat",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Tangerang",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "politicalParties": [
+                {
+                    "title": "National Mandate Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "matchRate": 52.0
         }
     ]
 }

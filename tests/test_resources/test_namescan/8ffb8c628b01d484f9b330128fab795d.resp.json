@@ -1,100 +1,16 @@
 {
-    "date": "2023-07-03T12:42:26.8189819+10:00",
-    "scan_id": "s11997717",
-    "number_of_matches": 6,
-    "number_of_pep_matches": 6,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:37.3174161+10:00",
+    "scanId": "s12038885",
+    "numberOfMatches": 6,
+    "numberOfPepMatches": 6,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2023-03-07",
+            "updateAt": "2022-09-29",
             "category": "PEP",
             "name": "Mulyadi",
             "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1970-11-02"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "location": "Bogor",
-                    "country": "Indonesia"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "places": [
-                {
-                    "country": "Indonesia",
-                    "location": "Jonggol",
-                    "type": "residence"
-                },
-                {
-                    "country": "Indonesia",
-                    "location": "Jonggol",
-                    "type": "residence"
-                },
-                {
-                    "country": "Indonesia",
-                    "location": "West Java",
-                    "type": "residence"
-                }
-            ],
-            "roles": [
-                {
-                    "title": "Member of the People's Representative Council of Indonesia",
-                    "since": "2019-10-01",
-                    "to": "2024-09-30"
-                },
-                {
-                    "title": "Member of Indonesia's Regional Representative Council",
-                    "since": "2009-10-01",
-                    "to": "2014-09-30"
-                }
-            ],
-            "occupations": [
-                "politician"
-            ],
-            "political_parties": [
-                {
-                    "title": "Great Indonesia Movement Party",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "contacts": [
-                {
-                    "value": "kang_mulyadi70",
-                    "type": "Instagram username"
-                }
-            ],
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2022-09-18",
-            "category": "PEP",
-            "name": "Mulyadi",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1970-03-01"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "occupations": [
-                "politician"
-            ],
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2022-09-29",
-            "category": "PEP",
-            "name": "Mulyadi",
-            "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1963-02-13"
                 },
@@ -102,13 +18,13 @@
                     "date": "1963-03-13"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Bukittinggi",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -154,7 +70,7 @@
                 "politician",
                 "entrepreneur"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Democratic Party",
                     "since": "",
@@ -164,25 +80,25 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Mulyadi%20DPR%20RI.jpg"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-04-04",
+            "updateAt": "2023-04-04",
             "category": "PEP",
             "name": "Mulyadi",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1967-05-14"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Jakarta",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -200,26 +116,110 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "United Development Party",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "23/04/2019",
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Mulyadi",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1970-03-01"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "2023-03-07",
+            "category": "PEP",
+            "name": "Mulyadi",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1970-11-02"
+                }
+            ],
+            "placesOfBirth": [
+                {
+                    "location": "Bogor",
+                    "country": "Indonesia"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Jonggol",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Jonggol",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "West Java",
+                    "type": "residence"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2019-10-01",
+                    "to": "2024-09-30"
+                },
+                {
+                    "title": "Member of Indonesia's Regional Representative Council",
+                    "since": "2009-10-01",
+                    "to": "2014-09-30"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "politicalParties": [
+                {
+                    "title": "Great Indonesia Movement Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "contacts": [
+                {
+                    "value": "kang_mulyadi70",
+                    "type": "Instagram username"
+                }
+            ],
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "23/04/2019",
             "category": "PEP",
             "name": "Ir. H. MULYADI",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1963-03-13"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
             "places": [
@@ -228,7 +228,7 @@
                     "type": "Legislature"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Mulyadi",
                     "type": ""
@@ -260,25 +260,25 @@
                     "type": "Wikipedia (id)"
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Muliadi",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1970-07-07"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 58.0
+            "matchRate": 58.0
         }
     ]
 }

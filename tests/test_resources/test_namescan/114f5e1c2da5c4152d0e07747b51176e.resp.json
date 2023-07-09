@@ -1,21 +1,21 @@
 {
-    "date": "2023-07-03T12:42:40.755006+10:00",
-    "scan_id": "s11997740",
-    "number_of_matches": 3,
-    "number_of_pep_matches": 3,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:54.3375287+10:00",
+    "scanId": "s12038908",
+    "numberOfMatches": 3,
+    "numberOfPepMatches": 3,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2022-10-15",
+            "updateAt": "2022-10-15",
             "category": "PEP",
             "name": "Nur'aeni",
             "gender": "female",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1974-10-05"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "roles": [
@@ -28,58 +28,26 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Democratic Party",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-09-07",
+            "updateAt": "2023-04-04",
             "category": "PEP",
             "name": "Nuraini",
             "gender": "female",
-            "dates_of_birth": [
-                {
-                    "date": "1989-01-13"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "places": [
-                {
-                    "country": "Indonesia",
-                    "location": "Banyuanyar",
-                    "type": "residence"
-                }
-            ],
-            "occupations": [
-                "politician"
-            ],
-            "political_parties": [
-                {
-                    "title": "National Awakening Party",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "match_rate": 58.0
-        },
-        {
-            "update_at": "2023-04-04",
-            "category": "PEP",
-            "name": "Nuraini",
-            "gender": "female",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1973-06-10"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -97,14 +65,46 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Indonesian Democratic Party \u2013 Struggle",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 58.0
+            "matchRate": 58.0
+        },
+        {
+            "updateAt": "2022-09-07",
+            "category": "PEP",
+            "name": "Nuraini",
+            "gender": "female",
+            "datesOfBirth": [
+                {
+                    "date": "1989-01-13"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Banyuanyar",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "politicalParties": [
+                {
+                    "title": "National Awakening Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "matchRate": 58.0
         }
     ]
 }

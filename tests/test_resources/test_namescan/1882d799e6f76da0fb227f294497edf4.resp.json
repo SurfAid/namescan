@@ -1,50 +1,50 @@
 {
-    "date": "2023-07-03T12:42:50.2088228+10:00",
-    "scan_id": "s11997755",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 1,
-    "number_of_sip_matches": 1,
+    "date": "2023-07-09T15:00:06.4901516+10:00",
+    "scanId": "s12038925",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 1,
+    "numberOfSipMatches": 1,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Kh. M. Mansyur",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1947-06-10"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Mansour Fadlallah Azzam",
             "gender": "male",
-            "original_script_name": "\u0645\u0646\u0635\u0648\u0631 \u0641\u0636\u0644 \u0627\u0644\u0644\u0647 \u0639\u0632\u0627\u0645",
-            "dates_of_birth": [
+            "originalScriptName": "\u0645\u0646\u0635\u0648\u0631 \u0641\u0636\u0644 \u0627\u0644\u0644\u0647 \u0639\u0632\u0627\u0645",
+            "datesOfBirth": [
                 {
                     "date": "1960"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12188"
+                    "idInList": "12188"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Mansur",
                     "type": "Also Known As"
@@ -54,8 +54,8 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Minister for Presidency Affairs. As a Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 66.0
+            "summary": "Justification: Minister for Presidency Affairs. As a Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 66.0
         }
     ]
 }

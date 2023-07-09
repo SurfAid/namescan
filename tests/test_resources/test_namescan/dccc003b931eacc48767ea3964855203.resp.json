@@ -1,30 +1,48 @@
 {
-    "date": "2023-07-03T12:42:52.5402893+10:00",
-    "scan_id": "s11997759",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T15:00:09.6688817+10:00",
+    "scanId": "s12038929",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2023-02-03",
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Syarifuddin",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1965-10-19"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 72.0
+        },
+        {
+            "updateAt": "2023-02-03",
             "category": "PEP",
             "name": "Muhammad Syarifuddin",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1954-10-17"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Baturaja",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "M. Syarifuddin",
                     "type": "Also Known As"
@@ -48,25 +66,7 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/M.%20Syarifuddin.jpg"
             ],
-            "match_rate": 72.0
-        },
-        {
-            "update_at": "2022-09-18",
-            "category": "PEP",
-            "name": "Syarifuddin",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1965-10-19"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "occupations": [
-                "politician"
-            ],
-            "match_rate": 72.0
+            "matchRate": 72.0
         }
     ]
 }

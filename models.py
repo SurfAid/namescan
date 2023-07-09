@@ -143,43 +143,42 @@ class Person(Entity):  # pylint: disable=too-many-instance-attributes
     def from_json(person: dict):
         gender = person.get("gender", None)
         return Person(
-            update_at=person.get("update_at", None),
+            update_at=person.get("updateAt", None),
             category=person["category"],
             name=person["name"],
             deceased=person.get("deceased", False),
-            deceased_date=person.get("deceased_date"),
+            deceased_date=person.get("deceasedDate"),
             gender=None if not gender else Gender(gender.strip().lower()),
-            original_script_name=person.get("original_script_name"),
+            original_script_name=person.get("originalScriptName"),
             dates_of_birth=[
-                DateOfBirth(date=dob["date"])
-                for dob in person.get("dates_of_birth", [])
+                DateOfBirth(date=dob["date"]) for dob in person.get("datesOfBirth", [])
             ],
             places_of_birth=[
                 PlaceOfBirth(
                     location=pob.get("location", ""), country=pob.get("country")
                 )
-                for pob in person.get("places_of_birth", [])
+                for pob in person.get("placesOfBirth", [])
             ],
-            reference_type=person["reference_type"],
+            reference_type=person["referenceType"],
             references=[
-                Reference(name=ref["name"], id_in_list=ref.get("id_in_list"))
+                Reference(name=ref["name"], id_in_list=ref.get("idInList"))
                 for ref in person.get("references", [])
             ],
             program=person.get("program", None),
             occupations=person.get("occupations", []),
             political_parties=[
                 PoliticalParty(title=party["title"])
-                for party in person.get("political_parties", [])
+                for party in person.get("politicalParties", [])
             ],
             roles=[Role(title=role["title"]) for role in person.get("roles", [])],
             nationality=person["nationality"],
             citizenship=person["citizenship"],
             other_names=[
                 OtherName(name=other_name["name"], type=other_name["type"])
-                for other_name in person.get("other_names", [])
+                for other_name in person.get("otherNames", [])
             ],
             summary=person.get("summary", None),
-            match_rate=person["match_rate"],
+            match_rate=person["matchRate"],
         )
 
 
@@ -254,6 +253,99 @@ class Organisation(Entity):  # pylint: disable=too-many-instance-attributes
     @property
     def rationale(self) -> Optional[str]:
         return None
+
+
+@dataclass
+class PersonScanResult:
+    date: str
+    scan_id: str
+    number_of_matches: int
+    number_of_pep_matches: int
+    number_of_sip_matches: int
+    persons: list[Person]
+
+    @staticmethod
+    def from_json(data: dict):
+        return PersonScanResult(
+            date=data["date"],
+            scan_id=data["scanId"],
+            number_of_matches=data["numberOfMatches"],
+            number_of_pep_matches=data["numberOfPepMatches"],
+            number_of_sip_matches=data["numberOfSipMatches"],
+            persons=[Person.from_json(person) for person in data.get("persons", [])],
+        )
+
+
+@dataclass(frozen=True)
+class EntityToScan:
+    name: str
+    country: str
+
+    @property
+    @abstractmethod
+    def hash(self) -> str:
+        pass
+
+
+@dataclass(frozen=True)
+class OrganizationToScan(EntityToScan):
+    name: str
+    country: str
+
+    @property
+    def hash(self) -> str:
+        joined = "".join([self.name, self.country])
+        return hashlib.md5(joined.encode("utf-8")).hexdigest()
+
+    @staticmethod
+    def from_dataframe(frame: Series):
+        return OrganizationToScan(name=frame["Name"], country=frame["Country"])
+
+
+@dataclass(frozen=True)
+class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attributes
+    name: str
+    first_name: Optional[str]
+    middle_name: Optional[str]
+    last_name: Optional[str]
+    gender: Optional[Gender]
+    dob: Optional[str]
+    country: str
+    list_type: Optional[ListType]
+    included_lists: Optional[str]
+    excluded_lists: Optional[str]
+    match_rate: int = 50
+
+    @property
+    def hash(self) -> str:
+        joined = "".join(
+            [
+                self.name,
+                self.dob or "",
+                self.first_name or "",
+                self.last_name or "",
+                self.gender or "",
+            ]
+        )
+        return hashlib.md5(joined.encode("utf-8")).hexdigest()
+
+    @staticmethod
+    def from_dataframe(frame: Series):
+        frame_dict = frame.to_dict()
+        gender = frame_dict.get("Gender", None)
+        return PersonToScan(
+            name=frame_dict["Name"],
+            first_name=frame_dict.get("FirstName"),
+            middle_name=frame_dict.get("MiddleName"),
+            last_name=frame_dict.get("LastName"),
+            gender=None if not gender else Gender(gender.strip().lower()),
+            dob=frame_dict.get("DOB"),
+            country=frame_dict.get("Country", "Indonesia"),
+            list_type=None,
+            included_lists=None,
+            excluded_lists=None,
+            match_rate=50,
+        )
 
 
 @dataclass(frozen=True)
@@ -333,97 +425,4 @@ class OrganisationScanResult:
                 )
                 for org in data["organisations"]
             ],
-        )
-
-
-@dataclass
-class PersonScanResult:
-    date: str
-    scan_id: str
-    number_of_matches: int
-    number_of_pep_matches: int
-    number_of_sip_matches: int
-    persons: list[Person]
-
-    @staticmethod
-    def from_json(data: dict):
-        return PersonScanResult(
-            date=data["date"],
-            scan_id=data["scan_id"],
-            number_of_matches=data["number_of_matches"],
-            number_of_pep_matches=data["number_of_pep_matches"],
-            number_of_sip_matches=data["number_of_sip_matches"],
-            persons=[Person.from_json(person) for person in data.get("persons", [])],
-        )
-
-
-@dataclass(frozen=True)
-class EntityToScan:
-    name: str
-    country: str
-
-    @property
-    @abstractmethod
-    def hash(self) -> str:
-        pass
-
-
-@dataclass(frozen=True)
-class OrganizationToScan(EntityToScan):
-    name: str
-    country: str
-
-    @property
-    def hash(self) -> str:
-        joined = "".join([self.name, self.country])
-        return hashlib.md5(joined.encode("utf-8")).hexdigest()
-
-    @staticmethod
-    def from_dataframe(frame: Series):
-        return OrganizationToScan(name=frame["Name"], country=frame["Country"])
-
-
-@dataclass(frozen=True)
-class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attributes
-    name: str
-    first_name: Optional[str]
-    middle_name: Optional[str]
-    last_name: Optional[str]
-    gender: Optional[Gender]
-    dob: Optional[str]
-    country: str
-    list_type: Optional[ListType]
-    included_lists: Optional[str]
-    excluded_lists: Optional[str]
-    match_rate: int = 50
-
-    @property
-    def hash(self) -> str:
-        joined = "".join(
-            [
-                self.name,
-                self.dob or "",
-                self.first_name or "",
-                self.last_name or "",
-                self.gender or "",
-            ]
-        )
-        return hashlib.md5(joined.encode("utf-8")).hexdigest()
-
-    @staticmethod
-    def from_dataframe(frame: Series):
-        frame_dict = frame.to_dict()
-        gender = frame_dict.get("Gender", None)
-        return PersonToScan(
-            name=frame_dict["Name"],
-            first_name=frame_dict.get("FirstName"),
-            middle_name=frame_dict.get("MiddleName"),
-            last_name=frame_dict.get("LastName"),
-            gender=None if not gender else Gender(gender.strip().lower()),
-            dob=frame_dict.get("DOB"),
-            country=frame_dict.get("Country", "Indonesia"),
-            list_type=None,
-            included_lists=None,
-            excluded_lists=None,
-            match_rate=50,
         )

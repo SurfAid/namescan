@@ -1,94 +1,94 @@
 {
-    "date": "2023-07-03T12:42:48.9444711+10:00",
-    "scan_id": "s11997753",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 1,
-    "number_of_sip_matches": 1,
+    "date": "2023-07-09T15:00:04.9475567+10:00",
+    "scanId": "s12038922",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 1,
+    "numberOfSipMatches": 1,
     "persons": [
         {
             "category": "SIP",
             "name": "'Abd al-Rahman Khalaf 'Ubayd Juday' AL-'ANIZI",
-            "first_name": "'Abd al-Rahman Khalaf 'Ubayd Juday'",
-            "last_name": "AL-'ANIZI",
-            "dates_of_birth": [
+            "firstName": "'Abd al-Rahman Khalaf 'Ubayd Juday'",
+            "lastName": "AL-'ANIZI",
+            "datesOfBirth": [
                 {
                     "date": "01 Jan 1973 to 31 Dec 1973",
                     "note": "main"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "US - OFAC Specially Designated Nationals (SDN) List",
-                    "id_in_list": "17166"
+                    "idInList": "17166"
                 }
             ],
             "program": "SDGT",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "'Abd al-Rahman Khalaf AL-'ANZI",
-                    "first_name": "'Abd al-Rahman Khalaf",
-                    "last_name": "AL-'ANZI",
+                    "firstName": "'Abd al-Rahman Khalaf",
+                    "lastName": "AL-'ANZI",
                     "type": "Also Known As"
                 },
                 {
                     "name": "AL-RAHMAN, Abu Usamah",
-                    "last_name": "AL-RAHMAN, Abu Usamah",
+                    "lastName": "AL-RAHMAN, Abu Usamah",
                     "type": "Low Quality AKA"
                 },
                 {
                     "name": "ABU USAMA",
-                    "last_name": "ABU USAMA",
+                    "lastName": "ABU USAMA",
                     "type": "Low Quality AKA"
                 },
                 {
                     "name": "YUSUF",
-                    "last_name": "YUSUF",
+                    "lastName": "YUSUF",
                     "type": "Low Quality AKA"
                 },
                 {
                     "name": "'Abd al-Rahman Khalaf AL-ANIZI",
-                    "first_name": "'Abd al-Rahman Khalaf",
-                    "last_name": "AL-ANIZI",
+                    "firstName": "'Abd al-Rahman Khalaf",
+                    "lastName": "AL-ANIZI",
                     "type": "Also Known As"
                 },
                 {
                     "name": "KUWAITI, Abu Shaima'",
-                    "last_name": "KUWAITI, Abu Shaima'",
+                    "lastName": "KUWAITI, Abu Shaima'",
                     "type": "Low Quality AKA"
                 },
                 {
                     "name": "AL-KUWAITI, Abu Usamah",
-                    "last_name": "AL-KUWAITI, Abu Usamah",
+                    "lastName": "AL-KUWAITI, Abu Usamah",
                     "type": "Low Quality AKA"
                 }
             ],
-            "match_rate": 65.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-06-06",
+            "updateAt": "2023-06-06",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2021-07-07",
+            "deceasedDate": "2021-07-07",
             "name": "Dilip Kumar",
-            "first_name": "Dilip",
-            "last_name": "Kumar",
+            "firstName": "Dilip",
+            "lastName": "Kumar",
             "gender": "male",
-            "original_script_name": "\u062f\u0644\u06cc\u067e \u06a9\u0645\u0627\u0631",
-            "dates_of_birth": [
+            "originalScriptName": "\u062f\u0644\u06cc\u067e \u06a9\u0645\u0627\u0631",
+            "datesOfBirth": [
                 {
                     "date": "1922-12-11"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Peshawar",
                     "country": "Pakistan"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "India; British Raj",
             "places": [
@@ -98,7 +98,7 @@
                     "type": "residence"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Yusuf Khan",
                     "type": "Also Known As"
@@ -134,7 +134,7 @@
             "siblings": [
                 "Nasir Khan"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Indian National Congress",
                     "since": "",
@@ -150,7 +150,7 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Dilip%20Kumar%202006.jpg"
             ],
-            "match_rate": 58.0
+            "matchRate": 75.0
         }
     ]
 }

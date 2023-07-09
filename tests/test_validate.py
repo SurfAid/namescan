@@ -32,17 +32,17 @@ class TestValidate:
 
         json_object = json.loads(json_string)
         scan_result = PersonScanResult.from_json(json_object)
-        assert scan_result.scan_id == "s11997772"
+        assert scan_result.scan_id == "s12038868"
         assert scan_result.number_of_matches == 23
         assert scan_result.number_of_pep_matches == 4
         assert scan_result.number_of_sip_matches == 19
         first_person = scan_result.persons[0]
-        assert first_person.name == "Mohammad Yahiya Moalla Dr."
+        assert first_person.name == "Mohammed Bilal Brigadier General"
         assert first_person.gender == "male"
         assert first_person.citizenship == ""
         reference = first_person.references[0]
         assert reference.name == "CH - SECO Sanction List"
-        assert reference.id_in_list == "22387"
+        assert reference.id_in_list == "29902"
 
     def test_rationale_for_politician(self):
         json_string = Path(test_resource_path / "politician.json").read_text(

@@ -1,27 +1,75 @@
 {
-    "date": "2023-07-03T12:42:40.1069353+10:00",
-    "scan_id": "s11997739",
-    "number_of_matches": 3,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 1,
+    "date": "2023-07-09T14:59:53.0000881+10:00",
+    "scanId": "s12038907",
+    "numberOfMatches": 3,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 1,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Mat Solar",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1962-12-04"
+                }
+            ],
+            "placesOfBirth": [
+                {
+                    "location": "Jakarta",
+                    "country": "Indonesia"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Bambuapus",
+                    "type": "residence"
+                }
+            ],
+            "otherNames": [
+                {
+                    "name": "Nasrullah",
+                    "type": "Also Known As"
+                }
+            ],
+            "occupations": [
+                "actor",
+                "politician"
+            ],
+            "politicalParties": [
+                {
+                    "title": "United Development Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Mat%20Solar.jpg"
+            ],
+            "matchRate": 78.0
+        },
+        {
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Nasrullah",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1968-11-18"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Pekalongan",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -51,78 +99,30 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "National Mandate Party",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 78.0
-        },
-        {
-            "update_at": "2022-09-18",
-            "category": "PEP",
-            "name": "Mat Solar",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1962-12-04"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "location": "Jakarta",
-                    "country": "Indonesia"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "places": [
-                {
-                    "country": "Indonesia",
-                    "location": "Bambuapus",
-                    "type": "residence"
-                }
-            ],
-            "other_names": [
-                {
-                    "name": "Nasrullah",
-                    "type": "Also Known As"
-                }
-            ],
-            "occupations": [
-                "actor",
-                "politician"
-            ],
-            "political_parties": [
-                {
-                    "title": "United Development Party",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "images": [
-                "http://commons.wikimedia.org/wiki/Special:FilePath/Mat%20Solar.jpg"
-            ],
-            "match_rate": 78.0
+            "matchRate": 78.0
         },
         {
             "category": "SIP",
             "name": "Nasrullah KHAN",
-            "first_name": "Nasrullah",
-            "last_name": "KHAN",
-            "dates_of_birth": [
+            "firstName": "Nasrullah",
+            "lastName": "KHAN",
+            "datesOfBirth": [
                 {
                     "date": "Mar-1959"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "UK - National Crime Agency",
-                    "id_in_list": "Nasrullah KHAN"
+                    "idInList": "Nasrullah KHAN"
                 }
             ],
             "nationality": "",
@@ -133,7 +133,7 @@
                 }
             ],
             "summary": "Court: Manchester;\nOffence: Drugs Class A;\nOrder Type: FRO;\nOrder Start Date: 7/13/2012;\nOrder Duration: 15;\nOrder End Date: 7/12/2027;\nLive/Dormant: Live;\nIn Prison/Community: In Community;\nTerms Of Order:\n\u2022 Report All Financial Transactions, Accounts, Assets, Etc",
-            "match_rate": 67.0
+            "matchRate": 67.0
         }
     ]
 }

@@ -1,35 +1,35 @@
 {
-    "date": "2023-07-03T12:42:44.5943379+10:00",
-    "scan_id": "s11997746",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:58.6236842+10:00",
+    "scanId": "s12038915",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2023-02-21",
+            "updateAt": "2023-02-21",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2021-08-29",
+            "deceasedDate": "2021-08-29",
             "name": "Muhammad Hamza",
-            "first_name": "Muhammad",
-            "last_name": "Hamza",
+            "firstName": "Muhammad",
+            "lastName": "Hamza",
             "gender": "male",
-            "original_script_name": "\u0645\u064f\u062d\u0645\u064e\u0651\u062f \u062d\u0645\u0632\u0629",
-            "dates_of_birth": [
+            "originalScriptName": "\u0645\u064f\u062d\u0645\u064e\u0651\u062f \u062d\u0645\u0632\u0629",
+            "datesOfBirth": [
                 {
                     "date": "1929-03-20"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Ludhiana",
                     "country": "India"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Pakistan; British Raj",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Hamza",
                     "type": "Also Known As"
@@ -65,33 +65,33 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Pakistan Muslim League (N)",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 86.0
+            "matchRate": 86.0
         },
         {
-            "update_at": "2023-02-12",
+            "updateAt": "2023-02-12",
             "category": "PEP",
             "name": "T. K. Hamza",
-            "first_name": "T.",
+            "firstName": "T.",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1937-07-14"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Wandoor",
                     "country": "India"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "India; Dominion of India; British Raj",
             "roles": [
@@ -104,14 +104,14 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Communist Party of India (Marxist)",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 66.0
+            "matchRate": 66.0
         }
     ]
 }

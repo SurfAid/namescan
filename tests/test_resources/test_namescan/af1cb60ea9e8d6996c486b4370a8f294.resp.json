@@ -1,72 +1,28 @@
 {
-    "date": "2023-07-03T12:42:45.8372238+10:00",
-    "scan_id": "s11997748",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:59.905215+10:00",
+    "scanId": "s12038917",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2020-12-05",
+            "updateAt": "2023-04-21",
             "category": "PEP",
             "name": "Usman Ibrahim",
-            "first_name": "Usman",
+            "firstName": "Usman",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1939-09-01"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Gujranwala District",
                     "country": "Pakistan"
                 }
             ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Pakistan; British India",
-            "roles": [
-                {
-                    "title": "Member of the 15th National Assembly of Pakistan",
-                    "since": "",
-                    "to": ""
-                },
-                {
-                    "title": "Member of the 14th National Assembly of Pakistan",
-                    "since": "2013-06-01",
-                    "to": ""
-                }
-            ],
-            "occupations": [
-                "politician"
-            ],
-            "political_parties": [
-                {
-                    "title": "Pakistan Muslim League (N)",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2023-04-21",
-            "category": "PEP",
-            "name": "Usman Ibrahim",
-            "first_name": "Usman",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1939-09-01"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "location": "Gujranwala District",
-                    "country": "Pakistan"
-                }
-            ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Pakistan; British Raj",
             "roles": [
@@ -84,14 +40,58 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Pakistan Muslim League (N)",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "2020-12-05",
+            "category": "PEP",
+            "name": "Usman Ibrahim",
+            "firstName": "Usman",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1939-09-01"
+                }
+            ],
+            "placesOfBirth": [
+                {
+                    "location": "Gujranwala District",
+                    "country": "Pakistan"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Pakistan; British India",
+            "roles": [
+                {
+                    "title": "Member of the 15th National Assembly of Pakistan",
+                    "since": "",
+                    "to": ""
+                },
+                {
+                    "title": "Member of the 14th National Assembly of Pakistan",
+                    "since": "2013-06-01",
+                    "to": ""
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "politicalParties": [
+                {
+                    "title": "Pakistan Muslim League (N)",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "matchRate": 100.0
         }
     ]
 }

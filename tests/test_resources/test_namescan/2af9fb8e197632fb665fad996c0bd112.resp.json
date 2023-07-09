@@ -1,27 +1,27 @@
 {
-    "date": "2023-07-03T12:42:32.6592482+10:00",
-    "scan_id": "s11997726",
-    "number_of_matches": 4,
-    "number_of_pep_matches": 4,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:43.7315951+10:00",
+    "scanId": "s12038895",
+    "numberOfMatches": 4,
+    "numberOfPepMatches": 4,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "R. Sudirman",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1957-12-30"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Maros",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -34,7 +34,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Nasdem Party",
                     "since": "",
@@ -46,19 +46,19 @@
                     "to": ""
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-03-07",
+            "updateAt": "2023-03-07",
             "category": "PEP",
             "name": "Sudirman",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1974-11-10"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "roles": [
@@ -71,37 +71,37 @@
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Sudirman",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1979-10-28"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Sudarmanto",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1957-05-15"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -114,7 +114,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Great Indonesia Movement Party",
                     "since": "",
@@ -126,7 +126,7 @@
                     "to": ""
                 }
             ],
-            "match_rate": 53.0
+            "matchRate": 53.0
         }
     ]
 }
