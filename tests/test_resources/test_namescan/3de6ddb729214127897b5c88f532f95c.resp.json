@@ -1,68 +1,48 @@
 {
-    "date": "2023-07-03T12:35:12.2579765+10:00",
-    "scan_id": "s11997702",
-    "number_of_matches": 9,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 7,
+    "date": "2023-07-09T14:59:31.5752593+10:00",
+    "scanId": "s12038877",
+    "numberOfMatches": 8,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 6,
     "persons": [
-        {
-            "update_at": "2022-08-22",
-            "category": "PEP",
-            "deceased": true,
-            "deceased_date": "2007",
-            "name": "Abdul Razak Ahmad",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1939"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "",
-            "occupations": [
-                "politician"
-            ],
-            "match_rate": 80.0
-        },
         {
             "category": "SIP",
             "name": "\u0623\u062d\u0645\u062f \u0627\u0644\u0634\u064a\u062e \u0639\u0628\u062f\u0627\u0644\u0642\u0627\u062f\u0631",
             "gender": "Male",
-            "original_script_name": "\u0623\u062d\u0645\u062f \u0627\u0644\u0634\u064a\u062e \u0639\u0628\u062f\u0627\u0644\u0642\u0627\u062f\u0631",
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0623\u062d\u0645\u062f \u0627\u0644\u0634\u064a\u062e \u0639\u0628\u062f\u0627\u0644\u0642\u0627\u062f\u0631",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "BL - Financial Sanctions List",
-                    "id_in_list": "109900"
+                    "idInList": "109900"
                 }
             ],
             "program": "SYR",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Ahmad Sheik ABDUL-QADER",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmad al-Sheik Abdulquader",
-                    "first_name": "Ahmad",
-                    "middle_name": "al-Sheik",
-                    "last_name": "Abdulquader",
+                    "firstName": "Ahmad",
+                    "middleName": "al-Sheik",
+                    "lastName": "Abdulquader",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmad Sheikh Abdul Qadir",
-                    "first_name": "Ahmad",
-                    "middle_name": "Sheikh",
-                    "last_name": "Abdul Qadir",
+                    "firstName": "Ahmad",
+                    "middleName": "Sheikh",
+                    "lastName": "Abdul Qadir",
                     "type": "strong"
                 }
             ],
@@ -74,239 +54,46 @@
             "sources": [
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
             ],
-            "match_rate": 67.0
+            "matchRate": 67.0
         },
         {
-            "update_at": "2020-06-26\n2019-08-13",
-            "category": "SIP",
-            "name": "Ahmad Sheik Abdul-Qader",
-            "gender": "male",
-            "original_script_name": "\u0623\u062d\u0645\u062f \u0627\u0644\u0634\u064a\u062e \u0639\u0628\u062f \u0627\u0644\u0642\u0627\u062f\u0631",
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "CH - SECO Sanction List",
-                    "id_in_list": "35219"
-                }
-            ],
-            "program": "Syria",
-            "nationality": "",
-            "citizenship": "",
-            "other_names": [
-                {
-                    "name": "Abdul Qadir",
-                    "type": "Also Known As"
-                },
-                {
-                    "name": "al-Sheik",
-                    "type": "Also Known As"
-                }
-            ],
-            "summary": "Justification: Former Governor of Quneitra, associated with and appointed by President Bashar al-Assad. Previously Governor of Latakia. Supports and benefits from the Syrian regime, including by public support for the Syrian Armed Forces and pro-regime militia.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2016-11-08",
-            "match_rate": 67.0
-        },
-        {
-            "update_at": "2020-05-29",
-            "category": "SIP",
-            "name": "Ahmad al-Sheik Abdulquader",
-            "first_name": "Ahmad",
-            "middle_name": "al-Sheik",
-            "last_name": "Abdulquader",
-            "gender": "male",
-            "original_script_name": "\u0623\u062d\u0645\u062f \u0627\u0644\u0634\u064a\u062e \u0639\u0628\u062f\u0627\u0644\u0642\u0627\u062f\u0631",
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "EU - Financial Sanctions List",
-                    "id_in_list": "109900"
-                }
-            ],
-            "program": "SYR",
-            "nationality": "",
-            "citizenship": "",
-            "other_names": [
-                {
-                    "title": "",
-                    "name": "Ahmad Sheik ABDUL-QADER",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
-                    "type": "strong"
-                },
-                {
-                    "title": "",
-                    "name": "Ahmad Sheikh Abdul Qadir",
-                    "first_name": "Ahmad",
-                    "middle_name": "Sheikh",
-                    "last_name": "Abdul Qadir",
-                    "type": "strong"
-                }
-            ],
-            "roles": [
-                {
-                    "title": "Former Governor of Quneitra, associated with and appointed by President Bashar al\u2010Assad. Previously Governor of Latakia."
-                }
-            ],
-            "sources": [
-                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
-            ],
-            "match_rate": 67.0
-        },
-        {
-            "category": "SIP",
-            "name": "Subhi Ahmad AL ABDALLAH",
-            "gender": "Male",
-            "original_script_name": "\u0635\u0628\u062d\u064a \u0627\u062d\u0645\u062f \u0627\u0644\u0639\u0628\u062f\u0627\u0644\u0644\u0647",
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "BL - Financial Sanctions List",
-                    "id_in_list": "7132"
-                }
-            ],
-            "program": "SYR",
-            "nationality": "",
-            "citizenship": "",
-            "other_names": [
-                {
-                    "title": "",
-                    "name": "Subhi Ahmad AL-ABDULLAH",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
-                    "type": "strong"
-                }
-            ],
-            "roles": [
-                {
-                    "title": "Former Minister of Agriculture and Agrarian Reform"
-                }
-            ],
-            "sources": [
-                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
-            ],
-            "match_rate": 64.0
-        },
-        {
-            "update_at": "2020-05-29",
-            "category": "SIP",
-            "name": "Subhi Ahmad AL ABDALLAH",
-            "gender": "male",
-            "original_script_name": "\u0635\u0628\u062d\u064a \u0627\u062d\u0645\u062f \u0627\u0644\u0639\u0628\u062f\u0627\u0644\u0644\u0647",
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "EU - Financial Sanctions List",
-                    "id_in_list": "7132"
-                }
-            ],
-            "program": "SYR",
-            "nationality": "",
-            "citizenship": "",
-            "other_names": [
-                {
-                    "title": "",
-                    "name": "Subhi Ahmad AL-ABDULLAH",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
-                    "type": "strong"
-                }
-            ],
-            "roles": [
-                {
-                    "title": "Former Minister of Agriculture and Agrarian Reform"
-                }
-            ],
-            "sources": [
-                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
-            ],
-            "match_rate": 64.0
-        },
-        {
-            "update_at": "2022-11-26",
-            "category": "PEP",
-            "deceased": true,
-            "deceased_date": "2012-12-26",
-            "name": "Abdul Ghafoor Ahmed",
-            "first_name": "Abdul Ghafoor",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1927-06-26"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "location": "Bareilly",
-                    "country": "India"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Pakistan; British Raj",
-            "roles": [
-                {
-                    "title": "Member of the National Assembly of Pakistan",
-                    "since": "",
-                    "to": ""
-                },
-                {
-                    "title": "Senator",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "occupations": [
-                "politician"
-            ],
-            "political_parties": [
-                {
-                    "title": "Jamaat-e-Islami",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "match_rate": 60.0
-        },
-        {
-            "update_at": "31/12/2020",
+            "updateAt": "31/12/2020",
             "category": "SIP",
             "name": "Ahmad al-Sheik ABDULQADER",
-            "first_name": "Ahmad",
-            "middle_name": "al-Sheik",
-            "last_name": "ABDULQADER",
-            "original_script_name": "\u0627\u0644\u0642\u0627\u062f\u0631 \u0639\u0628\u062f \u0627\u0644\u0634\u064a\u062e \u0623\u062d\u0645\u062f",
-            "dates_of_birth": [
+            "firstName": "Ahmad",
+            "middleName": "al-Sheik",
+            "lastName": "ABDULQADER",
+            "originalScriptName": "\u0627\u0644\u0642\u0627\u062f\u0631 \u0639\u0628\u062f \u0627\u0644\u0634\u064a\u062e \u0623\u062d\u0645\u062f",
+            "datesOfBirth": [
                 {
                     "date": ""
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "UK - HMT Financial Sanctions List",
-                    "id_in_list": "13387"
+                    "idInList": "13387"
                 }
             ],
             "program": "Syria",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Ahmad Sheikh ABDUL-QADER",
-                    "first_name": "Ahmad",
-                    "middle_name": "Sheikh",
-                    "last_name": "ABDUL-QADER",
+                    "firstName": "Ahmad",
+                    "middleName": "Sheikh",
+                    "lastName": "ABDUL-QADER",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Ahmad Sheikh Abdul QADIR",
-                    "first_name": "Ahmad",
-                    "middle_name": "Sheikh Abdul",
-                    "last_name": "QADIR",
+                    "firstName": "Ahmad",
+                    "middleName": "Sheikh Abdul",
+                    "lastName": "QADIR",
                     "type": ""
                 }
             ],
@@ -316,31 +103,180 @@
                 }
             ],
             "summary": "(UK Sanctions List Ref):SYR0007. (UK Statement of Reasons):Former Governor of Quneitra, associated with and appointed by Bashar al-Assad. Previously Governor of Latakia. Supports and benefits from the regime, including by public support for the Syrian Armed Forces and pro-regime militia. (Gender):Male\nListed On: 28/10/2016;\nDate Designated: 31/12/2020;",
-            "match_rate": 55.0
+            "matchRate": 67.0
         },
         {
-            "update_at": "2021-11-25\n2020-06-26",
+            "updateAt": "2020-05-29",
             "category": "SIP",
-            "name": "Imad Abdullah Sara",
+            "name": "Ahmad al-Sheik Abdulquader",
+            "firstName": "Ahmad",
+            "middleName": "al-Sheik",
+            "lastName": "Abdulquader",
             "gender": "male",
-            "original_script_name": "\u0639\u0645\u0627\u062f \u0639\u0628\u062f\u0627\u0644\u0644\u0647 \u0633\u0627\u0631\u0629",
-            "dates_of_birth": [
-                {
-                    "date": "1968"
-                }
-            ],
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0623\u062d\u0645\u062f \u0627\u0644\u0634\u064a\u062e \u0639\u0628\u062f\u0627\u0644\u0642\u0627\u062f\u0631",
+            "referenceType": "Sanction",
             "references": [
                 {
-                    "name": "CH - SECO Sanction List",
-                    "id_in_list": "38320"
+                    "name": "EU - Financial Sanctions List",
+                    "idInList": "109900"
                 }
             ],
-            "program": "Syria",
+            "program": "SYR",
             "nationality": "",
             "citizenship": "",
-            "summary": "Justification: Former Minister of Information. Appointed in Jan 2018. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nListed: 2018-03-07",
-            "match_rate": 55.0
+            "otherNames": [
+                {
+                    "title": "",
+                    "name": "Ahmad Sheik ABDUL-QADER",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
+                    "type": "strong"
+                },
+                {
+                    "title": "",
+                    "name": "Ahmad Sheikh Abdul Qadir",
+                    "firstName": "Ahmad",
+                    "middleName": "Sheikh",
+                    "lastName": "Abdul Qadir",
+                    "type": "strong"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Former Governor of Quneitra, associated with and appointed by President Bashar al\u2010Assad. Previously Governor of Latakia."
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
+            ],
+            "matchRate": 67.0
+        },
+        {
+            "updateAt": "2022-08-22",
+            "category": "PEP",
+            "deceased": true,
+            "deceasedDate": "2007",
+            "name": "Abdul Razak Ahmad",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1939"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 67.0
+        },
+        {
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Ahmad Mufti Salim",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1975-08-28"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 67.0
+        },
+        {
+            "category": "SIP",
+            "name": "Subhi Ahmad AL ABDALLAH",
+            "gender": "Male",
+            "originalScriptName": "\u0635\u0628\u062d\u064a \u0627\u062d\u0645\u062f \u0627\u0644\u0639\u0628\u062f\u0627\u0644\u0644\u0647",
+            "referenceType": "Sanction",
+            "references": [
+                {
+                    "name": "BL - Financial Sanctions List",
+                    "idInList": "7132"
+                }
+            ],
+            "program": "SYR",
+            "nationality": "",
+            "citizenship": "",
+            "otherNames": [
+                {
+                    "title": "",
+                    "name": "Subhi Ahmad AL-ABDULLAH",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
+                    "type": "strong"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Former Minister of Agriculture and Agrarian Reform"
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
+            ],
+            "matchRate": 55.0
+        },
+        {
+            "category": "SIP",
+            "name": "Subhi Ahmad Al-Abdullah",
+            "firstName": "Subhi Ahmad",
+            "lastName": "Al-Abdullah",
+            "referenceType": "Sanction",
+            "references": [
+                {
+                    "name": "CA - Consolidated Canadian Autonomous Sanctions List",
+                    "idInList": "Subhi Ahmad Al-Abdullah"
+                }
+            ],
+            "program": "Syria / Syrie",
+            "nationality": "",
+            "citizenship": "",
+            "matchRate": 55.0
+        },
+        {
+            "updateAt": "2020-05-29",
+            "category": "SIP",
+            "name": "Subhi Ahmad AL ABDALLAH",
+            "gender": "male",
+            "originalScriptName": "\u0635\u0628\u062d\u064a \u0627\u062d\u0645\u062f \u0627\u0644\u0639\u0628\u062f\u0627\u0644\u0644\u0647",
+            "referenceType": "Sanction",
+            "references": [
+                {
+                    "name": "EU - Financial Sanctions List",
+                    "idInList": "7132"
+                }
+            ],
+            "program": "SYR",
+            "nationality": "",
+            "citizenship": "",
+            "otherNames": [
+                {
+                    "title": "",
+                    "name": "Subhi Ahmad AL-ABDULLAH",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
+                    "type": "strong"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Former Minister of Agriculture and Agrarian Reform"
+                }
+            ],
+            "sources": [
+                "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
+            ],
+            "matchRate": 55.0
         }
     ]
 }

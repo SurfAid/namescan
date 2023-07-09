@@ -1,19 +1,19 @@
 {
-    "date": "2023-07-03T12:42:24.0109159+10:00",
-    "scan_id": "s11997713",
-    "number_of_matches": 8,
-    "number_of_pep_matches": 8,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:34.4730314+10:00",
+    "scanId": "s12038881",
+    "numberOfMatches": 8,
+    "numberOfPepMatches": 8,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2021-11-06",
+            "updateAt": "2021-11-06",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "1980-03-14",
+            "deceasedDate": "1980-03-14",
             "name": "Mohammad Hatta",
-            "first_name": "Mohammad",
+            "firstName": "Mohammad",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1902-08-12"
                 },
@@ -21,16 +21,16 @@
                     "date": "1960-03-09"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Bukittinggi",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia; Kingdom of the Netherlands; Dutch East Indies",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Hatta",
                     "type": "Also Known As"
@@ -98,7 +98,7 @@
                 "Halida Hatta",
                 "Gemala Rabi'ah Hatta"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Indonesian National Party",
                     "since": "",
@@ -113,26 +113,26 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Mohammad%20Hatta%201950.jpg"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-03-07",
+            "updateAt": "2023-03-07",
             "category": "PEP",
             "name": "Muhammad Hatta",
-            "first_name": "Mohammed",
+            "firstName": "Mohammed",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1973-08-17"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Surakarta",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
@@ -142,19 +142,19 @@
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Gusti%20Muhammad%20Hatta%2C%202011.jpg",
                 "http://commons.wikimedia.org/wiki/Special:FilePath/KIBII%20Gusti%20Muhammad%20Hatta.jpg"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "23/04/2019",
+            "updateAt": "23/04/2019",
             "category": "PEP",
             "name": "MOHAMMAD HATTA",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1973-08-17"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
             "places": [
@@ -163,7 +163,7 @@
                     "type": "Legislature"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Muhammad Hatta",
                     "type": ""
@@ -195,28 +195,28 @@
                     "type": "Wikipedia (id)"
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-03-26",
+            "updateAt": "2023-03-26",
             "category": "PEP",
             "name": "Hatta Rajasa",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1953-09-18"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Palembang",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Ir. M. Hatta Rajasa",
                     "type": "Also Known As"
@@ -237,7 +237,7 @@
             "siblings": [
                 "Hanna Gayatri"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "National Mandate Party",
                     "since": "",
@@ -247,25 +247,25 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Hatta%20Rajasa2.jpg"
             ],
-            "match_rate": 85.0
+            "matchRate": 85.0
         },
         {
-            "update_at": "2023-04-03",
+            "updateAt": "2023-04-03",
             "category": "PEP",
             "name": "Mohammad Hatta",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1973-08-17"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Surabaya",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -295,29 +295,29 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "National Mandate Party",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 77.0
+            "matchRate": 77.0
         },
         {
-            "update_at": "2022-04-27",
+            "updateAt": "2022-04-27",
             "category": "PEP",
             "name": "Rana Muhammad Hayat",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1955-12-24"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Rana Muhammad Hayat Khan",
                     "type": "Also Known As"
@@ -338,47 +338,47 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Pakistan Muslim League (N)",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 69.0
+            "matchRate": 69.0
         },
         {
-            "update_at": "2023-06-12",
+            "updateAt": "2023-06-12",
             "category": "RCA",
             "deceased": true,
-            "deceased_date": "1997",
+            "deceasedDate": "1997",
             "name": "Muhammad Hadi Nasrallah",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1979"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
             "father": "Hassan Nasrallah",
             "siblings": [
                 "Zainab Nasrallah"
             ],
-            "match_rate": 64.0
+            "matchRate": 64.0
         },
         {
-            "update_at": "2022-04-16",
+            "updateAt": "2022-04-16",
             "category": "PEP",
             "name": "Mian Muhammad Akhtar Hayat",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1950"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
             "roles": [
@@ -391,14 +391,14 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Pakistan Tehreek-e-Insaf",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 60.0
+            "matchRate": 60.0
         }
     ]
 }

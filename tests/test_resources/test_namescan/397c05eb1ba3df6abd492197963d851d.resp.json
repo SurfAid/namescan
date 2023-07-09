@@ -1,33 +1,33 @@
 {
-    "date": "2023-07-03T12:42:26.1897222+10:00",
-    "scan_id": "s11997716",
-    "number_of_matches": 6,
-    "number_of_pep_matches": 0,
-    "number_of_sip_matches": 6,
+    "date": "2023-07-09T14:59:36.6099606+10:00",
+    "scanId": "s12038884",
+    "numberOfMatches": 6,
+    "numberOfPepMatches": 0,
+    "numberOfSipMatches": 6,
     "persons": [
         {
             "category": "SIP",
             "name": "Ibrahim AL-HASSAN",
             "title": "Major General",
             "gender": "Male",
-            "original_script_name": "\u0627\u0628\u0631\u0627\u0647\u064a\u0645 \u0627\u0644\u062d\u0633\u0646",
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0627\u0628\u0631\u0627\u0647\u064a\u0645 \u0627\u0644\u062d\u0633\u0646",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "BL - Financial Sanctions List",
-                    "id_in_list": "6825"
+                    "idInList": "6825"
                 }
             ],
             "program": "SYR",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Ibrahim AL-HASAN",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 }
             ],
@@ -39,32 +39,32 @@
             "sources": [
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
             ],
-            "match_rate": 89.0
+            "matchRate": 89.0
         },
         {
-            "update_at": "2020-05-29",
+            "updateAt": "2020-05-29",
             "category": "SIP",
             "name": "Ibrahim AL-HASSAN",
             "title": "Major General",
             "gender": "male",
-            "original_script_name": "\u0627\u0628\u0631\u0627\u0647\u064a\u0645 \u0627\u0644\u062d\u0633\u0646",
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0627\u0628\u0631\u0627\u0647\u064a\u0645 \u0627\u0644\u062d\u0633\u0646",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "EU - Financial Sanctions List",
-                    "id_in_list": "6825"
+                    "idInList": "6825"
                 }
             ],
             "program": "SYR",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Ibrahim AL-HASAN",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 }
             ],
@@ -76,76 +76,76 @@
             "sources": [
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32020R0716&from=EN"
             ],
-            "match_rate": 89.0
+            "matchRate": 89.0
         },
         {
             "category": "SIP",
             "name": "Ibrahim Al-Hassan",
             "title": "Major General/major-g\u00e9n\u00e9ral",
-            "first_name": "Ibrahim",
-            "last_name": "Al-Hassan",
-            "reference_type": "Sanction",
+            "firstName": "Ibrahim",
+            "lastName": "Al-Hassan",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CA - Consolidated Canadian Autonomous Sanctions List",
-                    "id_in_list": "Ibrahim Al-Hassan"
+                    "idInList": "Ibrahim Al-Hassan"
                 }
             ],
             "program": "Syria / Syrie",
             "nationality": "",
             "citizenship": "",
-            "match_rate": 84.0
+            "matchRate": 84.0
         },
         {
-            "update_at": "31/12/2020",
+            "updateAt": "31/12/2020",
             "category": "SIP",
             "name": "AL-HASAN",
-            "last_name": "AL-HASAN",
-            "dates_of_birth": [
+            "lastName": "AL-HASAN",
+            "datesOfBirth": [
                 {
                     "date": ""
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "UK - HMT Financial Sanctions List",
-                    "id_in_list": "12415"
+                    "idInList": "12415"
                 }
             ],
             "program": "Syria",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Ibrahim AL-HASSAN",
-                    "first_name": "Ibrahim",
-                    "middle_name": "",
-                    "last_name": "AL-HASSAN",
+                    "firstName": "Ibrahim",
+                    "middleName": "",
+                    "lastName": "AL-HASSAN",
                     "type": ""
                 }
             ],
             "summary": "(UK Sanctions List Ref):SYR0094. (UK Statement of Reasons):Deputy Chief of Staff. Military official involved in the violence in Homs.\nListed On: 02/12/2011;\nDate Designated: 31/12/2020;",
-            "match_rate": 84.0
+            "matchRate": 84.0
         },
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Ibrahim Al-Hassan Major General",
             "gender": "male",
-            "original_script_name": "\u0625\u0628\u0631\u0627\u0647\u064a\u0645 \u0627\u0644\u062d\u0633\u0646",
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0625\u0628\u0631\u0627\u0647\u064a\u0645 \u0627\u0644\u062d\u0633\u0646",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12033"
+                    "idInList": "12033"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Major General",
                     "type": "Spelling Variation"
@@ -155,29 +155,29 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Deputy Chief of Staff. Military official involved in the violence in Homs.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 75.0
+            "summary": "Justification: Deputy Chief of Staff. Military official involved in the violence in Homs.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 75.0
         },
         {
-            "update_at": "26/2/2021",
-            "update_info": "Listed on: 3 Nov. 2003 (amended on 21 Mar. 2006, 25 Jul. 2006, 2 Jul. 2007, 11 Mar. 2010, 22 August 2016, 24 Nov. 2020) ",
+            "updateAt": "26/2/2021",
+            "updateInfo": "Listed on: 3 Nov. 2003 (amended on 21 Mar. 2006, 25 Jul. 2006, 2 Jul. 2007, 11 Mar. 2010, 22 August 2016, 24 Nov. 2020) ",
             "category": "SIP",
             "name": "Dawood Ibrahim Kaskar",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "26/12/1955"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "text": "Kher, Ratnagiri, Maharashtra, India"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "AU - DFAT Consolidated Sanction list",
-                    "id_in_list": "453"
+                    "idInList": "453"
                 }
             ],
             "program": "1267/1989/2253 (ISIL (Da'esh) and Al-Qaida)",
@@ -195,7 +195,7 @@
                     "text": "Palatial bungalow in the hilly area of Noorabad in Karachi"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Dawood Ebrahim",
                     "type": "Also Known As"
@@ -290,7 +290,7 @@
                 }
             ],
             "summary": "Passport no.: a) Indian number A-333602, issued on 4 Jun. 1985, issued in Bombay, India (passport subsequently revoked by the Government of India) b) Indian number M110522, issued on 13 Nov. 1978, issued in Bombay c) Indian number R841697, issued on 26 Nov. 1981, issued in Bombay d) Indian number F823692 (JEDDAH) issued by CGI in Jeddah, on 2 Sep. 1989 e) Indian number A501801 (BOMBAY), issued on 26 Jul. 1985 f) Indian number K560098 (BOMBAY), issued on 30 Jul. 1975 g) Passport number V57865 (BOMBAY), issued on 3 Oct. 1983 h) Passport number P537849 (BOMBAY), issued on 30 Jul. 1979 i) Passport number A717288 (MISUSE), issued on 18 Aug. 1985, issued in Dubai j) Pakistani number G866537 (MISUSE), issued on 12 Aug. 1991, issued in Rawalpindi k) Passport number C-267185 (issued in Karachi in Jul. 1996)  l) Passport number H-123259 (issued in Rawalpindi in Jul. 2001)  m) Passport number G-869537 (issued in Rawalpindi)  n) Passport number KC-285901.  Father's name is Sheikh Ibrahim Ali Kaskar, mother's name is Amina Bi, wife's name is Mehjabeen Shaikh. International arrest warrant issued by the Government of India. Review pursuant to Security Council resolution 1822 (2008) was concluded on 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 24 November 2020.",
-            "match_rate": 74.0
+            "matchRate": 74.0
         }
     ]
 }

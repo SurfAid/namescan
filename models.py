@@ -143,43 +143,42 @@ class Person(Entity):  # pylint: disable=too-many-instance-attributes
     def from_json(person: dict):
         gender = person.get("gender", None)
         return Person(
-            update_at=person.get("update_at", None),
+            update_at=person.get("updateAt", None),
             category=person["category"],
             name=person["name"],
             deceased=person.get("deceased", False),
-            deceased_date=person.get("deceased_date"),
+            deceased_date=person.get("deceasedDate"),
             gender=None if not gender else Gender(gender.strip().lower()),
-            original_script_name=person.get("original_script_name"),
+            original_script_name=person.get("originalScriptName"),
             dates_of_birth=[
-                DateOfBirth(date=dob["date"])
-                for dob in person.get("dates_of_birth", [])
+                DateOfBirth(date=dob["date"]) for dob in person.get("datesOfBirth", [])
             ],
             places_of_birth=[
                 PlaceOfBirth(
                     location=pob.get("location", ""), country=pob.get("country")
                 )
-                for pob in person.get("places_of_birth", [])
+                for pob in person.get("placesOfBirth", [])
             ],
-            reference_type=person["reference_type"],
+            reference_type=person["referenceType"],
             references=[
-                Reference(name=ref["name"], id_in_list=ref.get("id_in_list"))
+                Reference(name=ref["name"], id_in_list=ref.get("idInList"))
                 for ref in person.get("references", [])
             ],
             program=person.get("program", None),
             occupations=person.get("occupations", []),
             political_parties=[
                 PoliticalParty(title=party["title"])
-                for party in person.get("political_parties", [])
+                for party in person.get("politicalParties", [])
             ],
             roles=[Role(title=role["title"]) for role in person.get("roles", [])],
             nationality=person["nationality"],
             citizenship=person["citizenship"],
             other_names=[
                 OtherName(name=other_name["name"], type=other_name["type"])
-                for other_name in person.get("other_names", [])
+                for other_name in person.get("otherNames", [])
             ],
             summary=person.get("summary", None),
-            match_rate=person["match_rate"],
+            match_rate=person["matchRate"],
         )
 
 
@@ -256,104 +255,28 @@ class Organisation(Entity):  # pylint: disable=too-many-instance-attributes
         return None
 
 
-@dataclass(frozen=True)
-class OrganisationScanResult:
+@dataclass(frozen=True, eq=True)
+class ResultEntity:
     date: str
     scan_id: str
     number_of_matches: int
-    organisations: list[Organisation]
-
-    @staticmethod
-    def from_json(data: dict):
-        return OrganisationScanResult(
-            date=data["date"],
-            scan_id=data["scanId"],
-            number_of_matches=data["numberOfMatches"],
-            organisations=[
-                Organisation(
-                    uid=org["uid"],
-                    status=org["status"],
-                    update_at=org["updateAt"],
-                    update_info=org["updateInfo"],
-                    category=org["category"],
-                    name=org["name"],
-                    original_script_name=org["originalScriptName"],
-                    sort_key_name=org["sortKeyName"],
-                    reference_type=org["referenceType"],
-                    references=[
-                        OrganisationReference(
-                            name=ref["name"],
-                            since=ref["since"],
-                            until=ref["to"],
-                            id_in_list=ref["idInList"],
-                        )
-                        for ref in org["references"]
-                    ],
-                    program=org["program"],
-                    addresses=[
-                        Address(
-                            address1=addr["address1"],
-                            address2=addr["address2"],
-                            address3=addr["address3"],
-                            city=addr["city"],
-                            region=addr["region"],
-                            postal_code=addr["postalCode"],
-                            country=addr["country"],
-                            text=addr["text"],
-                            note=addr["note"],
-                        )
-                        for addr in org["addresses"]
-                    ],
-                    other_names=[
-                        OtherName(name=name["name"], type=name["type"])
-                        for name in org["otherNames"]
-                    ],
-                    identities=[
-                        Identity(
-                            number=identity["number"],
-                            country=identity["country"],
-                            note=identity["note"],
-                            type=identity["type"],
-                        )
-                        for identity in org["identities"]
-                    ],
-                    contacts=[
-                        Contact(value=contact["value"], type=contact["type"])
-                        for contact in org["contacts"]
-                    ],
-                    images=org["images"],
-                    links=[
-                        Link(url=link["url"], type=link["type"])
-                        for link in org["links"]
-                    ],
-                    sources=org["sources"],
-                    basis=org["basis"],
-                    summary=org["summary"],
-                    match_rate=org["matchRate"],
-                )
-                for org in data["organisations"]
-            ],
-        )
+    entities: list[Entity]
 
 
-@dataclass
-class PersonScanResult:
-    date: str
-    scan_id: str
-    number_of_matches: int
+@dataclass(frozen=True, eq=True)
+class PersonScanResult(ResultEntity):
     number_of_pep_matches: int
     number_of_sip_matches: int
-    persons: list[Person]
 
     @staticmethod
     def from_json(data: dict):
         return PersonScanResult(
             date=data["date"],
-            scan_id=data["scan_id"],
-            number_of_matches=data["number_of_matches"],
-            number_of_pep_matches=data["number_of_pep_matches"],
-            number_of_sip_matches=data["number_of_sip_matches"],
-            persons=[Person.from_json(person) for person in data.get("persons", [])],
+            scan_id=data["scanId"],
+            number_of_matches=data["numberOfMatches"],
+            number_of_pep_matches=data["numberOfPepMatches"],
+            number_of_sip_matches=data["numberOfSipMatches"],
+            entities=[Person.from_json(person) for person in data.get("persons", [])],
         )
 
 
@@ -426,4 +349,79 @@ class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attribute
             included_lists=None,
             excluded_lists=None,
             match_rate=50,
+        )
+
+
+@dataclass(frozen=True, eq=True)
+class OrganisationScanResult(ResultEntity):
+    @staticmethod
+    def from_json(data: dict):
+        return OrganisationScanResult(
+            date=data["date"],
+            scan_id=data["scanId"],
+            number_of_matches=data["numberOfMatches"],
+            entities=[
+                Organisation(
+                    uid=org["uid"],
+                    status=org["status"],
+                    update_at=org["updateAt"],
+                    update_info=org["updateInfo"],
+                    category=org["category"],
+                    name=org["name"],
+                    original_script_name=org["originalScriptName"],
+                    sort_key_name=org["sortKeyName"],
+                    reference_type=org["referenceType"],
+                    references=[
+                        OrganisationReference(
+                            name=ref["name"],
+                            since=ref["since"],
+                            until=ref["to"],
+                            id_in_list=ref["idInList"],
+                        )
+                        for ref in org["references"]
+                    ],
+                    program=org["program"],
+                    addresses=[
+                        Address(
+                            address1=addr["address1"],
+                            address2=addr["address2"],
+                            address3=addr["address3"],
+                            city=addr["city"],
+                            region=addr["region"],
+                            postal_code=addr["postalCode"],
+                            country=addr["country"],
+                            text=addr["text"],
+                            note=addr["note"],
+                        )
+                        for addr in org["addresses"]
+                    ],
+                    other_names=[
+                        OtherName(name=name["name"], type=name["type"])
+                        for name in org["otherNames"]
+                    ],
+                    identities=[
+                        Identity(
+                            number=identity["number"],
+                            country=identity["country"],
+                            note=identity["note"],
+                            type=identity["type"],
+                        )
+                        for identity in org["identities"]
+                    ],
+                    contacts=[
+                        Contact(value=contact["value"], type=contact["type"])
+                        for contact in org["contacts"]
+                    ],
+                    images=org["images"],
+                    links=[
+                        Link(url=link["url"], type=link["type"])
+                        for link in org["links"]
+                    ],
+                    sources=org["sources"],
+                    basis=org["basis"],
+                    summary=org["summary"],
+                    match_rate=org["matchRate"],
+                )
+                for org in data.get("organisations", [])
+            ],
         )

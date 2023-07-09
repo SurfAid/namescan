@@ -1,19 +1,19 @@
 {
-    "date": "2023-07-03T12:42:30.2673486+10:00",
-    "scan_id": "s11997722",
-    "number_of_matches": 5,
-    "number_of_pep_matches": 4,
-    "number_of_sip_matches": 1,
+    "date": "2023-07-09T14:59:41.1221748+10:00",
+    "scanId": "s12038891",
+    "numberOfMatches": 5,
+    "numberOfPepMatches": 4,
+    "numberOfSipMatches": 1,
     "persons": [
         {
-            "update_at": "06/30/2023 17:00:46",
+            "updateAt": "07/08/2023 13:00:00",
             "category": "SIP",
             "name": "MR. K.M. RAHMAN",
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "World Bank - Ineligible Firms and Individuals List",
-                    "id_in_list": "186124"
+                    "idInList": "186124"
                 }
             ],
             "nationality": "",
@@ -23,67 +23,24 @@
                     "address1": "LAST KNOWN ADDRESS: HOUSE NO. 300, EIDGHA, ROAD NO. 8/A (NEW), WEST DHANMONDI",
                     "city": "DHAKA-1209",
                     "region": "",
-                    "postal_code": "",
+                    "postalCode": "",
                     "country": "Bangladesh"
                 }
             ],
             "summary": "Ineligibility Period: From 2011-07-29 To 2999-12-31\nIneligibility Reason: Consultant Guidelines 1.25(a)(ii)\nAdditional Info: * 42\nInfo*: http://pubdocs.worldbank.org/en/387181466627871302/World-Bank-Notes-on-Debarred-Firms-and-Individuals.pdf",
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-09-18",
-            "category": "PEP",
-            "name": "Rahman",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1962-01-30"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "location": "Bandung",
-                    "country": "Indonesia"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "places": [
-                {
-                    "country": "Indonesia",
-                    "location": "Cempaka Putih Timur",
-                    "type": "residence"
-                },
-                {
-                    "country": "Indonesia",
-                    "location": "Central Jakarta",
-                    "type": "residence"
-                }
-            ],
-            "occupations": [
-                "politician"
-            ],
-            "political_parties": [
-                {
-                    "title": "United Development Party",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "A. Rahman",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1959-02-17"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -106,33 +63,76 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "United Development Party",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-02-13",
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Rahman",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1962-01-30"
+                }
+            ],
+            "placesOfBirth": [
+                {
+                    "location": "Bandung",
+                    "country": "Indonesia"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Cempaka Putih Timur",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Central Jakarta",
+                    "type": "residence"
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "politicalParties": [
+                {
+                    "title": "United Development Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "2023-02-13",
             "category": "PEP",
             "name": "K. Rahman Khan",
-            "first_name": "K.",
+            "firstName": "K.",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1939-04-05"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Mandya",
                     "country": "India"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "India; British Raj; Dominion of India",
             "roles": [
@@ -145,7 +145,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Indian National Congress",
                     "since": "",
@@ -155,29 +155,29 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/K%20Rahman%20Khan%20%28cropped%29.jpg"
             ],
-            "match_rate": 79.0
+            "matchRate": 79.0
         },
         {
-            "update_at": "2022-09-03",
+            "updateAt": "2022-09-03",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2013-06-16",
+            "deceasedDate": "2013-06-16",
             "name": "B. Raman",
-            "first_name": "B.",
+            "firstName": "B.",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1936-08-14"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "India; Dominion of India; British Raj",
             "occupations": [
                 "academic",
                 "politician"
             ],
-            "match_rate": 58.0
+            "matchRate": 58.0
         }
     ]
 }

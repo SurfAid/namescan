@@ -1,35 +1,35 @@
 {
-    "date": "2023-07-03T12:35:03.7369682+10:00",
-    "scan_id": "s11997697",
-    "number_of_matches": 16,
-    "number_of_pep_matches": 9,
-    "number_of_sip_matches": 7,
+    "date": "2023-07-09T14:59:27.9722644+10:00",
+    "scanId": "s12038872",
+    "numberOfMatches": 13,
+    "numberOfPepMatches": 9,
+    "numberOfSipMatches": 4,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2019-07-13",
+            "deceasedDate": "2019-07-13",
             "name": "Abu Bakar",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1952-12-09"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "West Bandung",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Indonesian Democratic Party \u2013 Struggle",
                     "since": "",
@@ -39,22 +39,22 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/H-abubakar-bandungbaratkab.go.id.jpg"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2021-04-06\n2021-02-23\n2015-10-29",
+            "updateAt": "2021-04-06\n2021-02-23\n2015-10-29",
             "category": "SIP",
             "name": "Abu Bakar Ba'asyir",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "17 Aug 1938"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "14923"
+                    "idInList": "14923"
                 }
             ],
             "program": "\u00abAl-Qa\u00efda\u00bb, Taliban",
@@ -65,7 +65,7 @@
                     "text": "Indonesia"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Abu Bakar Baasyir",
                     "type": "Also Known As"
@@ -83,29 +83,29 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Foreign identifier: QI.B.217.06.\r\nSanctions: article 3 paragraphs 1 and 2 (Financial sanctions) and articles 4 and 4a (Travel ban)\r\nOther information: Formed Jemmah Anshorut Tauhid (JAT) (QDe.133) in 2008. In 2010, arrested for incitement to commit terrorism and fundraising with respect to a training camp in Aceh, Indonesia and sentenced to 15 years in 2011. Ba'asyir was released from prison on 8 Jan 2021 after serving his sentence in accordance with Indonesian laws and regulations. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 24 Nov 2020. INTERPOL-UN Security Council Special Notice web link available.\r\nGood quality a.k.a a) Abu Bakar Baasyir, born on 17 Aug 1938 in Jombang, East Java, Indonesia; b) Abu Bakar Bashir born on 17 Aug 1938 in Jombang, East Java, Indonesia",
-            "match_rate": 75.0
+            "summary": "Foreign identifier: QI.B.217.06.\r\nSanctions: Art. 3 Abs. 1 und 2 (Finanzsanktionen) und Art. 4 sowie 4a (Ein- und Durchreiseverbot)\r\nOther information: Formed Jemmah Anshorut Tauhid (JAT) (QDe.133) in 2008. In 2010, arrested for incitement to commit terrorism and fundraising with respect to a training camp in Aceh, Indonesia and sentenced to 15 years in 2011. Ba'asyir was released from prison on 8 Jan 2021 after serving his sentence in accordance with Indonesian laws and regulations. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 24 Nov 2020. INTERPOL-UN Security Council Special Notice web link available.\r\nGood quality a.k.a a) Abu Bakar Baasyir, born on 17 Aug 1938 in Jombang, East Java, Indonesia; b) Abu Bakar Bashir born on 17 Aug 1938 in Jombang, East Java, Indonesia",
+            "matchRate": 75.0
         },
         {
-            "update_at": "8/4/2021",
-            "update_info": "Listed by the UN 1267 Committee on 21 April 2006 (amended on 14 Oct. 2015, 24 Nov. 2020,  6 April 2021)",
+            "updateAt": "8/4/2021",
+            "updateInfo": "Listed by the UN 1267 Committee on 21 April 2006 (amended on 14 Oct. 2015, 24 Nov. 2020,  6 April 2021)",
             "category": "SIP",
             "name": "Abu Bakar Ba'asyir",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "17/8/1938"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "text": "Jombang, East Java, Indonesia;"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "AU - DFAT Consolidated Sanction list",
-                    "id_in_list": "573"
+                    "idInList": "573"
                 }
             ],
             "program": "1267/1989/2253 (ISIL (Da'esh) and Al-Qaida)",
@@ -116,7 +116,7 @@
                     "text": "Indonesia"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Abu Bakar Baasyir",
                     "type": "Also Known As"
@@ -135,30 +135,30 @@
                 }
             ],
             "summary": "Formed Jemmah Anshorut Tauhid (JAT) (QDe.133) in 2008. In 2010, arrested for incitement to commit terrorism and fundraising with respect to a training camp in Aceh, Indonesia and sentenced to 15 years in 2011. Ba'asyir was released from prison on 8 January 2021 after serving his sentence in accordance with Indonesian laws and regulations. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 24 November 2020.",
-            "match_rate": 75.0
+            "matchRate": 75.0
         },
         {
-            "update_at": "2021-04-06",
+            "updateAt": "2021-04-06",
             "category": "SIP",
             "name": "ABU BAKAR BA'ASYIR",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1938-08-17",
                     "note": "EXACT"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "city": "Jombang",
                     "region": "East Java",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "UN - United Nations Sanctions List",
-                    "id_in_list": "111792"
+                    "idInList": "111792"
                 }
             ],
             "program": "Al-Qaida (QDi.217)",
@@ -169,7 +169,7 @@
                     "country": "Indonesia"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Abu Bakar Baasyir",
                     "type": "good"
@@ -188,43 +188,25 @@
                 }
             ],
             "summary": "Formed Jemmah Anshorut Tauhid (JAT) (QDe.133) in 2008. In 2010, arrested for incitement to commit terrorism and fundraising with respect to a training camp in Aceh, Indonesia and sentenced to 15 years in 2011. Ba'asyir was released from prison on 8 January 2021 after serving his sentence in accordance with Indonesian laws and regulations. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 24 November 2020. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-            "match_rate": 75.0
+            "matchRate": 75.0
         },
         {
-            "update_at": "2022-09-18",
-            "category": "PEP",
-            "name": "Abu Bakar Abdi",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1965-05-05"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "occupations": [
-                "politician"
-            ],
-            "match_rate": 75.0
-        },
-        {
-            "update_at": "2023-03-20",
+            "updateAt": "2023-07-03",
             "category": "PEP",
             "name": "Wan Abubakar",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1950-08-09"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Selat Panjang",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -239,7 +221,7 @@
                     "type": "residence"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Wan Abu Bakar",
                     "type": "Also Known As"
@@ -255,7 +237,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "National Mandate Party",
                     "since": "",
@@ -267,75 +249,46 @@
                     "to": ""
                 }
             ],
-            "match_rate": 75.0
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Wan%20Abu%20Bakar%2C%20Wakil%20Gubernur%20Riau.png"
+            ],
+            "matchRate": 75.0
         },
         {
-            "update_at": "2022-10-15",
+            "updateAt": "2022-09-18",
             "category": "PEP",
-            "name": "Tagore Abubakar",
+            "name": "Abu Bakar Abdi",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
-                    "date": "1954-04-20"
+                    "date": "1965-05-05"
                 }
             ],
-            "places_of_birth": [
-                {
-                    "location": "Takengon",
-                    "country": "Indonesia"
-                }
-            ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
-            "places": [
-                {
-                    "country": "Indonesia",
-                    "location": "Bandar",
-                    "type": "residence"
-                },
-                {
-                    "country": "Indonesia",
-                    "location": "Karang Rejo",
-                    "type": "residence"
-                }
-            ],
-            "other_names": [
-                {
-                    "name": "Tagore Abu Bakar",
-                    "type": "Also Known As"
-                }
-            ],
-            "roles": [
-                {
-                    "title": "Member of the People's Representative Council of Indonesia",
-                    "since": "2014-10-01",
-                    "to": "2019-09-30"
-                }
-            ],
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
-                {
-                    "title": "Indonesian Democratic Party \u2013 Struggle",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "match_rate": 75.0
+            "matchRate": 75.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2023-07-03",
             "category": "PEP",
             "name": "Abu Bakar Jamalia",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1953-07-21"
                 }
             ],
-            "reference_type": "PEP",
+            "placesOfBirth": [
+                {
+                    "location": "Kuala Tungkal",
+                    "country": "Indonesia"
+                }
+            ],
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "roles": [
@@ -351,69 +304,125 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Abu%20Bakar%20Jamalia.jpg"
             ],
-            "match_rate": 75.0
+            "matchRate": 75.0
         },
         {
-            "update_at": "2021-11-11",
+            "updateAt": "2022-09-18",
             "category": "PEP",
-            "name": "Wan Abu Bakar",
+            "name": "Abu Bakar Sidik",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
-                    "date": "1950-08-09"
+                    "date": "1962-05-25"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "matchRate": 75.0
+        },
+        {
+            "updateAt": "2021-11-11",
+            "category": "PEP",
+            "name": "Wan Abu Bakar",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1950-08-09"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "politicalParties": [
                 {
                     "title": "National Mandate Party",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 75.0
+            "matchRate": 75.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-10-15",
             "category": "PEP",
-            "name": "Abu Bakar Sidik",
+            "name": "Tagore Abubakar",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
-                    "date": "1962-05-25"
+                    "date": "1954-04-20"
                 }
             ],
-            "reference_type": "PEP",
+            "placesOfBirth": [
+                {
+                    "location": "Takengon",
+                    "country": "Indonesia"
+                }
+            ],
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Bandar",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Karang Rejo",
+                    "type": "residence"
+                }
+            ],
+            "otherNames": [
+                {
+                    "name": "Tagore Abu Bakar",
+                    "type": "Also Known As"
+                }
+            ],
+            "roles": [
+                {
+                    "title": "Member of the People's Representative Council of Indonesia",
+                    "since": "2014-10-01",
+                    "to": "2019-09-30"
+                }
+            ],
             "occupations": [
                 "politician"
             ],
-            "match_rate": 75.0
+            "politicalParties": [
+                {
+                    "title": "Indonesian Democratic Party \u2013 Struggle",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "matchRate": 75.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Aboe Bakar Al-Habsyi",
-            "first_name": "Abubakar",
+            "firstName": "Abubakar",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1964-10-15"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Jakarta",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -433,7 +442,7 @@
                     "type": "residence"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Aboe Bakar",
                     "type": "Also Known As"
@@ -463,7 +472,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Prosperous Justice Party",
                     "since": "",
@@ -473,14 +482,14 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Aboe%20Bakar%20Al-Habsyi.jpg"
             ],
-            "match_rate": 71.0
+            "matchRate": 71.0
         },
         {
-            "update_at": "2010-11-06",
+            "updateAt": "2010-11-06",
             "category": "SIP",
             "name": "Mohammed, Shariff Omar",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1974-04-14"
                 },
@@ -494,18 +503,18 @@
                     "date": "1974-03-14"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "city": "Zanzibar",
                     "region": "",
                     "country": "TANZANIA, UNITED REPUBLIC OF"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "EU - Financial Sanctions List",
-                    "id_in_list": "519"
+                    "idInList": "519"
                 }
             ],
             "program": "TAQA",
@@ -516,460 +525,231 @@
                     "address1": "",
                     "city": "",
                     "region": "",
-                    "postal_code": "",
+                    "postalCode": "",
                     "country": "UNITED STATES"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Ahmed le Tanzanien",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Bakr, Abu",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ali, Ahmed Khalfan",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Al Tanzani, Ahmad",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed, Ahmed Khalfan",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed, Abubakary K.",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Haytham al-Kini",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed el Tanzano",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed Tanzanianul",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Abubakary Khalfan Ahmed Ghailani",
-                    "first_name": "Abubakary",
-                    "middle_name": "Khalfan Ahmed",
-                    "last_name": "Ghailani",
+                    "firstName": "Abubakary",
+                    "middleName": "Khalfan Ahmed",
+                    "lastName": "Ghailani",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed Ghailani",
-                    "first_name": "Ahmed",
-                    "middle_name": "",
-                    "last_name": "Ghailani",
+                    "firstName": "Ahmed",
+                    "middleName": "",
+                    "lastName": "Ghailani",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmad Khalafan Ghilani",
-                    "first_name": "Ahmad",
-                    "middle_name": "Khalafan",
-                    "last_name": "Ghilani",
+                    "firstName": "Ahmad",
+                    "middleName": "Khalafan",
+                    "lastName": "Ghilani",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Hussein, Mahafudh Abubakar Ahmed Abdallah",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Khabar, Abu",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Khalfan, Ahmed",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed Khalfan Ghailani",
-                    "first_name": "Ahmed",
-                    "middle_name": "Khalfan",
-                    "last_name": "Ghailani",
+                    "firstName": "Ahmed",
+                    "middleName": "Khalfan",
+                    "lastName": "Ghailani",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed The Tanzanian",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Foopie",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Fupi",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmad, Abu Bakr",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed, A",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed, Abubakar",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed, Abubakar K.",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Ahmed, Abubakar Khalfan",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 }
             ],
             "sources": [
                 "http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2010:290:0033:0036:EN:PDF"
             ],
-            "match_rate": 66.0
+            "matchRate": 66.0
         },
         {
-            "category": "SIP",
-            "name": "Abu Bakar Bashir",
-            "first_name": "Abu",
-            "middle_name": "Bakar",
-            "last_name": "Bashir",
-            "dates_of_birth": [
-                {
-                    "date": "1938-08-17"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "city": "Jombang, East Java",
-                    "location": "",
-                    "country": "Indonesia"
-                }
-            ],
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "BL - Financial Sanctions List",
-                    "id_in_list": "3341"
-                }
-            ],
-            "program": "TAQA",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "addresses": [
-                {
-                    "address1": "",
-                    "address3": "",
-                    "city": "",
-                    "region": "",
-                    "postal_code": "",
-                    "country": "Indonesia"
-                }
-            ],
-            "other_names": [
-                {
-                    "title": "",
-                    "name": "Abdus Somad",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
-                    "type": "strong"
-                },
-                {
-                    "title": "",
-                    "name": "Abu Bakar Baasyir",
-                    "first_name": "Abu",
-                    "middle_name": "Bakar",
-                    "last_name": "Baasyir",
-                    "type": "strong"
-                },
-                {
-                    "title": "",
-                    "name": "Abu Bakar Ba\u2019asyir",
-                    "first_name": "Abu",
-                    "middle_name": "Bakar",
-                    "last_name": "Ba\u2019asyir",
-                    "type": "strong"
-                },
-                {
-                    "title": "",
-                    "name": "Abdus Samad",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
-                    "type": "strong"
-                }
-            ],
-            "sources": [
-                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2021.125.01.0013.01.ENG&toc=OJ%3AL%3A2021%3A125%3ATOC"
-            ],
-            "match_rate": 64.0
-        },
-        {
-            "update_at": "07/04/2021",
-            "category": "SIP",
-            "name": "Abu Bakar BAASYIR",
-            "first_name": "Abu",
-            "middle_name": "Bakar",
-            "last_name": "BAASYIR",
-            "dates_of_birth": [
-                {
-                    "date": "17/08/1938"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "city": "Jombang, East Java",
-                    "country": "Indonesia"
-                }
-            ],
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "UK - HMT Financial Sanctions List",
-                    "id_in_list": "8831"
-                }
-            ],
-            "program": "ISIL (Da'esh) and Al-Qaida",
-            "nationality": "Indonesia",
-            "citizenship": "",
-            "addresses": [
-                {
-                    "address1": "",
-                    "address2": "",
-                    "address3": "",
-                    "postal_code": "",
-                    "country": "Indonesia"
-                }
-            ],
-            "other_names": [
-                {
-                    "title": "",
-                    "name": "ABU BAKAR BA'ASYIR",
-                    "first_name": "ABU BAKAR",
-                    "middle_name": "",
-                    "last_name": "BA'ASYIR",
-                    "type": ""
-                },
-                {
-                    "title": "",
-                    "name": "Abu Bakar BASHIR",
-                    "first_name": "Abu",
-                    "middle_name": "Bakar",
-                    "last_name": "BASHIR",
-                    "type": ""
-                },
-                {
-                    "title": "",
-                    "name": "Abdus SAMAD",
-                    "first_name": "Abdus",
-                    "middle_name": "",
-                    "last_name": "SAMAD",
-                    "type": ""
-                },
-                {
-                    "title": "",
-                    "name": "Abdus SOMAD",
-                    "first_name": "Abdus",
-                    "middle_name": "",
-                    "last_name": "SOMAD",
-                    "type": ""
-                }
-            ],
-            "summary": "(UK Sanctions List Ref):AQD0114. (UN Ref):QDi.217. Formed Jemmah Anshorut Tauhid (JAT) (QDe.133) in 2008. In 2010, arrested for incitement to commit terrorism and fundraising with respect to a training camp in Aceh, Indonesia and sentenced to 15 years in 2011. Ba'asyir was released from prison on 8 January 2021 after serving his sentence in accordance with Indonesian laws and regulations. Review pursuant to Security Council resolution 1822 (2008) was concluded on 8 Jun. 2010. Review pursuant to Security Council resolution 2368 (2017) was concluded on 24 November 2020. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/un/1428633\nListed On: 26/04/2006;\nDate Designated: 21/04/2006;",
-            "match_rate": 64.0
-        },
-        {
-            "update_at": "2021-04-13",
-            "category": "SIP",
-            "name": "Abu Bakar Bashir",
-            "first_name": "Abu",
-            "middle_name": "Bakar",
-            "last_name": "Bashir",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1938-08-17"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "city": "Jombang, East Java",
-                    "region": "",
-                    "country": "INDONESIA"
-                }
-            ],
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "EU - Financial Sanctions List",
-                    "id_in_list": "3341"
-                }
-            ],
-            "program": "TAQA",
-            "nationality": "",
-            "citizenship": "INDONESIA",
-            "addresses": [
-                {
-                    "address1": "",
-                    "city": "",
-                    "region": "",
-                    "postal_code": "",
-                    "country": "INDONESIA"
-                }
-            ],
-            "other_names": [
-                {
-                    "title": "",
-                    "name": "Abdus Somad",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
-                    "type": "strong"
-                },
-                {
-                    "title": "",
-                    "name": "Abu Bakar Baasyir",
-                    "first_name": "Abu",
-                    "middle_name": "Bakar",
-                    "last_name": "Baasyir",
-                    "type": "strong"
-                },
-                {
-                    "title": "",
-                    "name": "Abu Bakar Ba\u2019asyir",
-                    "first_name": "Abu",
-                    "middle_name": "Bakar",
-                    "last_name": "Ba\u2019asyir",
-                    "type": "strong"
-                },
-                {
-                    "title": "",
-                    "name": "Abdus Samad",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
-                    "type": "strong"
-                }
-            ],
-            "sources": [
-                "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv%3AOJ.L_.2021.125.01.0013.01.ENG&toc=OJ%3AL%3A2021%3A125%3ATOC"
-            ],
-            "match_rate": 64.0
-        },
-        {
-            "update_at": "2022-08-08",
+            "updateAt": "2022-08-08",
             "category": "PEP",
             "name": "Abu Bakr Baira",
-            "first_name": "Abu Bakr",
+            "firstName": "Abu Bakr",
             "gender": "male",
-            "original_script_name": "\u0623\u0628\u0648 \u0628\u0643\u0631 \u0645\u0635\u0637\u0641\u0649 \u0628\u0639\u064a\u0631\u0629",
-            "dates_of_birth": [
+            "originalScriptName": "\u0623\u0628\u0648 \u0628\u0643\u0631 \u0645\u0635\u0637\u0641\u0649 \u0628\u0639\u064a\u0631\u0629",
+            "datesOfBirth": [
                 {
                     "date": "1941-07-21"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Cyrenaica",
                     "country": "Cyrenaica"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Libya; Libyan Arab Republic; Great Socialist People's Libyan Arab Jamahiriya",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Abu Bakr Mustaffa Baira",
                     "type": "Also Known As"
@@ -978,7 +758,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "independent politician",
                     "since": "",
@@ -988,7 +768,7 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/UN%20general%20Assembly%2C%20New%20York%2C%20Senior%20Level%20Meeting%20-%20Abubakr%20Buera%20Ban%20Ki-Moon.jpg"
             ],
-            "match_rate": 53.0
+            "matchRate": 53.0
         }
     ]
 }

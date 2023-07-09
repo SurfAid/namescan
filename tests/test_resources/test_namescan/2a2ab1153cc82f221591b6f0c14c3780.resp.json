@@ -1,32 +1,32 @@
 {
-    "date": "2023-07-03T12:42:47.681018+10:00",
-    "scan_id": "s11997751",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 1,
-    "number_of_sip_matches": 1,
+    "date": "2023-07-09T15:00:02.8868723+10:00",
+    "scanId": "s12038920",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 1,
+    "numberOfSipMatches": 1,
     "persons": [
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Mohammad Ali Jafari Brigadier Commander",
             "gender": "male",
-            "original_script_name": "\u0645\u062d\u0645\u062f \u0639\u0644\u064a \u062c\u0639\u0641\u0631\u064a",
-            "dates_of_birth": [
+            "originalScriptName": "\u0645\u062d\u0645\u062f \u0639\u0644\u064a \u062c\u0639\u0641\u0631\u064a",
+            "datesOfBirth": [
                 {
                     "date": "1 Sep 1957"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "11784"
+                    "idInList": "11784"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Brigadier Commander",
                     "type": "Spelling Variation"
@@ -44,26 +44,26 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Head of \u2018Baqiayt Allah\u2019, cultural organisation of the Islamic Revolutionary Guard Corps. General Commander of the Islamic Revolutionary Guard Corps until 21.4.2019, involved in providing equipment and support to help the Syrian regime suppress protests in Syria.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 75.0
+            "summary": "Justification: Head of \u2018Baqiayt Allah\u2019, cultural organisation of the Islamic Revolutionary Guard Corps. General Commander of the Islamic Revolutionary Guard Corps until 21.4.2019, involved in providing equipment and support to help the Syrian regime suppress protests in Syria.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 75.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Sayed Jafar",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1962-03-17"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 75.0
+            "matchRate": 75.0
         }
     ]
 }

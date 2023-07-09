@@ -1,21 +1,21 @@
 {
-    "date": "2023-07-03T12:42:42.0025996+10:00",
-    "scan_id": "s11997742",
-    "number_of_matches": 3,
-    "number_of_pep_matches": 3,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:55.7886751+10:00",
+    "scanId": "s12038911",
+    "numberOfMatches": 3,
+    "numberOfPepMatches": 3,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2023-04-04",
+            "updateAt": "2023-04-04",
             "category": "PEP",
             "name": "Nuryati",
             "gender": "female",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1975-03-01"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -33,32 +33,32 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Prosperous Justice Party",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 66.0
+            "matchRate": 66.0
         },
         {
-            "update_at": "2022-09-17",
+            "updateAt": "2022-09-17",
             "category": "PEP",
             "name": "Nurhayati",
             "gender": "female",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1969-11-20"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Tasikmalaya",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -89,7 +89,7 @@
                 "politician"
             ],
             "spouse": "Suharso Monoarfa",
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "United Development Party",
                     "since": "",
@@ -105,14 +105,14 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Nurhayati%20DPR.jpg"
             ],
-            "match_rate": 52.0
+            "matchRate": 52.0
         },
         {
-            "update_at": "23/04/2019",
+            "updateAt": "23/04/2019",
             "category": "PEP",
             "name": "Hj. NURHAYATI",
             "gender": "female",
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
             "places": [
@@ -137,7 +137,7 @@
             "images": [
                 "http://dpr.go.id/doksigota/photo/1440.jpg"
             ],
-            "match_rate": 52.0
+            "matchRate": 52.0
         }
     ]
 }

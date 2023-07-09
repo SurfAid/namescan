@@ -1,33 +1,33 @@
 {
   "date": "2023-07-06T19:57:48.2730988+10:00",
-  "scan_id": "s12022672",
-  "number_of_matches": 1,
-  "number_of_pep_matches": 1,
-  "number_of_sip_matches": 0,
+  "scanId": "s12022672",
+  "numberOfMatches": 1,
+  "numberOfPepMatches": 1,
+  "numberOfSipMatches": 0,
   "persons": [
     {
-      "update_at": "2023-07-03",
+      "updateAt": "2023-07-03",
       "category": "PEP",
       "name": "Dahlan M. Noer",
       "gender": "male",
-      "dates_of_birth": [
+      "datesOfBirth": [
         {
           "date": "1957-10-10"
         }
       ],
-      "places_of_birth": [
+      "placesOfBirth": [
         {
           "location": "Bima",
           "country": "Indonesia"
         }
       ],
-      "reference_type": "PEP",
+      "referenceType": "PEP",
       "nationality": "",
       "citizenship": "Indonesia",
       "occupations": [
         "politician"
       ],
-      "match_rate": 100.0
+      "matchRate": 100.0
     }
   ]
 }

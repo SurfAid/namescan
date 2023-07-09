@@ -1,45 +1,45 @@
 {
-    "date": "2023-07-03T12:42:46.4291831+10:00",
-    "scan_id": "s11997749",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T15:00:00.586052+10:00",
+    "scanId": "s12038918",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2023-04-08",
             "category": "PEP",
             "name": "Ilham",
             "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1968-09-08"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "occupations": [
-                "politician"
-            ],
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2023-04-08",
-            "category": "PEP",
-            "name": "Ilham",
-            "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1975-05-08"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Ilham",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1968-09-08"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 100.0
         }
     ]
 }

@@ -1,42 +1,42 @@
 {
-    "date": "2023-07-03T12:42:37.7057802+10:00",
-    "scan_id": "s11997734",
-    "number_of_matches": 3,
-    "number_of_pep_matches": 3,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:50.0622061+10:00",
+    "scanId": "s12038903",
+    "numberOfMatches": 3,
+    "numberOfPepMatches": 3,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "M. Nasir",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1973-03-19"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-03-07",
+            "updateAt": "2023-03-07",
             "category": "PEP",
             "name": "Nasir Khan",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1966-02-09"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Nasir Khan Khattak",
                     "type": "Also Known As"
@@ -57,30 +57,30 @@
             "occupations": [
                 "politician"
             ],
-            "match_rate": 58.0
+            "matchRate": 75.0
         },
         {
-            "update_at": "2023-05-30",
+            "updateAt": "2023-05-30",
             "category": "RCA",
             "deceased": true,
-            "deceased_date": "1974-05-03",
+            "deceasedDate": "1974-05-03",
             "name": "Nasir Khan",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1924-01-11"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Mumbai",
                     "country": "India"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "India; British Raj; Dominion of India",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Nasir Khan (actor)",
                     "type": "Also Known As"
@@ -96,7 +96,7 @@
             "siblings": [
                 "Dilip Kumar"
             ],
-            "match_rate": 58.0
+            "matchRate": 75.0
         }
     ]
 }

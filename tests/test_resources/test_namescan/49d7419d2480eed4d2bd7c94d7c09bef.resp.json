@@ -1,244 +1,244 @@
 {
-    "date": "2023-07-03T12:42:22.1413995+10:00",
-    "scan_id": "s11997710",
-    "number_of_matches": 9,
-    "number_of_pep_matches": 0,
-    "number_of_sip_matches": 9,
+    "date": "2023-07-09T14:59:32.2965043+10:00",
+    "scanId": "s12038878",
+    "numberOfMatches": 9,
+    "numberOfPepMatches": 0,
+    "numberOfSipMatches": 9,
     "persons": [
         {
             "category": "SIP",
+            "name": "Yassin SYAWAL",
+            "firstName": "Yassin",
+            "lastName": "SYAWAL",
+            "datesOfBirth": [
+                {
+                    "date": "9/3/1962"
+                }
+            ],
+            "placesOfBirth": [
+                {
+                    "location": "Makassar",
+                    "country": "Indonesia"
+                }
+            ],
+            "referenceType": "Sanction",
+            "references": [
+                {
+                    "name": "NZ - Designated Terrorist Entities (Resolutions 1267/1989/2253 and 1988)",
+                    "idInList": "I286"
+                }
+            ],
+            "nationality": "Indonesia",
+            "citizenship": "",
+            "otherNames": [
+                {
+                    "name": "Salim YASIN",
+                    "firstName": "Salim",
+                    "middleName": "",
+                    "lastName": "YASIN",
+                    "type": ""
+                },
+                {
+                    "name": "Yasin Mahmud MOCHTAR",
+                    "firstName": "Yasin",
+                    "middleName": "Mahmud",
+                    "lastName": "MOCHTAR",
+                    "type": ""
+                },
+                {
+                    "name": "Abdul Hadi YASIN",
+                    "firstName": "Abdul",
+                    "middleName": "Hadi",
+                    "lastName": "YASIN",
+                    "type": ""
+                },
+                {
+                    "name": "Muhamad MUBAROK",
+                    "firstName": "Muhamad",
+                    "middleName": "",
+                    "lastName": "MUBAROK",
+                    "type": ""
+                },
+                {
+                    "name": "Muhammad SYAWAL",
+                    "firstName": "Muhammad",
+                    "middleName": "",
+                    "lastName": "SYAWAL",
+                    "type": ""
+                },
+                {
+                    "name": "Yassin SYWAL",
+                    "firstName": "Yassin",
+                    "middleName": "",
+                    "lastName": "SYWAL",
+                    "type": ""
+                },
+                {
+                    "name": "Abu SETA",
+                    "firstName": "Abu",
+                    "middleName": "",
+                    "lastName": "SETA",
+                    "type": ""
+                },
+                {
+                    "name": "MAHMUD",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "MAHMUD",
+                    "type": ""
+                },
+                {
+                    "name": "Abu MUAMAR",
+                    "firstName": "Abu",
+                    "middleName": "",
+                    "lastName": "MUAMAR",
+                    "type": ""
+                },
+                {
+                    "name": "MUBAROK",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "MUBAROK",
+                    "type": ""
+                }
+            ],
+            "summary": "Associated With: Al Qaeda;\nNZ Designation Date: 1/21/2004;\nEntry Date2: 25/06/2004\n\nAmended 12/12/2014 SCA/2/14 (25)\n\nAmended 29/03/2019 SCA/2/19 (07);\nSanctions List Permanent Reference Number: QDi.123;\nOther2: At large as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 21 Feb. 2019.v Review pursuant to Security Council \nresolution 2610 (2021) was concluded on 8 November 2022. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/un/1424789",
+            "matchRate": 100.0
+        },
+        {
+            "category": "SIP",
             "name": "Mubarok",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1962-09-03"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "city": "Makassar",
                     "location": "",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "BL - Financial Sanctions List",
-                    "id_in_list": "1069"
+                    "idInList": "1069"
                 }
             ],
             "program": "TAQA",
             "nationality": "",
             "citizenship": "Indonesia",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Yassin Syawal",
-                    "first_name": "Yassin",
-                    "middle_name": "",
-                    "last_name": "Syawal",
+                    "firstName": "Yassin",
+                    "middleName": "",
+                    "lastName": "Syawal",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Salim Yasin",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Yasin Mahmud Mochtar",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Abdul Hadi Yasin",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Muhamad Mubarok",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Muhammad Syawal",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Yassin Sywal",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Abu Seta",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Mahmud",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Abu Muamar",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 }
             ],
             "sources": [
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2019:097:FULL&from=EN"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "category": "SIP",
-            "name": "Yassin SYAWAL",
-            "first_name": "Yassin",
-            "last_name": "SYAWAL",
-            "dates_of_birth": [
-                {
-                    "date": "9/3/1962"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "location": "Makassar",
-                    "country": "Indonesia"
-                }
-            ],
-            "reference_type": "Sanction",
-            "references": [
-                {
-                    "name": "NZ - Designated Terrorist Entities (Resolutions 1267/1989/2253 and 1988)",
-                    "id_in_list": "I286"
-                }
-            ],
-            "nationality": "Indonesia",
-            "citizenship": "",
-            "other_names": [
-                {
-                    "name": "Salim YASIN",
-                    "first_name": "Salim",
-                    "middle_name": "",
-                    "last_name": "YASIN",
-                    "type": ""
-                },
-                {
-                    "name": "Yasin Mahmud MOCHTAR",
-                    "first_name": "Yasin",
-                    "middle_name": "Mahmud",
-                    "last_name": "MOCHTAR",
-                    "type": ""
-                },
-                {
-                    "name": "Abdul Hadi YASIN",
-                    "first_name": "Abdul",
-                    "middle_name": "Hadi",
-                    "last_name": "YASIN",
-                    "type": ""
-                },
-                {
-                    "name": "Muhamad MUBAROK",
-                    "first_name": "Muhamad",
-                    "middle_name": "",
-                    "last_name": "MUBAROK",
-                    "type": ""
-                },
-                {
-                    "name": "Muhammad SYAWAL",
-                    "first_name": "Muhammad",
-                    "middle_name": "",
-                    "last_name": "SYAWAL",
-                    "type": ""
-                },
-                {
-                    "name": "Yassin SYWAL",
-                    "first_name": "Yassin",
-                    "middle_name": "",
-                    "last_name": "SYWAL",
-                    "type": ""
-                },
-                {
-                    "name": "Abu SETA",
-                    "first_name": "Abu",
-                    "middle_name": "",
-                    "last_name": "SETA",
-                    "type": ""
-                },
-                {
-                    "name": "MAHMUD",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "MAHMUD",
-                    "type": ""
-                },
-                {
-                    "name": "Abu MUAMAR",
-                    "first_name": "Abu",
-                    "middle_name": "",
-                    "last_name": "MUAMAR",
-                    "type": ""
-                },
-                {
-                    "name": "MUBAROK",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "MUBAROK",
-                    "type": ""
-                }
-            ],
-            "summary": "Associated With: Al Qaeda;\nNZ Designation Date: 1/21/2004;\nEntry Date2: 25/06/2004\n\nAmended 12/12/2014 SCA/2/14 (25)\n\nAmended 29/03/2019 SCA/2/19 (07);\nSanctions List Permanent Reference Number: QDi.123;\nOther2: At large as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 21 Feb. 2019.v Review pursuant to Security Council \nresolution 2610 (2021) was concluded on 8 November 2022. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/un/1424789",
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2020-06-26\n2016-06-10\n2016-01-19\n2013-11-06",
+            "updateAt": "2020-06-26\n2016-06-10\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Hussein Mahmoud Farzat",
             "gender": "male",
-            "original_script_name": "\u062d\u0633\u064a\u0646 \u0645\u062d\u0645\u0648\u062f \u0641\u0631\u0632\u0627\u062a",
-            "dates_of_birth": [
+            "originalScriptName": "\u062d\u0633\u064a\u0646 \u0645\u062d\u0645\u0648\u062f \u0641\u0631\u0632\u0627\u062a",
+            "datesOfBirth": [
                 {
                     "date": "1957"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12286"
+                    "idInList": "12286"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Hussain",
                     "type": "Also Known As"
@@ -248,35 +248,35 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Former Minister of State, in office until at least 2014. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 100.0
+            "summary": "Justification: Former Minister of State, in office until at least 2014. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 100.0
         },
         {
-            "update_at": "31/3/2023",
-            "update_info": "Listed on: 9 Sep. 2003 (amended on 12 Dec. 2014, 29 Mar. 2019, 1 May 2019).",
+            "updateAt": "31/3/2023",
+            "updateInfo": "Listed on: 9 Sep. 2003 (amended on 12 Dec. 2014, 29 Mar. 2019, 1 May 2019).",
             "category": "SIP",
             "name": "Yassin Syawal",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "3/9/1962"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "text": "Makassar, Indonesia"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "AU - DFAT Consolidated Sanction list",
-                    "id_in_list": "443"
+                    "idInList": "443"
                 }
             ],
             "program": "1267/1989/2253 (ISIL (Da'esh) and Al-Qaida)",
             "nationality": "",
             "citizenship": "Indonesia",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Salim Yasin",
                     "type": "Also Known As"
@@ -319,370 +319,370 @@
                 }
             ],
             "summary": "At large as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 21 Feb. 2019. Review pursuant to Security Council resolution 2610 (2021) was concluded on 8 November 2022.",
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "31/12/2020",
+            "updateAt": "31/12/2020",
             "category": "SIP",
             "name": "MAHMUD",
-            "last_name": "MAHMUD",
-            "dates_of_birth": [
+            "lastName": "MAHMUD",
+            "datesOfBirth": [
                 {
                     "date": "03/09/1962"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "city": "Makassar",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "UK - HMT Financial Sanctions List",
-                    "id_in_list": "7834"
+                    "idInList": "7834"
                 }
             ],
             "program": "ISIL (Da'esh) and Al-Qaida",
             "nationality": "Indonesia",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Yasin Mahmud MOCHTAR",
-                    "first_name": "Yasin",
-                    "middle_name": "Mahmud",
-                    "last_name": "MOCHTAR",
+                    "firstName": "Yasin",
+                    "middleName": "Mahmud",
+                    "lastName": "MOCHTAR",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Abu MUAMAR",
-                    "first_name": "Abu",
-                    "middle_name": "",
-                    "last_name": "MUAMAR",
+                    "firstName": "Abu",
+                    "middleName": "",
+                    "lastName": "MUAMAR",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "MUBAROK",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "MUBAROK",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "MUBAROK",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Muhamad MUBAROK",
-                    "first_name": "Muhamad",
-                    "middle_name": "",
-                    "last_name": "MUBAROK",
+                    "firstName": "Muhamad",
+                    "middleName": "",
+                    "lastName": "MUBAROK",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Abu SETA",
-                    "first_name": "Abu",
-                    "middle_name": "",
-                    "last_name": "SETA",
+                    "firstName": "Abu",
+                    "middleName": "",
+                    "lastName": "SETA",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Muhammad SYAWAL",
-                    "first_name": "Muhammad",
-                    "middle_name": "",
-                    "last_name": "SYAWAL",
+                    "firstName": "Muhammad",
+                    "middleName": "",
+                    "lastName": "SYAWAL",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "YASSIN SYAWAL",
-                    "first_name": "YASSIN",
-                    "middle_name": "",
-                    "last_name": "SYAWAL",
+                    "firstName": "YASSIN",
+                    "middleName": "",
+                    "lastName": "SYAWAL",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Yassin SYWAL",
-                    "first_name": "Yassin",
-                    "middle_name": "",
-                    "last_name": "SYWAL",
+                    "firstName": "Yassin",
+                    "middleName": "",
+                    "lastName": "SYWAL",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Abdul Hadi YASIN",
-                    "first_name": "Abdul",
-                    "middle_name": "Hadi",
-                    "last_name": "YASIN",
+                    "firstName": "Abdul",
+                    "middleName": "Hadi",
+                    "lastName": "YASIN",
                     "type": ""
                 },
                 {
                     "title": "",
                     "name": "Salim YASIN",
-                    "first_name": "Salim",
-                    "middle_name": "",
-                    "last_name": "YASIN",
+                    "firstName": "Salim",
+                    "middleName": "",
+                    "lastName": "YASIN",
                     "type": ""
                 }
             ],
             "summary": "(UK Sanctions List Ref):AQD0335. (UN Ref):QDi.123. At large as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 21 Feb. 2019. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/notice/search/un/1424789\nListed On: 05/09/2003;\nDate Designated: 09/09/2003;",
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2019-04-08",
+            "updateAt": "2019-04-08",
             "category": "SIP",
             "name": "Mubarok",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1962-09-03"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "city": "Makassar",
                     "region": "",
                     "country": "INDONESIA"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "EU - Financial Sanctions List",
-                    "id_in_list": "1069"
+                    "idInList": "1069"
                 }
             ],
             "program": "TAQA",
             "nationality": "",
             "citizenship": "INDONESIA",
-            "other_names": [
+            "otherNames": [
                 {
                     "title": "",
                     "name": "Yassin Syawal",
-                    "first_name": "Yassin",
-                    "middle_name": "",
-                    "last_name": "Syawal",
+                    "firstName": "Yassin",
+                    "middleName": "",
+                    "lastName": "Syawal",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Salim Yasin",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Yasin Mahmud Mochtar",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Abdul Hadi Yasin",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Muhamad Mubarok",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Muhammad Syawal",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Yassin Sywal",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Abu Seta",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Mahmud",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 },
                 {
                     "title": "",
                     "name": "Abu Muamar",
-                    "first_name": "",
-                    "middle_name": "",
-                    "last_name": "",
+                    "firstName": "",
+                    "middleName": "",
+                    "lastName": "",
                     "type": "strong"
                 }
             ],
             "sources": [
                 "https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2019:097:FULL&from=EN"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
             "category": "SIP",
             "name": "Yassin SYAWAL",
-            "first_name": "Yassin",
-            "last_name": "SYAWAL",
-            "dates_of_birth": [
+            "firstName": "Yassin",
+            "lastName": "SYAWAL",
+            "datesOfBirth": [
                 {
                     "date": "03 Sep 1962",
                     "note": "main"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "text": "Makassar, Indonesia"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "US - OFAC Specially Designated Nationals (SDN) List",
-                    "id_in_list": "7928"
+                    "idInList": "7928"
                 }
             ],
             "program": "SDGT",
             "nationality": "Indonesia 2275",
             "citizenship": "Indonesia 17624",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "ABU MUAMAR",
-                    "last_name": "ABU MUAMAR",
+                    "lastName": "ABU MUAMAR",
                     "type": "Low Quality AKA"
                 },
                 {
                     "name": "Yasin Mahmud MOCHTAR",
-                    "first_name": "Yasin Mahmud",
-                    "last_name": "MOCHTAR",
+                    "firstName": "Yasin Mahmud",
+                    "lastName": "MOCHTAR",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Muhamad MUBAROK",
-                    "first_name": "Muhamad",
-                    "last_name": "MUBAROK",
+                    "firstName": "Muhamad",
+                    "lastName": "MUBAROK",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Muhammad SYAWAL",
-                    "first_name": "Muhammad",
-                    "last_name": "SYAWAL",
+                    "firstName": "Muhammad",
+                    "lastName": "SYAWAL",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Abdul Hadi YASIN",
-                    "first_name": "Abdul Hadi",
-                    "last_name": "YASIN",
+                    "firstName": "Abdul Hadi",
+                    "lastName": "YASIN",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Salim YASIN",
-                    "first_name": "Salim",
-                    "last_name": "YASIN",
+                    "firstName": "Salim",
+                    "lastName": "YASIN",
                     "type": "Also Known As"
                 },
                 {
                     "name": "ABU SETA",
-                    "last_name": "ABU SETA",
+                    "lastName": "ABU SETA",
                     "type": "Low Quality AKA"
                 },
                 {
                     "name": "MAHMUD",
-                    "last_name": "MAHMUD",
+                    "lastName": "MAHMUD",
                     "type": "Low Quality AKA"
                 },
                 {
                     "name": "Syawal YASIN",
-                    "first_name": "Syawal",
-                    "last_name": "YASIN",
+                    "firstName": "Syawal",
+                    "lastName": "YASIN",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Laode Agussalim MUBARAK",
-                    "first_name": "Laode Agussalim",
-                    "last_name": "MUBARAK",
+                    "firstName": "Laode Agussalim",
+                    "lastName": "MUBARAK",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Ustad Haji Laudi Agus Salim MUHAMMAD",
-                    "first_name": "Ustad Haji Laudi Agus Salim",
-                    "last_name": "MUHAMMAD",
+                    "firstName": "Ustad Haji Laudi Agus Salim",
+                    "lastName": "MUHAMMAD",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Mohd Shahwal KHAN",
-                    "first_name": "Mohd Shahwal",
-                    "last_name": "KHAN",
+                    "firstName": "Mohd Shahwal",
+                    "lastName": "KHAN",
                     "type": "Also Known As"
                 },
                 {
                     "name": "Laode IDA",
-                    "first_name": "Laode",
-                    "last_name": "IDA",
+                    "firstName": "Laode",
+                    "lastName": "IDA",
                     "type": "Also Known As"
                 },
                 {
                     "name": "AGUS SALIM",
-                    "last_name": "AGUS SALIM",
+                    "lastName": "AGUS SALIM",
                     "type": "Low Quality AKA"
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-11-08",
+            "updateAt": "2022-11-08",
             "category": "SIP",
             "name": "YASSIN SYAWAL",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1962-09-03",
                     "note": "EXACT"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "city": "Makassar",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "UN - United Nations Sanctions List",
-                    "id_in_list": "113222"
+                    "idInList": "113222"
                 }
             ],
             "program": "Al-Qaida (QDi.123)",
             "nationality": "Indonesia",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Salim Yasin",
                     "type": "good"
@@ -725,25 +725,25 @@
                 }
             ],
             "summary": "At large as at Dec. 2003. Review pursuant to Security Council resolution 1822 (2008) was concluded on 25 May 2010. Review pursuant to Security Council resolution 2253 (2015) was concluded on 21 February 2019. Review pursuant to Security Council resolution 2610 (2021) was concluded on 8 November 2022. INTERPOL-UN Security Council Special Notice web link: https://www.interpol.int/en/How-we-work/Notices/View-UN-Notices-Individuals",
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Makhmoud Al-Khattib",
             "gender": "male",
-            "original_script_name": "\u0645\u062d\u0645\u0648\u062f \u0627\u0644\u062e\u0637\u064a\u0628",
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0645\u062d\u0645\u0648\u062f \u0627\u0644\u062e\u0637\u064a\u0628",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12157"
+                    "idInList": "12157"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Mahmoud",
                     "type": "Also Known As"
@@ -753,8 +753,8 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: As Head of the Investigative Branch of the Political Security Directorate, responsible for detention and torture of detainees.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Position: Head of Investigative Branch (Political Security Directorate)",
-            "match_rate": 66.0
+            "summary": "Justification: As Head of the Investigative Branch of the Political Security Directorate, responsible for detention and torture of detainees.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)\r\nOther information: Position: Head of Investigative Branch (Political Security Directorate)",
+            "matchRate": 66.0
         }
     ]
 }

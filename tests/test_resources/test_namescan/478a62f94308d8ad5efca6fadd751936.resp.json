@@ -1,23 +1,23 @@
 {
-    "date": "2023-07-03T12:42:42.5901947+10:00",
-    "scan_id": "s11997743",
-    "number_of_matches": 3,
-    "number_of_pep_matches": 3,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:56.4858868+10:00",
+    "scanId": "s12038912",
+    "numberOfMatches": 3,
+    "numberOfPepMatches": 3,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2014-08-28",
+            "deceasedDate": "2014-08-28",
             "name": "Suhardi",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1952-08-13"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "country": "Indonesia"
                 },
@@ -31,7 +31,7 @@
                     "location": "Klaten"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -44,7 +44,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Great Indonesia Movement Party",
                     "since": "",
@@ -54,58 +54,58 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Suhardi%20Chairman%20of%20Gerindra%20Party.jpg"
             ],
-            "match_rate": 90.0
+            "matchRate": 90.0
         },
         {
-            "update_at": "2023-02-03",
+            "updateAt": "2023-02-03",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2015-12-13",
+            "deceasedDate": "2015-12-13",
             "name": "Suhardiman",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1924-12-16"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Surakarta",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician",
                 "military personnel"
             ],
-            "match_rate": 69.0
+            "matchRate": 69.0
         },
         {
-            "update_at": "2023-06-23",
+            "updateAt": "2023-06-23",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2008-01-27",
+            "deceasedDate": "2008-01-27",
             "name": "Suharto",
-            "last_name": "Soeharto",
+            "lastName": "Soeharto",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1921-06-08"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Kemusuk",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia; Dutch East Indies",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Father of Development",
                     "type": "Also Known As"
@@ -178,7 +178,7 @@
                 "Tommy Suharto",
                 "Tutut Soeharto"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Golongan Karya Party",
                     "since": "",
@@ -189,7 +189,7 @@
                 "http://commons.wikimedia.org/wiki/Special:FilePath/President%20Suharto%2C%201993.jpg"
             ],
             "summary": "Height: 1.68",
-            "match_rate": 52.0
+            "matchRate": 52.0
         }
     ]
 }

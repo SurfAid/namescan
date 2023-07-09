@@ -1,29 +1,29 @@
 {
-    "date": "2023-07-03T12:42:53.1419317+10:00",
-    "scan_id": "s11997760",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T15:00:10.3286587+10:00",
+    "scanId": "s12038930",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2023-06-19",
+            "updateAt": "2023-06-19",
             "category": "PEP",
             "name": "Siti Nurbaya Bakar",
-            "first_name": "Siti",
-            "last_name": "Bakar",
+            "firstName": "Siti",
+            "lastName": "Bakar",
             "gender": "female",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1956-08-28"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Jakarta",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -33,7 +33,7 @@
                     "type": "residence"
                 }
             ],
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Siti Nurbaya",
                     "type": "Also Known As"
@@ -57,7 +57,7 @@
             "children": [
                 "Ananda Tohpati"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Nasdem Party",
                     "since": "",
@@ -67,13 +67,13 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Siti%20Nurbaya%20Bakar.jpg"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "27/09/2022",
+            "updateAt": "27/09/2022",
             "category": "PEP",
             "name": "SITI Nurbaya Bakar",
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
             "places": [
@@ -86,7 +86,7 @@
                     "title": "Min. of Environment & Forestry"
                 }
             ],
-            "match_rate": 82.0
+            "matchRate": 82.0
         }
     ]
 }

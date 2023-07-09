@@ -1,27 +1,27 @@
 {
-    "date": "2023-07-03T12:42:29.0284562+10:00",
-    "scan_id": "s11997720",
-    "number_of_matches": 5,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 3,
+    "date": "2023-07-09T14:59:39.6889522+10:00",
+    "scanId": "s12038888",
+    "numberOfMatches": 5,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 3,
     "persons": [
         {
-            "update_at": "2021-06-11\n2019-08-13\n2016-01-19\n2013-11-06",
+            "updateAt": "2021-06-11\n2019-08-13\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Ali Barakat",
             "gender": "male",
-            "original_script_name": "\u0639\u0644\u064a \u0628\u0631\u0643\u0627\u062a",
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0639\u0644\u064a \u0628\u0631\u0643\u0627\u062a",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12041"
+                    "idInList": "12041"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Barakat",
                     "type": "Also Known As"
@@ -31,44 +31,44 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Military official involved in the violence in Homs. Currently serves in the 30th Mobile Infantry Division of the Republican Guard.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 100.0
+            "summary": "Justification: Military official involved in the violence in Homs. Currently serves in the 30th Mobile Infantry Division of the Republican Guard.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Ali",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1950-09-01"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06\n2013-02-13",
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06\n2013-02-13",
             "category": "SIP",
             "name": "Nasser Al-Ali Brigadier General",
             "gender": "male",
-            "original_script_name": "\u0646\u0627\u0635\u0631 \u0627\u0644\u0639\u0644\u064a",
-            "reference_type": "Sanction",
+            "originalScriptName": "\u0646\u0627\u0635\u0631 \u0627\u0644\u0639\u0644\u064a",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12167"
+                    "idInList": "12167"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Brigadier General",
                     "type": "Spelling Variation"
@@ -82,31 +82,31 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Head of the Political Security Directorate since Jul 2019. Responsible for detention and torture of detainees.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)\r\nOther information: Position: Head of the Political Security Directorate",
-            "match_rate": 58.0
+            "summary": "Justification: Head of the Political Security Directorate since Jul 2019. Responsible for detention and torture of detainees.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)\r\nOther information: Position: Head of the Political Security Directorate",
+            "matchRate": 58.0
         },
         {
-            "update_at": "2020-06-26\n2016-01-19\n2013-11-06",
+            "updateAt": "2020-06-26\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Aous \"Ali\" Aslan Major General",
             "gender": "male",
-            "original_script_name": "\u0623\u0648\u0633 \"",
-            "dates_of_birth": [
+            "originalScriptName": "\u0623\u0648\u0633 \"",
+            "datesOfBirth": [
                 {
                     "date": "1958"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "11959"
+                    "idInList": "11959"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Ali\" Major General",
                     "type": "Spelling Variation"
@@ -120,30 +120,30 @@
                     "type": "Spelling Variation"
                 }
             ],
-            "summary": "Justification: High-ranking officer. Close to Maher al-Assad and President Bashar al-Assad. Former positions: Commander of the 40th Brigade (4th Division) between 2011 and 2014; deputy Commander of the 4th Division in 2015; Commander of the 2nd Corps in 2016. Involved in the crackdown on the civilian population across Syria, including arbitrary arrests, mass killings and forced displacements of civilian population.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 58.0
+            "summary": "Justification: High-ranking officer. Close to Maher al-Assad and President Bashar al-Assad. Former positions: Commander of the 40th Brigade (4th Division) between 2011 and 2014; deputy Commander of the 4th Division in 2015; Commander of the 2nd Corps in 2016. Involved in the crackdown on the civilian population across Syria, including arbitrary arrests, mass killings and forced displacements of civilian population.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 58.0
         },
         {
-            "update_at": "2023-02-06",
+            "updateAt": "2023-02-06",
             "category": "RCA",
             "name": "Ahmad Al Ghazali",
-            "first_name": "Ahmad",
+            "firstName": "Ahmad",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1997-09-01"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Jakarta",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Al",
                     "type": "Also Known As"
@@ -182,7 +182,7 @@
                     "type": "Facebook profile ID"
                 }
             ],
-            "match_rate": 58.0
+            "matchRate": 58.0
         }
     ]
 }

@@ -1,63 +1,63 @@
 {
-    "date": "2023-07-03T12:42:34.5285401+10:00",
-    "scan_id": "s11997729",
-    "number_of_matches": 3,
-    "number_of_pep_matches": 3,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:46.2145364+10:00",
+    "scanId": "s12038898",
+    "numberOfMatches": 3,
+    "numberOfPepMatches": 3,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Abdul Haris",
             "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1968-05-03"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "occupations": [
-                "politician"
-            ],
-            "match_rate": 100.0
-        },
-        {
-            "update_at": "2022-09-18",
-            "category": "PEP",
-            "name": "Abdul Haris",
-            "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1956-07-11"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Abdul Haris",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1968-05-03"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 100.0
+        },
+        {
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Abdul Haris Makkie",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1962-05-10"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 80.0
+            "matchRate": 80.0
         }
     ]
 }

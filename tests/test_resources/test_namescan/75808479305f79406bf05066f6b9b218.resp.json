@@ -1,51 +1,80 @@
 {
-    "date": "2023-07-03T12:42:24.7458041+10:00",
-    "scan_id": "s11997714",
-    "number_of_matches": 7,
-    "number_of_pep_matches": 6,
-    "number_of_sip_matches": 1,
+    "date": "2023-07-09T14:59:35.1514351+10:00",
+    "scanId": "s12038882",
+    "numberOfMatches": 7,
+    "numberOfPepMatches": 6,
+    "numberOfSipMatches": 1,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2023-04-04",
             "category": "PEP",
-            "name": "Rusmin Abdul Gani",
+            "name": "Ruslan Abdul Gani",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
-                    "date": "1980-12-08"
+                    "date": "1958-12-09"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
+            "places": [
+                {
+                    "country": "Indonesia",
+                    "location": "Kebayoran Baru",
+                    "type": "residence"
+                },
+                {
+                    "country": "Indonesia",
+                    "location": "Pariaman Tengah",
+                    "type": "residence"
+                }
+            ],
             "occupations": [
                 "politician"
             ],
-            "match_rate": 78.0
+            "politicalParties": [
+                {
+                    "title": "People's Conscience Party",
+                    "since": "",
+                    "to": ""
+                },
+                {
+                    "title": "New Indonesia National Sovereignty Party",
+                    "since": "",
+                    "to": ""
+                },
+                {
+                    "title": "Indonesian Democratic Party \u2013 Struggle",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "matchRate": 78.0
         },
         {
-            "update_at": "2022-09-03",
+            "updateAt": "2022-09-03",
             "category": "PEP",
             "deceased": true,
-            "deceased_date": "2002-05-21",
+            "deceasedDate": "2002-05-21",
             "name": "Abdul Ghani Lone",
-            "first_name": "Abdul Ghani",
+            "firstName": "Abdul Ghani",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1932-05-06"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Handwara",
                     "country": "India"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "India; British Raj; Dominion of India",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Abdul Gani Lone",
                     "type": "Also Known As"
@@ -65,84 +94,55 @@
                 "Sajjad Lone",
                 "Shabnam Ghani Lone"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Jammu & Kashmir People Conference",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 78.0
+            "matchRate": 78.0
         },
         {
-            "update_at": "2023-04-04",
+            "updateAt": "2022-09-18",
             "category": "PEP",
-            "name": "Ruslan Abdul Gani",
+            "name": "Rusmin Abdul Gani",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
-                    "date": "1958-12-09"
+                    "date": "1980-12-08"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
-            "places": [
-                {
-                    "country": "Indonesia",
-                    "location": "Kebayoran Baru",
-                    "type": "residence"
-                },
-                {
-                    "country": "Indonesia",
-                    "location": "Pariaman Tengah",
-                    "type": "residence"
-                }
-            ],
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
-                {
-                    "title": "People's Conscience Party",
-                    "since": "",
-                    "to": ""
-                },
-                {
-                    "title": "New Indonesia National Sovereignty Party",
-                    "since": "",
-                    "to": ""
-                },
-                {
-                    "title": "Indonesian Democratic Party \u2013 Struggle",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "match_rate": 78.0
+            "matchRate": 78.0
         },
         {
-            "update_at": "2022-09-28\n2021-06-11\n2020-06-26\n2018-06-12\n2016-06-10\n2016-01-19\n2013-11-06",
+            "updateAt": "2022-09-28\n2021-06-11\n2020-06-26\n2018-06-12\n2016-06-10\n2016-01-19\n2013-11-06",
             "category": "SIP",
             "name": "Emad Abdul-Ghani Sabouni",
             "gender": "male",
-            "original_script_name": "\u0639\u0645\u0627\u062f \u0639\u0628\u062f\u0627\u0644\u063a\u0646\u064a \u0635\u0627\u0628\u0648\u0646\u064a",
-            "dates_of_birth": [
+            "originalScriptName": "\u0639\u0645\u0627\u062f \u0639\u0628\u062f\u0627\u0644\u063a\u0646\u064a \u0635\u0627\u0628\u0648\u0646\u064a",
+            "datesOfBirth": [
                 {
                     "date": "1964"
                 }
             ],
-            "reference_type": "Sanction",
+            "referenceType": "Sanction",
             "references": [
                 {
                     "name": "CH - SECO Sanction List",
-                    "id_in_list": "12195"
+                    "idInList": "12195"
                 }
             ],
-            "program": "Syria",
+            "program": "Syrien",
             "nationality": "",
             "citizenship": "",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Imad",
                     "type": "Also Known As"
@@ -156,48 +156,90 @@
                     "type": "Also Known As"
                 }
             ],
-            "summary": "Justification: Former Minister of Telecommunications and Technology, in office until at least Apr 2014. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population. Former Head of Planning and International Cooperation Agency (PICC). The PICC is a government agency, affiliated to the Prime Ministry and produces, in particular, the five-year plans that provide the broad guidelines for the Government\u2019s economic and development policies.\r\nSanctions: article 10 paragraph 1 (Financial sanctions) and article 17 paragraph 1 (Travel ban)",
-            "match_rate": 75.0
+            "summary": "Justification: Former Minister of Telecommunications and Technology, in office until at least Apr 2014. As a former Government Minister, shares responsibility for the Syrian regime\u2019s violent repression of the civilian population. Former Head of Planning and International Cooperation Agency (PICC). The PICC is a government agency, affiliated to the Prime Ministry and produces, in particular, the five-year plans that provide the broad guidelines for the Government\u2019s economic and development policies.\r\nSanctions: Art. 10 Abs. 1 (Finanzsanktionen) und Art. 17 Abs. 1 (Ein- und Durchreiseverbot)",
+            "matchRate": 75.0
         },
         {
-            "update_at": "2023-05-27",
+            "updateAt": "2023-05-27",
             "category": "PEP",
             "name": "Abdul Ganie Mohamed",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1937-11-04"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 74.0
+            "matchRate": 74.0
         },
         {
-            "update_at": "2023-06-07",
+            "updateAt": "2023-05-23",
+            "category": "PEP",
+            "name": "Abdul Ghani Kasuba",
+            "firstName": "Abdul Ghani",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1951-12-21"
+                }
+            ],
+            "placesOfBirth": [
+                {
+                    "location": "Bacan islands",
+                    "country": "Indonesia"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "roles": [
+                {
+                    "title": "Governor of North Maluku",
+                    "since": "2014-05-05",
+                    "to": ""
+                }
+            ],
+            "occupations": [
+                "politician"
+            ],
+            "politicalParties": [
+                {
+                    "title": "Prosperous Justice Party",
+                    "since": "",
+                    "to": ""
+                }
+            ],
+            "images": [
+                "http://commons.wikimedia.org/wiki/Special:FilePath/Gubernur%20Maluku%20Utara%20Abdul%20Gani%20Kasuba.jpg"
+            ],
+            "matchRate": 63.0
+        },
+        {
+            "updateAt": "2023-06-07",
             "category": "PEP",
             "name": "Abdul Ghani Baradar",
-            "first_name": "Abdul Ghani",
+            "firstName": "Abdul Ghani",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1968-09-29"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Weetmak",
                     "country": "Afghanistan"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Afghanistan; Democratic Republic of Afghanistan; Islamic State of Afghanistan; Kingdom of Afghanistan; Republic of Afghanistan",
-            "other_names": [
+            "otherNames": [
                 {
                     "name": "Baradar",
                     "type": "Also Known As"
@@ -232,7 +274,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Taliban",
                     "since": "",
@@ -248,49 +290,7 @@
             "images": [
                 "http://commons.wikimedia.org/wiki/Special:FilePath/Abdul%20Ghani%20Baradar.jpg"
             ],
-            "match_rate": 63.0
-        },
-        {
-            "update_at": "2023-05-23",
-            "category": "PEP",
-            "name": "Abdul Ghani Kasuba",
-            "first_name": "Abdul Ghani",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1951-12-21"
-                }
-            ],
-            "places_of_birth": [
-                {
-                    "location": "Bacan islands",
-                    "country": "Indonesia"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "roles": [
-                {
-                    "title": "Governor of North Maluku",
-                    "since": "2014-05-05",
-                    "to": ""
-                }
-            ],
-            "occupations": [
-                "politician"
-            ],
-            "political_parties": [
-                {
-                    "title": "Prosperous Justice Party",
-                    "since": "",
-                    "to": ""
-                }
-            ],
-            "images": [
-                "http://commons.wikimedia.org/wiki/Special:FilePath/Gubernur%20Maluku%20Utara%20Abdul%20Gani%20Kasuba.jpg"
-            ],
-            "match_rate": 63.0
+            "matchRate": 63.0
         }
     ]
 }

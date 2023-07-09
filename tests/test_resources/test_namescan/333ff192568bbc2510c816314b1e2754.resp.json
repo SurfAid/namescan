@@ -1,39 +1,39 @@
 {
-    "date": "2023-07-03T12:42:33.8803834+10:00",
-    "scan_id": "s11997728",
-    "number_of_matches": 4,
-    "number_of_pep_matches": 4,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T14:59:45.5346734+10:00",
+    "scanId": "s12038897",
+    "numberOfMatches": 4,
+    "numberOfPepMatches": 4,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2022-10-15",
+            "updateAt": "2022-10-15",
             "category": "PEP",
             "name": "Syamsudin",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1954-02-07"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2023-04-04",
+            "updateAt": "2023-04-04",
             "category": "PEP",
             "name": "Syamsuddin Hb.",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1974-07-07"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -46,50 +46,50 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Nasdem Party",
                     "since": "",
                     "to": ""
                 }
             ],
-            "match_rate": 93.0
+            "matchRate": 93.0
         },
         {
-            "update_at": "2022-09-18",
-            "category": "PEP",
-            "name": "Samsudin S.",
-            "gender": "male",
-            "dates_of_birth": [
-                {
-                    "date": "1982-02-12"
-                }
-            ],
-            "reference_type": "PEP",
-            "nationality": "",
-            "citizenship": "Indonesia",
-            "occupations": [
-                "politician"
-            ],
-            "match_rate": 75.0
-        },
-        {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Samsudin",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1962-12-01"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 75.0
+            "matchRate": 75.0
+        },
+        {
+            "updateAt": "2022-09-18",
+            "category": "PEP",
+            "name": "Samsudin S.",
+            "gender": "male",
+            "datesOfBirth": [
+                {
+                    "date": "1982-02-12"
+                }
+            ],
+            "referenceType": "PEP",
+            "nationality": "",
+            "citizenship": "Indonesia",
+            "occupations": [
+                "politician"
+            ],
+            "matchRate": 75.0
         }
     ]
 }

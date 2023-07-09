@@ -1,27 +1,27 @@
 {
-    "date": "2023-07-03T12:42:56.4725931+10:00",
-    "scan_id": "s11997765",
-    "number_of_matches": 2,
-    "number_of_pep_matches": 2,
-    "number_of_sip_matches": 0,
+    "date": "2023-07-09T15:00:14.7764673+10:00",
+    "scanId": "s12038935",
+    "numberOfMatches": 2,
+    "numberOfPepMatches": 2,
+    "numberOfSipMatches": 0,
     "persons": [
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Supratman",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1959-05-04"
                 }
             ],
-            "places_of_birth": [
+            "placesOfBirth": [
                 {
                     "location": "Medan",
                     "country": "Indonesia"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "places": [
@@ -44,7 +44,7 @@
             "occupations": [
                 "politician"
             ],
-            "political_parties": [
+            "politicalParties": [
                 {
                     "title": "Indonesian Justice and Unity Party",
                     "since": "",
@@ -56,25 +56,25 @@
                     "to": ""
                 }
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         },
         {
-            "update_at": "2022-09-18",
+            "updateAt": "2022-09-18",
             "category": "PEP",
             "name": "Supratman",
             "gender": "male",
-            "dates_of_birth": [
+            "datesOfBirth": [
                 {
                     "date": "1949-10-05"
                 }
             ],
-            "reference_type": "PEP",
+            "referenceType": "PEP",
             "nationality": "",
             "citizenship": "Indonesia",
             "occupations": [
                 "politician"
             ],
-            "match_rate": 100.0
+            "matchRate": 100.0
         }
     ]
 }

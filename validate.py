@@ -19,9 +19,10 @@ from models import (
     PersonToScan,
     Entity,
     PersonScanResult,
+    OrganisationScanResult,
 )
 
-NAME_SCAN_URL = "https://api.namescan.io/v2"
+NAME_SCAN_URL = "https://api.namescan.io/v3"
 EMERALD_PERSON_URL = f"{NAME_SCAN_URL}/person-scans/emerald"
 EMERALD_ORGANIZATION_URL = f"{NAME_SCAN_URL}/organisation-scans/emerald"
 REQUEST_TIMEOUT_IN_SECONDS = 10
@@ -231,11 +232,15 @@ def create_rationale(
         encoding="utf-8"
     )
     json_object = json.loads(response_json_string)
-    scan_result = PersonScanResult.from_json(json_object)
+    scan_result = (
+        PersonScanResult.from_json(json_object)
+        if isinstance(entity, PersonToScan)
+        else OrganisationScanResult.from_json(json_object)
+    )
     rationale = Rationale(
         entity_to_scan=entity,
         matches_with_explanations={
-            match: match.rationale for match in scan_result.persons
+            match: match.rationale for match in scan_result.entities
         },
     )
     console.log(
