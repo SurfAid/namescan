@@ -103,9 +103,10 @@ class TestValidate:
         assert response is None
 
     def test_read_response_should_take_files_not_too_old(self):
-        response = file_response(
+        age, response = file_response(
             file_path=Path(test_resource_path / "politician.json"),
             max_days_old=sys.maxsize,
         )
         assert response.json()["scanId"] == "s12022672"
         assert response.json()["date"] == "2023-07-06T19:57:48.2730988+10:00"
+        assert age > 0

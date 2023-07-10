@@ -76,7 +76,7 @@ def to_output_path(input_file: Path, output: Optional[str]) -> Path:
     help="Skip the namescan API call and only add the rationale to the output file.",
 )
 def check(
-    file: str, output: Optional[str], key: str, entity: str, skip: bool, max_age: int
+    file: str, output: Optional[str], key: str, entity: str, skip: bool, age: int
 ):
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console = create_console_logger()
@@ -85,7 +85,7 @@ def check(
     output_path = to_output_path(input_file, output)
 
     if not skip:
-        validate_file(console, input_file, output_path, key, entity, max_age)
+        validate_file(console, input_file, output_path, key, entity, age)
     add_rationale(console, input_file, entity, output_path)
 
 
