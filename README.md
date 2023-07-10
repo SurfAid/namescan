@@ -53,3 +53,8 @@ Run tests
 ```shell
 pipven run validate
 ```
+
+### Adjusting false positives logic
+
+The logic marking matches as false positive and the rationale for doing so is [here](https://github.com/SurfAid/namescan/blob/821f5fa4667a50bc4fb0517d6702ea409e3c873b/models.py#L91)
+and can be adjusted to your policy.
