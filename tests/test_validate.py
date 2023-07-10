@@ -1,4 +1,5 @@
 import json
+import sys
 from pathlib import Path
 
 from models import OrganisationScanResult, Gender
@@ -9,6 +10,7 @@ from validate import (
     PersonScanResult,
     add_rationale,
     PersonToScan,
+    file_response,
 )
 
 
@@ -93,3 +95,17 @@ class TestValidate:
             match_rate=50,
         )
         assert person.hash == "fded17b8481e0691f4a96e3af2938a41"
+
+    def test_read_response_should_skip_too_old_files(self):
+        response = file_response(
+            file_path=Path(test_resource_path / "politician.json"), max_days_old=1
+        )
+        assert response is None
+
+    def test_read_response_should_take_files_not_too_old(self):
+        response = file_response(
+            file_path=Path(test_resource_path / "politician.json"),
+            max_days_old=sys.maxsize,
+        )
+        assert response.json()["scanId"] == "s12022672"
+        assert response.json()["date"] == "2023-07-06T19:57:48.2730988+10:00"

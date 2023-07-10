@@ -3,6 +3,7 @@ import csv
 import dataclasses
 import json
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from typing import Optional, Any
 
@@ -35,13 +36,36 @@ def log_request(request_body: dict, output_file: Path):
         file.write(json.dumps(request_body, indent=4))
 
 
-def file_response(file_path: Path) -> Response:
+def file_response(file_path: Path, max_days_old: int) -> Optional[Response]:
+    if not file_path.exists():
+        return None
+
     response = Response()
     response.status_code = 201
     response._content = bytes(  # pylint: disable=protected-access
         file_path.read_text("utf-8"), "utf-8"
     )
+    maybe_date = response.json().get("date")
+    if maybe_date:
+        response_date = datetime.fromisoformat(maybe_date)
+        days_old = (datetime.now().astimezone() - response_date).days
+        if days_old > max_days_old:
+            return None
+
     return response
+
+
+def do_request(api_url, entity_dict, key, output_file, max_days_old: int) -> Response:
+    response_from_file = file_response(output_file, max_days_old)
+    if response_from_file:
+        return response_from_file
+
+    return requests.post(
+        api_url,
+        json=entity_dict,
+        headers={"api-key": key},
+        timeout=REQUEST_TIMEOUT_IN_SECONDS,
+    )
 
 
 def send_request(
@@ -52,22 +76,14 @@ def send_request(
     entity_dict: dict,
     key: str,
     output_path: Path,
+    max_days_old: int,
 ) -> None:
     """Send a request to the Namescan emerald API."""
     status_prefix = f"{index} checking {entity.name}..."
     with console.status(status_prefix) as status:
         log_request(entity_dict, Path(output_path, f"{entity.hash}.req.json"))
         output_file = Path(output_path, f"{entity.hash}.resp.json")
-        response = (
-            requests.post(
-                api_url,
-                json=entity_dict,
-                headers={"api-key": key},
-                timeout=REQUEST_TIMEOUT_IN_SECONDS,
-            )
-            if not output_file.exists()
-            else file_response(output_file)
-        )
+        response = do_request(api_url, entity_dict, key, output_file, max_days_old)
         if response.status_code < 300:
             response_json = response.json()
             status.console.log(
@@ -107,7 +123,12 @@ def read_csv_as_worksheet(file_path: Path) -> Worksheet:
 
 
 def validate_file(
-    console: Console, file: Path, output_path: Path, key: str, entity: str
+    console: Console,
+    file: Path,
+    output_path: Path,
+    key: str,
+    entity: str,
+    max_days_old: int,
 ) -> None:
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console.log(Markdown(f"Reading `{file}`"))
@@ -126,6 +147,7 @@ def validate_file(
                 dataclasses.asdict(org),
                 key,
                 output_path,
+                max_days_old,
             )
         elif entity == "person":
             person = PersonToScan.from_dataframe(row)
@@ -137,6 +159,7 @@ def validate_file(
                 dataclasses.asdict(person),
                 key,
                 output_path,
+                max_days_old,
             )
         else:
             raise BadParameter(f"Unknown scan type: {entity}")
