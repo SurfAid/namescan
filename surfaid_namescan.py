@@ -63,11 +63,21 @@ def to_output_path(input_file: Path, output: Optional[str]) -> Path:
     help="The type of scan to do. Default is person.",
 )
 @click.option(
+    "--age",
+    "-a",
+    type=click.INT,
+    required=False,
+    default=90,
+    help="The maximum age of namescan data to still be considered valid. Default is 90 days.",
+)
+@click.option(
     "--skip",
     is_flag=True,
     help="Skip the namescan API call and only add the rationale to the output file.",
 )
-def check(file: str, output: Optional[str], key: str, entity: str, skip: bool):
+def check(
+    file: str, output: Optional[str], key: str, entity: str, skip: bool, age: int
+):
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console = create_console_logger()
 
@@ -75,7 +85,7 @@ def check(file: str, output: Optional[str], key: str, entity: str, skip: bool):
     output_path = to_output_path(input_file, output)
 
     if not skip:
-        validate_file(console, input_file, output_path, key, entity)
+        validate_file(console, input_file, output_path, key, entity, age)
     add_rationale(console, input_file, entity, output_path)
 
 

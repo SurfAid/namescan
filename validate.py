@@ -3,8 +3,9 @@ import csv
 import dataclasses
 import json
 from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
-from typing import Optional, Any
+from typing import Optional, Any, Tuple
 
 import openpyxl
 import requests
@@ -35,13 +36,27 @@ def log_request(request_body: dict, output_file: Path):
         file.write(json.dumps(request_body, indent=4))
 
 
-def file_response(file_path: Path) -> Response:
+def response_age(response: dict) -> int:
+    """Get the age of a response in days."""
+    date = response["date"]
+    response_date = datetime.fromisoformat(date)
+    return (datetime.now().astimezone() - response_date).days
+
+
+def file_response(file_path: Path, max_days_old: int) -> Optional[Tuple[int, Response]]:
+    if not file_path.exists():
+        return None
+
     response = Response()
     response.status_code = 201
     response._content = bytes(  # pylint: disable=protected-access
         file_path.read_text("utf-8"), "utf-8"
     )
-    return response
+    age = response_age(response.json())
+    if age > max_days_old:
+        return None
+
+    return age, response
 
 
 def send_request(
@@ -52,26 +67,22 @@ def send_request(
     entity_dict: dict,
     key: str,
     output_path: Path,
+    max_days_old: int,
 ) -> None:
     """Send a request to the Namescan emerald API."""
     status_prefix = f"{index} checking {entity.name}..."
     with console.status(status_prefix) as status:
         log_request(entity_dict, Path(output_path, f"{entity.hash}.req.json"))
         output_file = Path(output_path, f"{entity.hash}.resp.json")
-        response = (
-            requests.post(
-                api_url,
-                json=entity_dict,
-                headers={"api-key": key},
-                timeout=REQUEST_TIMEOUT_IN_SECONDS,
-            )
-            if not output_file.exists()
-            else file_response(output_file)
+        age, response = get_response(
+            api_url, entity_dict, key, max_days_old, output_file
         )
+
         if response.status_code < 300:
             response_json = response.json()
+            when = "checked just now" if age == 0 else f"checked {age} days ago"
             status.console.log(
-                f"{index} checked {entity.name} - {response_json.get('numberOfMatches', 'Error')} matches"
+                f"{index} {when} {entity.name} - {response_json.get('numberOfMatches', 'Error')} matches"
             )
             log_request(response_json, output_file)
         else:
@@ -79,6 +90,24 @@ def send_request(
                 f"[red]Error while sending request {entity.hash}, {entity.name} to Namescan API: {response.status_code}"
                 f" - {response.text}[/red]"
             )
+
+
+def get_response(
+    api_url, entity_dict, key, max_days_old, output_file
+) -> Tuple[int, Response]:
+    from_file = file_response(output_file, max_days_old)
+    if from_file is not None:
+        return from_file
+
+    return (
+        0,
+        requests.post(
+            api_url,
+            json=entity_dict,
+            headers={"api-key": key},
+            timeout=REQUEST_TIMEOUT_IN_SECONDS,
+        ),
+    )
 
 
 def read_as_dataframe(file: Path) -> list[dict[str, Any]]:
@@ -107,7 +136,12 @@ def read_csv_as_worksheet(file_path: Path) -> Worksheet:
 
 
 def validate_file(
-    console: Console, file: Path, output_path: Path, key: str, entity: str
+    console: Console,
+    file: Path,
+    output_path: Path,
+    key: str,
+    entity: str,
+    max_days_old: int,
 ) -> None:
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console.log(Markdown(f"Reading `{file}`"))
@@ -126,6 +160,7 @@ def validate_file(
                 dataclasses.asdict(org),
                 key,
                 output_path,
+                max_days_old,
             )
         elif entity == "person":
             person = PersonToScan.from_dataframe(row)
@@ -137,6 +172,7 @@ def validate_file(
                 dataclasses.asdict(person),
                 key,
                 output_path,
+                max_days_old,
             )
         else:
             raise BadParameter(f"Unknown scan type: {entity}")
