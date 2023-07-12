@@ -140,30 +140,32 @@ def read_csv_as_worksheet(file_path: Path) -> Worksheet:
 
 def check_database(console: Console, path: Path, max_age: int) -> None:
     """Check if the database exists."""
-    if path.exists():
-        files = glob.glob(f"{path}/*.resp.json")
-        responses = [json.loads(Path(file).read_text("utf-8")) for file in files]
-        dates = [response_age(response) for response in responses]
-        outdated = [date for date in dates if date > max_age]
+    files = glob.glob(f"{path}/*.resp.json")
+    responses = [json.loads(Path(file).read_text("utf-8")) for file in files]
+    dates = [response_age(response) for response in responses]
+    outdated = [date for date in dates if date > max_age]
 
-        if not prompt.Confirm.ask(
-            f"{len(dates)} responses found in {path}. {len(outdated)} are than {max_age} days old. Continue?"
-        ):
-            console.log("Aborted")
-            sys.exit(0)
+    total = len(dates)
+    question = (
+        f"Found responses in {path}. {len(outdated)} out of {total} are than {max_age} days old. Continue?"
+        if total > 0
+        else f"Found no responses in {path}. Will call namescan for each row in the excel sheet. Continue?"
+    )
+
+    if not prompt.Confirm.ask(question):
+        console.log("Aborted")
+        sys.exit(0)
 
 
 def validate_file(
     console: Console,
-    file: Path,
+    dataframe: list[dict[str, Any]],
     output_path: Path,
     key: str,
     entity: str,
     max_days_old: int,
 ) -> None:
     """Validate an Excel sheet with persons against the Namescan emerald API."""
-    console.log(Markdown(f"Reading `{file}`"))
-    dataframe = read_as_dataframe(file)
 
     output_path.mkdir(parents=True, exist_ok=True)
 

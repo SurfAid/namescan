@@ -2,16 +2,15 @@
 import sys
 from contextlib import redirect_stderr
 from pathlib import Path
-from typing import Optional
-
-print(  # pylint: disable=wrong-import-position
-    "Surfaid Namescan CLI © 2023. Starting up..."
-)
+from typing import Optional, Any
 
 import click
 from rich.console import Console
+from rich.markdown import Markdown
 
-from validate import validate_file, add_rationale, check_database
+from validate import validate_file, add_rationale, check_database, read_as_dataframe
+
+print("Surfaid Namescan CLI © 2023. Starting up...")
 
 
 def create_console_logger() -> Console:
@@ -86,7 +85,9 @@ def check(
     check_database(console, output_path, age)
 
     if not skip:
-        validate_file(console, input_file, output_path, key, entity, age)
+        console.log(Markdown(f"Reading `{input_file}`"))
+        dataframe: list[dict[str, Any]] = read_as_dataframe(input_file)
+        validate_file(console, dataframe, output_path, key, entity, age)
     add_rationale(console, input_file, entity, output_path)
 
 
