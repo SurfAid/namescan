@@ -11,7 +11,7 @@ print(  # pylint: disable=wrong-import-position
 import click
 from rich.console import Console
 
-from validate import validate_file, add_rationale
+from validate import validate_file, add_rationale, check_database
 
 
 def create_console_logger() -> Console:
@@ -83,6 +83,7 @@ def check(
 
     input_file = Path(file)
     output_path = to_output_path(input_file, output)
+    check_database(console, output_path, age)
 
     if not skip:
         validate_file(console, input_file, output_path, key, entity, age)

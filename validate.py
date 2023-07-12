@@ -1,7 +1,9 @@
 """Validation logic for the Namescan emerald API."""
 import csv
 import dataclasses
+import glob
 import json
+import sys
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -12,6 +14,7 @@ import requests
 from click import BadParameter
 from openpyxl.worksheet.worksheet import Worksheet
 from requests import Response
+from rich import prompt
 from rich.console import Console
 from rich.markdown import Markdown
 
@@ -133,6 +136,21 @@ def read_csv_as_worksheet(file_path: Path) -> Worksheet:
         for row in reader:
             worksheet.append(row)
     return worksheet
+
+
+def check_database(console: Console, path: Path, max_age: int) -> None:
+    """Check if the database exists."""
+    if path.exists():
+        files = glob.glob(f"{path}/*.resp.json")
+        responses = [json.loads(Path(file).read_text("utf-8")) for file in files]
+        dates = [response_age(response) for response in responses]
+        outdated = [date for date in dates if date > max_age]
+
+        if not prompt.Confirm.ask(
+            f"{len(dates)} responses found in {path}. {len(outdated)} are than {max_age} days old. Continue?"
+        ):
+            console.log("Aborted")
+            sys.exit(0)
 
 
 def validate_file(
