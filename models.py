@@ -320,15 +320,14 @@ class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attribute
 
     @property
     def hash(self) -> str:
-        joined = "".join(
-            [
-                self.name,
-                self.dob or "",
-                self.first_name or "",
-                self.last_name or "",
-                self.gender or "",
-            ]
-        )
+        fields = [
+            self.name,
+            self.dob or "",
+            self.first_name or "",
+            self.last_name or "",
+            self.gender or "",
+        ]
+        joined = "".join(field.replace("-", "") for field in fields)
         return hashlib.md5(joined.encode("utf-8")).hexdigest()
 
     @staticmethod
