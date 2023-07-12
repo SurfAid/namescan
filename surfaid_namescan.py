@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Optional, Any
 
 import click
+from rich import prompt
 from rich.console import Console
 from rich.markdown import Markdown
 
@@ -43,8 +44,16 @@ def to_output_path(input_file: Path, output: Optional[str]) -> Path:
     "--output",
     "-o",
     required=False,
+    type=click.Path(),
+    help="Name of output file file. Same as input file name + 'explained' by default.",
+)
+@click.option(
+    "--database",
+    "-d",
+    required=False,
     type=click.Path(exists=False),
-    help="Optional output path. Same as input file name by default. Will be created if it does not exist.",
+    help="Path to folder with namescan responses from earlier runs. Same as input file name by default. "
+    "Will be created if it does not exist.",
 )
 @click.option(
     "--key",
@@ -75,20 +84,40 @@ def to_output_path(input_file: Path, output: Optional[str]) -> Path:
     help="Skip the namescan API call and only add the rationale to the output file.",
 )
 def check(
-    file: str, output: Optional[str], key: str, entity: str, skip: bool, age: int
+    file: str,
+    database: Optional[str],
+    output: Optional[str],
+    key: str,
+    entity: str,
+    skip: bool,
+    age: int,
 ):
     """Validate an Excel sheet with persons against the Namescan emerald API."""
     console = create_console_logger()
 
     input_file = Path(file)
-    output_path = to_output_path(input_file, output)
+    output_path = to_output_path(input_file, database)
+
+    file_format = input_file.suffix
+
+    output_sheet = (
+        Path(input_file.parent, f"{input_file.stem}-explained{file_format}")
+        if not output
+        else Path(output)
+    )
+    if output_sheet.exists() and not prompt.Confirm.ask(
+        f"File {output_sheet} already exists. Overwrite?"
+    ):
+        console.log("Aborting.")
+        sys.exit(0)
+
     check_database(console, output_path, age)
 
     if not skip:
         console.log(Markdown(f"Reading `{input_file}`"))
         dataframe: list[dict[str, Any]] = read_as_dataframe(input_file)
         validate_file(console, dataframe, output_path, key, entity, age)
-    add_rationale(console, input_file, entity, output_path)
+    add_rationale(console, input_file, entity, output_path, output_sheet, file_format)
 
 
 if __name__ == "__main__":

@@ -146,13 +146,14 @@ def check_database(console: Console, path: Path, max_age: int) -> None:
     outdated = [date for date in dates if date > max_age]
 
     total = len(dates)
+    total_outdated = len(outdated)
     question = (
-        f"Found responses in {path}. {len(outdated)} out of {total} are than {max_age} days old. Continue?"
+        f"Found responses in {path}. {total_outdated} out of {total} are more than {max_age} days old. Continue?"
         if total > 0
         else f"Found no responses in {path}. Will call namescan for each row in the excel sheet. Continue?"
     )
 
-    if not prompt.Confirm.ask(question):
+    if total_outdated > 0 and not prompt.Confirm.ask(question):
         console.log("Aborted")
         sys.exit(0)
 
@@ -246,10 +247,10 @@ def add_rationale(  # pylint: disable=too-many-locals
     console: Console,
     input_file: Path,
     entity: str,
-    output_path: Path,
-    file_format: str = "xlsx",
+    database_path: Path,
+    output_sheet: Path,
+    file_format: str = ".xlsx",
 ) -> None:
-    output_sheet = Path(output_path, f"{input_file.stem}-explained.{file_format}")
     console.log(Markdown(f"Writing `{output_sheet}`"))
     dataframe = read_as_dataframe(input_file)
 
@@ -269,7 +270,7 @@ def add_rationale(  # pylint: disable=too-many-locals
             str(index),
             entity,
             entity.hash,
-            output_path,
+            database_path,
         )
         for index, entity in entities
     ]
@@ -295,7 +296,7 @@ def add_rationale(  # pylint: disable=too-many-locals
         "NeedExplanation",
     ]
 
-    if file_format == "xlsx":
+    if file_format == ".xlsx":
         write_excel_sheet(
             dataframe,
             output_sheet,
