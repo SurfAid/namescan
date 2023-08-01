@@ -302,7 +302,7 @@ def add_rationale(  # pylint: disable=too-many-locals
 
     unique_id = [rationale.entity_to_scan.hash for rationale in rationales]
     last_checked = [
-        rationale.last_updated.strftime("%Y-%m-%d") for rationale in rationales
+        rationale.last_updated.strftime("%m/%d/%Y") for rationale in rationales
     ]
     matched = [rationale.matches > 0 for rationale in rationales]
     verdict = [to_verdict(rationale) for rationale in rationales]
