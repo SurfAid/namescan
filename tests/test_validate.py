@@ -78,7 +78,13 @@ class TestValidate:
         console = create_console_logger()
         input_file = Path(test_resource_path / "test_namescan.xlsx")
         output_path = to_output_path(input_file, None)
-        add_rationale(console, input_file, "person", output_path, "csv")
+        add_rationale(
+            console,
+            input_file,
+            "person",
+            output_path,
+            Path(test_resource_path / "test_namescan_explained.xlsx"),
+        )
 
     def test_person_to_scan_hash_is_stable(self):
         person = PersonToScan(
