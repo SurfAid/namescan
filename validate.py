@@ -201,6 +201,7 @@ def validate_file(
 
 @dataclass(frozen=True)
 class Rationale:
+    last_updated: datetime
     entity_to_scan: EntityToScan
     matches_with_explanations: dict[Entity, Optional[str]]
 
@@ -243,6 +244,23 @@ class Rationale:
         return "🟢" if self.matches == self.explained else "🔴"
 
 
+def to_matrix(
+    dataframe, last_updated, explanation, matched, need_explanation, unique_id, verdict
+) -> list[list[str]]:
+    results = []
+    for index, row in enumerate(dataframe):
+        with_it = list(row.values()) + [
+            unique_id[index],
+            last_updated[index],
+            matched[index],
+            verdict[index],
+            explanation[index],
+            need_explanation[index],
+        ]
+        results.append(list(with_it))
+    return results
+
+
 def add_rationale(  # pylint: disable=too-many-locals
     console: Console,
     input_file: Path,
@@ -283,6 +301,9 @@ def add_rationale(  # pylint: disable=too-many-locals
         return "Needs explanation"
 
     unique_id = [rationale.entity_to_scan.hash for rationale in rationales]
+    last_checked = [
+        rationale.last_updated.strftime("%Y-%m-%d") for rationale in rationales
+    ]
     matched = [rationale.matches > 0 for rationale in rationales]
     verdict = [to_verdict(rationale) for rationale in rationales]
     explanation = [rationale.rationale for rationale in rationales]
@@ -290,34 +311,31 @@ def add_rationale(  # pylint: disable=too-many-locals
 
     headers = list(dataframe[0].keys()) + [
         "UniqueId",
+        "LastChecked",
         "Matched",
         "Verdict",
         "Explanation",
         "NeedExplanation",
     ]
 
+    matrix = to_matrix(
+        dataframe,
+        last_checked,
+        explanation,
+        matched,
+        need_explanation,
+        unique_id,
+        verdict,
+    )
+
     if file_format == ".xlsx":
         write_excel_sheet(
-            dataframe,
             output_sheet,
             headers,
-            explanation,
-            matched,
-            need_explanation,
-            unique_id,
-            verdict,
+            matrix,
         )
     else:
-        write_csv(
-            dataframe,
-            output_sheet,
-            headers,
-            explanation,
-            matched,
-            need_explanation,
-            unique_id,
-            verdict,
-        )
+        write_csv(output_sheet, headers, matrix)
 
     total_matches = sum(rationale.matches for rationale in rationales)
     total_explained = sum(rationale.explained for rationale in rationales)
@@ -325,54 +343,30 @@ def add_rationale(  # pylint: disable=too-many-locals
 
 
 def write_excel_sheet(
-    dataframe,
     output_sheet,
     headers,
-    explanation,
-    matched,
-    need_explanation,
-    unique_id,
-    verdict,
+    matrix,
 ) -> None:
     workbook = openpyxl.Workbook()
     worksheet = workbook.worksheets[0]
     worksheet.append(headers)
-    for index, row in enumerate(dataframe):
-        with_it = list(row.values()) + [
-            unique_id[index],
-            matched[index],
-            verdict[index],
-            explanation[index],
-            need_explanation[index],
-        ]
-        worksheet.append(list(with_it))
+    for row in matrix:
+        worksheet.append(row)
     workbook.save(output_sheet)
 
 
 def write_csv(
-    dataframe,
     output_sheet,
     headers,
-    explanation,
-    matched,
-    need_explanation,
-    unique_id,
-    verdict,
+    matrix,
 ):
     with open(output_sheet, "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.writer(
             csvfile, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
         )
         writer.writerow(headers)
-        for index, row in enumerate(dataframe):
-            with_it = list(row.values()) + [
-                unique_id[index],
-                matched[index],
-                verdict[index],
-                explanation[index],
-                need_explanation[index],
-            ]
-            writer.writerow(list(with_it))
+        for row in matrix:
+            writer.writerow(row)
 
 
 def create_rationale(
@@ -392,6 +386,7 @@ def create_rationale(
         else OrganisationScanResult.from_json(json_object)
     )
     rationale = Rationale(
+        last_updated=datetime.fromisoformat(scan_result.date),
         entity_to_scan=entity,
         matches_with_explanations={
             match: match.rationale for match in scan_result.entities
