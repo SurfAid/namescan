@@ -9,7 +9,14 @@ from rich import prompt
 from rich.console import Console
 from rich.markdown import Markdown
 
-from validate import validate_file, add_rationale, check_database, read_as_dataframe
+from models import EntityToScan
+from validate import (
+    validate_file,
+    add_rationale,
+    check_database,
+    read_as_dataframe,
+    to_entities,
+)
 
 print("Surfaid Namescan CLI © 2023. Starting up...")
 
@@ -48,8 +55,8 @@ def to_output_path(input_file: Path, output: Optional[str]) -> Path:
     help="Name of output file file. Same as input file name + 'explained' by default.",
 )
 @click.option(
-    "--database",
-    "-d",
+    "--cache",
+    "-c",
     required=False,
     type=click.Path(exists=False),
     help="Path to folder with namescan responses from earlier runs. Same as input file name by default. "
@@ -85,7 +92,7 @@ def to_output_path(input_file: Path, output: Optional[str]) -> Path:
 )
 def check(
     file: str,
-    database: Optional[str],
+    cache: Optional[str],
     output: Optional[str],
     key: str,
     entity: str,
@@ -96,7 +103,7 @@ def check(
     console = create_console_logger()
 
     input_file = Path(file)
-    output_path = to_output_path(input_file, database)
+    output_path = to_output_path(input_file, cache)
 
     file_format = input_file.suffix
 
@@ -111,12 +118,14 @@ def check(
         console.log("Aborting.")
         sys.exit(0)
 
-    check_database(console, output_path, age)
+    console.log(Markdown(f"Reading `{input_file}`"))
+    dataframe: list[dict[str, Any]] = read_as_dataframe(input_file)
+    entities: list[EntityToScan] = to_entities(entity, dataframe)
+
+    check_database(console, output_path, age, entities)
 
     if not skip:
-        console.log(Markdown(f"Reading `{input_file}`"))
-        dataframe: list[dict[str, Any]] = read_as_dataframe(input_file)
-        validate_file(console, dataframe, output_path, key, entity, age)
+        validate_file(console, entities, output_path, key, age)
     add_rationale(console, input_file, entity, output_path, output_sheet, file_format)
 
 

@@ -138,59 +138,85 @@ def read_csv_as_worksheet(file_path: Path) -> Worksheet:
     return worksheet
 
 
-def check_database(console: Console, path: Path, max_age: int) -> None:
-    """Check if the database exists."""
-    files = glob.glob(f"{path}/*.resp.json")
-    responses = [json.loads(Path(file).read_text("utf-8")) for file in files]
-    dates = [response_age(response) for response in responses]
-    outdated = [date for date in dates if date > max_age]
+def check_database(
+    console: Console, path: Path, max_age: int, entities: list[EntityToScan]
+) -> None:
+    """Check the contents of the cache."""
 
-    total = len(dates)
-    total_outdated = len(outdated)
+    files = glob.glob(f"{path}/*.resp.json")
+    response_dict = {
+        Path(file).name.split(".")[0]: json.loads(Path(file).read_text("utf-8"))
+        for file in files
+    }
+    total_outdated = 0
+    in_dictionary = 0
+    not_in_dictionary = 0
+
+    for entity in entities:
+        if entity.hash in response_dict:
+            in_dictionary += 1
+            entity_dict = response_dict[entity.hash]
+            age = response_age(entity_dict)
+            if age > max_age:
+                total_outdated += 1
+        else:
+            not_in_dictionary += 1
+
+    total = len(entities)
+    cache_size = len(response_dict)
     question = (
-        f"Found responses in {path}. {total_outdated} out of {total} are more than {max_age} days old. Continue?"
-        if total > 0
-        else f"Found no responses in {path}. Will call namescan for each row in the excel sheet. Continue?"
+        f"[bold]{total}[/bold] rows in input. Found [bold]{in_dictionary}[/bold] responses in [italic]{path}[/italic], "
+        f"[bold]{total_outdated}[/bold] of these are more than {max_age} days old. \n"
+        f"Will call namescan [bold red]{not_in_dictionary + total_outdated}[/bold red] times. Continue?"
+        if cache_size > 0
+        else f"Found no responses in [italic]{path}[/italic].\nWill call namescan "
+        f"[bold magenta]{total}[/bold magenta] times. Once for each row in the excel sheet. Continue?"
     )
 
-    if total_outdated > 0 and not prompt.Confirm.ask(question):
+    if not prompt.Confirm.ask(question):
         console.log("Aborted")
         sys.exit(0)
 
 
+def to_entities(entity: str, dataframe: list[dict[str, Any]]) -> list[EntityToScan]:
+    return [
+        OrganizationToScan.from_dataframe(row)
+        if entity == "organization"
+        else PersonToScan.from_dataframe(row)
+        for _, row in enumerate(dataframe)
+    ]
+
+
 def validate_file(
     console: Console,
-    dataframe: list[dict[str, Any]],
+    entities: list[EntityToScan],
     output_path: Path,
     key: str,
-    entity: str,
     max_days_old: int,
 ) -> None:
     """Validate an Excel sheet with persons against the Namescan emerald API."""
 
     output_path.mkdir(parents=True, exist_ok=True)
 
-    for index, row in enumerate(dataframe):
-        if entity == "organization":
-            org = OrganizationToScan.from_dataframe(row)
+    for index, entity in enumerate(entities):
+        if isinstance(entity, OrganizationToScan):
             send_request(
                 console,
-                org,
+                entity,
                 str(index),
                 EMERALD_ORGANIZATION_URL,
-                dataclasses.asdict(org),
+                dataclasses.asdict(entity),
                 key,
                 output_path,
                 max_days_old,
             )
-        elif entity == "person":
-            person = PersonToScan.from_dataframe(row)
+        elif isinstance(entity, PersonToScan):
             send_request(
                 console,
-                person,
+                entity,
                 str(index),
                 EMERALD_PERSON_URL,
-                dataclasses.asdict(person),
+                dataclasses.asdict(entity),
                 key,
                 output_path,
                 max_days_old,
@@ -201,6 +227,7 @@ def validate_file(
 
 @dataclass(frozen=True)
 class Rationale:
+    last_updated: datetime
     entity_to_scan: EntityToScan
     matches_with_explanations: dict[Entity, Optional[str]]
 
@@ -243,6 +270,23 @@ class Rationale:
         return "🟢" if self.matches == self.explained else "🔴"
 
 
+def to_matrix(
+    dataframe, last_updated, explanation, matched, need_explanation, unique_id, verdict
+) -> list[list[str]]:
+    results = []
+    for index, row in enumerate(dataframe):
+        with_it = list(row.values()) + [
+            unique_id[index],
+            last_updated[index],
+            matched[index],
+            verdict[index],
+            explanation[index],
+            need_explanation[index],
+        ]
+        results.append(list(with_it))
+    return results
+
+
 def add_rationale(  # pylint: disable=too-many-locals
     console: Console,
     input_file: Path,
@@ -283,6 +327,9 @@ def add_rationale(  # pylint: disable=too-many-locals
         return "Needs explanation"
 
     unique_id = [rationale.entity_to_scan.hash for rationale in rationales]
+    last_checked = [
+        rationale.last_updated.strftime("%m/%d/%Y") for rationale in rationales
+    ]
     matched = [rationale.matches > 0 for rationale in rationales]
     verdict = [to_verdict(rationale) for rationale in rationales]
     explanation = [rationale.rationale for rationale in rationales]
@@ -290,34 +337,31 @@ def add_rationale(  # pylint: disable=too-many-locals
 
     headers = list(dataframe[0].keys()) + [
         "UniqueId",
+        "LastChecked",
         "Matched",
         "Verdict",
         "Explanation",
         "NeedExplanation",
     ]
 
+    matrix = to_matrix(
+        dataframe,
+        last_checked,
+        explanation,
+        matched,
+        need_explanation,
+        unique_id,
+        verdict,
+    )
+
     if file_format == ".xlsx":
         write_excel_sheet(
-            dataframe,
             output_sheet,
             headers,
-            explanation,
-            matched,
-            need_explanation,
-            unique_id,
-            verdict,
+            matrix,
         )
     else:
-        write_csv(
-            dataframe,
-            output_sheet,
-            headers,
-            explanation,
-            matched,
-            need_explanation,
-            unique_id,
-            verdict,
-        )
+        write_csv(output_sheet, headers, matrix)
 
     total_matches = sum(rationale.matches for rationale in rationales)
     total_explained = sum(rationale.explained for rationale in rationales)
@@ -325,54 +369,30 @@ def add_rationale(  # pylint: disable=too-many-locals
 
 
 def write_excel_sheet(
-    dataframe,
     output_sheet,
     headers,
-    explanation,
-    matched,
-    need_explanation,
-    unique_id,
-    verdict,
+    matrix,
 ) -> None:
     workbook = openpyxl.Workbook()
     worksheet = workbook.worksheets[0]
     worksheet.append(headers)
-    for index, row in enumerate(dataframe):
-        with_it = list(row.values()) + [
-            unique_id[index],
-            matched[index],
-            verdict[index],
-            explanation[index],
-            need_explanation[index],
-        ]
-        worksheet.append(list(with_it))
+    for row in matrix:
+        worksheet.append(row)
     workbook.save(output_sheet)
 
 
 def write_csv(
-    dataframe,
     output_sheet,
     headers,
-    explanation,
-    matched,
-    need_explanation,
-    unique_id,
-    verdict,
+    matrix,
 ):
     with open(output_sheet, "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.writer(
             csvfile, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
         )
         writer.writerow(headers)
-        for index, row in enumerate(dataframe):
-            with_it = list(row.values()) + [
-                unique_id[index],
-                matched[index],
-                verdict[index],
-                explanation[index],
-                need_explanation[index],
-            ]
-            writer.writerow(list(with_it))
+        for row in matrix:
+            writer.writerow(row)
 
 
 def create_rationale(
@@ -392,6 +412,7 @@ def create_rationale(
         else OrganisationScanResult.from_json(json_object)
     )
     rationale = Rationale(
+        last_updated=datetime.fromisoformat(scan_result.date),
         entity_to_scan=entity,
         matches_with_explanations={
             match: match.rationale for match in scan_result.entities

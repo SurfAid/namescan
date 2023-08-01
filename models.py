@@ -98,14 +98,14 @@ class Person(Entity):  # pylint: disable=too-many-instance-attributes
         if self.program and "syr" in self.program.lower():
             return "Suspect in Syrian conflict"
 
+        if self.citizenship != "" and "indonesia" not in self.citizenship.lower():
+            return f"Foreigner: {self.citizenship}"
+
         if "politician" in self.occupations:
             return self.politician_summary
 
         if self.roles:
             return f"Public figure: {self.roles[0].title}"
-
-        if self.citizenship != "" and "indonesia" not in self.citizenship.lower():
-            return f"Foreigner: {self.citizenship}"
 
         return None
 
