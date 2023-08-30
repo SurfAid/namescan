@@ -6,8 +6,9 @@ import json
 import sys
 from dataclasses import dataclass
 from datetime import datetime
+from io import StringIO
 from pathlib import Path
-from typing import Optional, Any, Tuple
+from typing import Optional, Any, Tuple, TextIO
 
 import openpyxl
 import requests
@@ -113,28 +114,46 @@ def get_response(
     )
 
 
+def convert_to_csv(worksheet: Worksheet):
+    """Convert an Excel file to a CSV file."""
+    csv_file = StringIO()
+    writer = csv.writer(
+        csv_file, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
+    )
+    for row in worksheet.iter_rows(values_only=True):
+        writer.writerow(row)
+    csv_file.seek(0)
+    return csv_file
+
+
 def read_as_dataframe(file: Path) -> list[dict[str, Any]]:
     extension = file.suffix
     list_of_dicts = []
     worksheet: Worksheet = (
-        read_csv_as_worksheet(file)
+        read_csv_file_as_worksheet(file)
         if extension == ".csv"
-        else openpyxl.load_workbook(file).worksheets[0]
+        else read_csv_as_worksheet(
+            convert_to_csv(openpyxl.load_workbook(file).worksheets[0])
+        )
     )
-    headers = [str(header.value) for header in worksheet[1] if header.value is not None]
+    headers = [str(header.value) for header in worksheet[1] if header.value]
     for row in worksheet.iter_rows(min_row=2, values_only=True):
         res = dict(zip(headers, list(row)))
         list_of_dicts.append(res)
     return list_of_dicts
 
 
-def read_csv_as_worksheet(file_path: Path) -> Worksheet:
+def read_csv_file_as_worksheet(file_path: Path) -> Worksheet:
+    with open(file_path, encoding="utf-8") as csv_file:
+        return read_csv_as_worksheet(csv_file)
+
+
+def read_csv_as_worksheet(csv_file: TextIO) -> Worksheet:
     workbook = openpyxl.Workbook()
     worksheet = workbook.worksheets[0]
-    with open(file_path, encoding="utf-8") as csv_file:
-        reader = csv.reader(csv_file)
-        for row in reader:
-            worksheet.append(row)
+    reader = csv.reader(csv_file)
+    for row in reader:
+        worksheet.append(row)
     return worksheet
 
 
