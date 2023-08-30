@@ -184,8 +184,9 @@ def check_database(
     total = len(entities)
     cache_size = len(response_dict)
     question = (
-        f"[bold]{total}[/bold] rows in input. Found [bold]{in_dictionary}[/bold] responses in [italic]{path}[/italic], "
-        f"[bold]{total_outdated}[/bold] of these are more than {max_age} days old. \n"
+        f"[bold]{total}[/bold] rows in input. Found [bold]{len(response_dict)}[/bold] responses in"
+        f" [italic]{path}[/italic], [bold]{in_dictionary}[/bold] of them match rows in the input file. \n"
+        f"[bold]{total_outdated}[/bold] of the responsesn in the cache are more than {max_age} days old. \n"
         f"Will call namescan [bold red]{not_in_dictionary + total_outdated}[/bold red] times. Continue?"
         if cache_size > 0
         else f"Found no responses in [italic]{path}[/italic].\nWill call namescan "
