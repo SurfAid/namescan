@@ -64,14 +64,14 @@ def file_response(file_path: Path, max_days_old: int) -> Optional[Tuple[int, Res
 
 
 def send_request(
-    console: Console,
-    entity: EntityToScan,
-    index: str,
-    api_url: str,
-    entity_dict: dict,
-    key: str,
-    output_path: Path,
-    max_days_old: int,
+        console: Console,
+        entity: EntityToScan,
+        index: str,
+        api_url: str,
+        entity_dict: dict,
+        key: str,
+        output_path: Path,
+        max_days_old: int,
 ) -> None:
     """Send a request to the Namescan emerald API."""
     status_prefix = f"{index} checking {entity.name}..."
@@ -91,13 +91,16 @@ def send_request(
             log_request(response_json, output_file)
         else:
             console.log(
-                f"[red]Error while sending request {entity.hash}, {entity.name} to Namescan API: {response.status_code}"
+                f"[red]Error while sending request {index} {entity.hash}, {entity.name} to Namescan API: {response.status_code}"
                 f" - {response.text}[/red]"
             )
+            if not prompt.Confirm.ask(f"Continue after row {index} ?"):
+                console.log("Aborted")
+                sys.exit(0)
 
 
 def get_response(
-    api_url, entity_dict, key, max_days_old, output_file
+        api_url, entity_dict, key, max_days_old, output_file
 ) -> Tuple[int, Response]:
     from_file = file_response(output_file, max_days_old)
     if from_file is not None:
@@ -158,7 +161,7 @@ def read_csv_as_worksheet(csv_file: TextIO) -> Worksheet:
 
 
 def check_database(
-    console: Console, path: Path, max_age: int, entities: list[EntityToScan]
+        console: Console, path: Path, max_age: int, entities: list[EntityToScan]
 ) -> None:
     """Check the contents of the cache."""
 
@@ -190,7 +193,7 @@ def check_database(
         f"Will call namescan [bold red]{not_in_dictionary + total_outdated}[/bold red] times. Continue?"
         if cache_size > 0
         else f"Found no responses in [italic]{path}[/italic].\nWill call namescan "
-        f"[bold magenta]{total}[/bold magenta] times. Once for each row in the excel sheet. Continue?"
+             f"[bold magenta]{total}[/bold magenta] times. Once for each row in the excel sheet. Continue?"
     )
 
     if not prompt.Confirm.ask(question):
@@ -208,11 +211,11 @@ def to_entities(entity: str, dataframe: list[dict[str, Any]]) -> list[EntityToSc
 
 
 def validate_file(
-    console: Console,
-    entities: list[EntityToScan],
-    output_path: Path,
-    key: str,
-    max_days_old: int,
+        console: Console,
+        entities: list[EntityToScan],
+        output_path: Path,
+        key: str,
+        max_days_old: int,
 ) -> None:
     """Validate an Excel sheet with persons against the Namescan emerald API."""
 
@@ -291,7 +294,7 @@ class Rationale:
 
 
 def to_matrix(
-    dataframe, last_updated, explanation, matched, need_explanation, unique_id, verdict
+        dataframe, last_updated, explanation, matched, need_explanation, unique_id, verdict
 ) -> list[list[str]]:
     results = []
     for index, row in enumerate(dataframe):
@@ -308,12 +311,12 @@ def to_matrix(
 
 
 def add_rationale(  # pylint: disable=too-many-locals
-    console: Console,
-    input_file: Path,
-    entity: str,
-    database_path: Path,
-    output_sheet: Path,
-    file_format: str = ".xlsx",
+        console: Console,
+        input_file: Path,
+        entity: str,
+        database_path: Path,
+        output_sheet: Path,
+        file_format: str = ".xlsx",
 ) -> None:
     console.log(Markdown(f"Writing `{output_sheet}`"))
     dataframe = read_as_dataframe(input_file)
@@ -389,9 +392,9 @@ def add_rationale(  # pylint: disable=too-many-locals
 
 
 def write_excel_sheet(
-    output_sheet,
-    headers,
-    matrix,
+        output_sheet,
+        headers,
+        matrix,
 ) -> None:
     workbook = openpyxl.Workbook()
     worksheet = workbook.worksheets[0]
@@ -402,9 +405,9 @@ def write_excel_sheet(
 
 
 def write_csv(
-    output_sheet,
-    headers,
-    matrix,
+        output_sheet,
+        headers,
+        matrix,
 ):
     with open(output_sheet, "w", newline="", encoding="utf-8") as csvfile:
         writer = csv.writer(
@@ -416,11 +419,11 @@ def write_csv(
 
 
 def create_rationale(
-    console: Console,
-    index: str,
-    entity: EntityToScan,
-    person_hash: str,
-    output_path: Path,
+        console: Console,
+        index: str,
+        entity: EntityToScan,
+        person_hash: str,
+        output_path: Path,
 ) -> Rationale:
     response_json_string = Path(output_path, f"{person_hash}.resp.json").read_text(
         encoding="utf-8"
