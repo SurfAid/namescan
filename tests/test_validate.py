@@ -132,4 +132,7 @@ class TestValidate:
 
     def test_date_format(self):
         assert PersonToScan.to_namescan_dob_format(None) == ""
-        assert PersonToScan.to_namescan_dob_format("1981-09-21 00:00:00") == "21/09/1981"
+        assert (
+            PersonToScan.to_namescan_dob_format("1981-09-21 00:00:00") == "21/09/1981"
+        )
+        assert PersonToScan.to_namescan_dob_format("21/09/1981") == "21/09/1981"
