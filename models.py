@@ -2,6 +2,7 @@
 import hashlib
 from abc import abstractmethod
 from dataclasses import dataclass
+from datetime import datetime
 from enum import Enum
 from typing import Optional
 
@@ -331,6 +332,13 @@ class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attribute
         return hashlib.md5(joined.encode("utf-8")).hexdigest()
 
     @staticmethod
+    def to_namescan_dob_format(dob: Optional[str]):
+        if not dob:
+            return ""
+        dtm = datetime.fromisoformat(dob)
+        return dtm.strftime("%d/%m/%Y")
+
+    @staticmethod
     def from_dataframe(frame_dict: dict):
         gender = frame_dict.get("Gender", None)
         return PersonToScan(
@@ -339,7 +347,7 @@ class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attribute
             middle_name=frame_dict.get("MiddleName"),
             last_name=frame_dict.get("LastName"),
             gender=None if not gender else Gender(gender.strip().lower()),
-            dob=frame_dict.get("DOB"),
+            dob=PersonToScan.to_namescan_dob_format(frame_dict.get("DOB")),
             country=frame_dict.get("Country", "Indonesia"),
             list_type=None,
             included_lists=None,
