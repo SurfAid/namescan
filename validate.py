@@ -91,9 +91,13 @@ def send_request(
             log_request(response_json, output_file)
         else:
             console.log(
-                f"[red]Error while sending request {entity.hash}, {entity.name} to Namescan API: {response.status_code}"
+                f"[red]Error while sending request {index} {entity.hash}, {entity.name} "
+                f"to Namescan API: {response.status_code}"
                 f" - {response.text}[/red]"
             )
+            if not prompt.Confirm.ask(f"Continue after row {index} ?"):
+                console.log("Aborted")
+                sys.exit(0)
 
 
 def get_response(
@@ -137,6 +141,7 @@ def read_as_dataframe(file: Path) -> list[dict[str, Any]]:
         )
     )
     headers = [str(header.value) for header in worksheet[1] if header.value]
+
     for row in worksheet.iter_rows(min_row=2, values_only=True):
         res = dict(zip(headers, list(row)))
         list_of_dicts.append(res)
@@ -186,7 +191,7 @@ def check_database(
     question = (
         f"[bold]{total}[/bold] rows in input. Found [bold]{len(response_dict)}[/bold] responses in"
         f" [italic]{path}[/italic], [bold]{in_dictionary}[/bold] of them match rows in the input file. \n"
-        f"[bold]{total_outdated}[/bold] of the responsesn in the cache are more than {max_age} days old. \n"
+        f"[bold]{total_outdated}[/bold] of the responses in the cache are more than {max_age} days old. \n"
         f"Will call namescan [bold red]{not_in_dictionary + total_outdated}[/bold red] times. Continue?"
         if cache_size > 0
         else f"Found no responses in [italic]{path}[/italic].\nWill call namescan "

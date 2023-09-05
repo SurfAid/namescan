@@ -2,6 +2,7 @@
 import hashlib
 from abc import abstractmethod
 from dataclasses import dataclass
+from datetime import datetime
 from enum import Enum
 from typing import Optional
 
@@ -62,6 +63,25 @@ class Entity:
     @abstractmethod
     def entity_summary(self) -> str:
         pass
+
+
+COLUMN_NAME = "Name"
+COLUMN_FIRST_NAME = "FirstName"
+COLUMN_MIDDLE_NAME = "MiddleName"
+COLUMN_LAST_NAME = "LastName"
+COLUMN_GENDER = "Gender"
+COLUMN_DOB = "DOB"
+COLUMN_COUNTRY = "Country"
+
+ALL_COLUMNS = [
+    COLUMN_NAME,
+    COLUMN_FIRST_NAME,
+    COLUMN_MIDDLE_NAME,
+    COLUMN_LAST_NAME,
+    COLUMN_GENDER,
+    COLUMN_DOB,
+    COLUMN_COUNTRY,
+]
 
 
 @dataclass(frozen=True, eq=True)
@@ -331,16 +351,26 @@ class PersonToScan(EntityToScan):  # pylint: disable=too-many-instance-attribute
         return hashlib.md5(joined.encode("utf-8")).hexdigest()
 
     @staticmethod
+    def to_namescan_dob_format(dob: Optional[str]):
+        if dob is None:
+            return ""
+        try:
+            dtm = datetime.fromisoformat(dob)
+            return dtm.strftime("%d/%m/%Y")
+        except (TypeError, ValueError):
+            return dob
+
+    @staticmethod
     def from_dataframe(frame_dict: dict):
-        gender = frame_dict.get("Gender", None)
+        gender = frame_dict.get(COLUMN_GENDER, None)
         return PersonToScan(
-            name=frame_dict["Name"],
-            first_name=frame_dict.get("FirstName"),
-            middle_name=frame_dict.get("MiddleName"),
-            last_name=frame_dict.get("LastName"),
+            name=frame_dict[COLUMN_NAME],
+            first_name=frame_dict.get(COLUMN_FIRST_NAME),
+            middle_name=frame_dict.get(COLUMN_MIDDLE_NAME),
+            last_name=frame_dict.get(COLUMN_LAST_NAME),
             gender=None if not gender else Gender(gender.strip().lower()),
-            dob=frame_dict.get("DOB"),
-            country=frame_dict.get("Country", "Indonesia"),
+            dob=PersonToScan.to_namescan_dob_format(frame_dict.get(COLUMN_DOB)),
+            country=frame_dict.get(COLUMN_COUNTRY, "Indonesia"),
             list_type=None,
             included_lists=None,
             excluded_lists=None,

@@ -129,3 +129,10 @@ class TestValidate:
         assert response.json()["scanId"] == "s12022672"
         assert response.json()["date"] == "2023-07-06T19:57:48.2730988+10:00"
         assert age > 0
+
+    def test_date_format(self):
+        assert PersonToScan.to_namescan_dob_format(None) == ""
+        assert (
+            PersonToScan.to_namescan_dob_format("1981-09-21 00:00:00") == "21/09/1981"
+        )
+        assert PersonToScan.to_namescan_dob_format("21/09/1981") == "21/09/1981"
