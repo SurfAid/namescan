@@ -69,8 +69,8 @@ class TestValidate:
         json_object = json.loads(json_string)
         scan_result = OrganisationScanResult.from_json(json_object)
         organisation = scan_result.entities[0]
-        assert organisation.name == "string"
-        summary = "string"
+        assert organisation.name == "MAKENGA"
+        summary = "MAKENGA"
         assert organisation.entity_summary == summary
         assert organisation.rationale is None
 

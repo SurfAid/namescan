@@ -431,11 +431,19 @@ def create_rationale(
         encoding="utf-8"
     )
     json_object = json.loads(response_json_string)
-    scan_result = (
-        PersonScanResult.from_json(json_object)
-        if isinstance(entity, PersonToScan)
-        else OrganisationScanResult.from_json(json_object)
-    )
+    try:
+        scan_result = (
+            PersonScanResult.from_json(json_object)
+            if isinstance(entity, PersonToScan)
+            else OrganisationScanResult.from_json(json_object)
+        )
+    except (KeyError, ValueError) as exc:
+        console.log(
+            f"⚠️ Error while parsing response {index} {person_hash}.resp.json, {entity.name} "
+            f"from Namescan API: {exc}"
+        )
+        return Rationale(datetime.now(), entity, {})
+
     rationale = Rationale(
         last_updated=datetime.fromisoformat(scan_result.date),
         entity_to_scan=entity,
