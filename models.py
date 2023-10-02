@@ -200,7 +200,7 @@ class Person(Entity):  # pylint: disable=too-many-instance-attributes
         )
 
 
-@dataclass
+@dataclass(frozen=True)
 class OrganisationReference:
     name: str
     since: Optional[str]
@@ -265,7 +265,15 @@ class Organisation(Entity):  # pylint: disable=too-many-instance-attributes
 
     @property
     def rationale(self) -> Optional[str]:
+        if self.original_script_name:
+            return f"Not an Indonesian name: {self.original_script_name}"
+
+        if self.program and "syr" in self.program.lower():
+            return "Suspect in Syrian conflict"
         return None
+
+    def __hash__(self):
+        return hash(tuple(self.references))
 
 
 @dataclass(frozen=True, eq=True)
