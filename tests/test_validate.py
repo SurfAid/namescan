@@ -72,7 +72,7 @@ class TestValidate:
         assert organisation.name == "MAKENGA"
         summary = "MAKENGA"
         assert organisation.entity_summary == summary
-        assert organisation.rationale is None
+        assert organisation.rationale == "Not an Indonesian name: SULTANI"
 
     def test_roundtrip_all_persons(self):
         console = create_console_logger()
