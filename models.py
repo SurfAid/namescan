@@ -203,8 +203,8 @@ class Person(Entity):  # pylint: disable=too-many-instance-attributes
 @dataclass
 class OrganisationReference:
     name: str
-    since: str
-    until: str
+    since: Optional[str]
+    until: Optional[str]
     id_in_list: str
 
 
@@ -243,16 +243,11 @@ class Link:
 
 @dataclass(frozen=True, eq=True)
 class Organisation(Entity):  # pylint: disable=too-many-instance-attributes
-    uid: str
-    status: str
-    update_at: str
-    update_info: str
     category: str
     original_script_name: str
-    sort_key_name: str
-    reference_type: str
+    reference_type: Optional[str]
     references: list[OrganisationReference]
-    program: str
+    program: Optional[str]
     addresses: list[Address]
     other_names: list[OtherName]
     identities: list[Identity]
@@ -260,8 +255,8 @@ class Organisation(Entity):  # pylint: disable=too-many-instance-attributes
     images: list[str]
     links: list[Link]
     sources: list[str]
-    basis: str
-    summary: str
+    basis: Optional[str]
+    summary: Optional[str]
     match_rate: int
 
     @property
@@ -388,63 +383,58 @@ class OrganisationScanResult(ResultEntity):
             number_of_matches=data["numberOfMatches"],
             entities=[
                 Organisation(
-                    uid=org["uid"],
-                    status=org["status"],
-                    update_at=org["updateAt"],
-                    update_info=org["updateInfo"],
                     category=org["category"],
                     name=org["name"],
                     original_script_name=org["originalScriptName"],
-                    sort_key_name=org["sortKeyName"],
                     reference_type=org["referenceType"],
                     references=[
                         OrganisationReference(
                             name=ref["name"],
-                            since=ref["since"],
-                            until=ref["to"],
+                            since=ref.get("since"),
+                            until=ref.get("to"),
                             id_in_list=ref["idInList"],
                         )
-                        for ref in org["references"]
+                        for ref in org.get("references", [])
                     ],
-                    program=org["program"],
+                    program=org.get("program"),
                     addresses=[
                         Address(
-                            address1=addr["address1"],
-                            address2=addr["address2"],
-                            address3=addr["address3"],
-                            city=addr["city"],
-                            region=addr["region"],
-                            postal_code=addr["postalCode"],
-                            country=addr["country"],
-                            text=addr["text"],
-                            note=addr["note"],
+                            address1=addr.get("address1"),
+                            address2=addr.get("address2"),
+                            address3=addr.get("address3"),
+                            city=addr.get("city"),
+                            region=addr.get("region"),
+                            postal_code=addr.get("postalCode"),
+                            country=addr.get("country"),
+                            text=addr.get("text"),
+                            note=addr.get("note"),
                         )
-                        for addr in org["addresses"]
+                        for addr in org.get("addresses", [])
                     ],
                     other_names=[
                         OtherName(name=name["name"], type=name["type"])
-                        for name in org["otherNames"]
+                        for name in org.get("otherNames", [])
                     ],
                     identities=[
                         Identity(
                             number=identity["number"],
-                            country=identity["country"],
-                            note=identity["note"],
-                            type=identity["type"],
+                            country=identity.get("country"),
+                            note=identity.get("note"),
+                            type=identity.get("type"),
                         )
-                        for identity in org["identities"]
+                        for identity in org.get("identities", [])
                     ],
                     contacts=[
                         Contact(value=contact["value"], type=contact["type"])
-                        for contact in org["contacts"]
+                        for contact in org.get("contacts", [])
                     ],
-                    images=org["images"],
+                    images=org.get("images"),
                     links=[
                         Link(url=link["url"], type=link["type"])
-                        for link in org["links"]
+                        for link in org.get("links", [])
                     ],
-                    sources=org["sources"],
-                    basis=org["basis"],
+                    sources=org.get("sources"),
+                    basis=org.get("basis"),
                     summary=org["summary"],
                     match_rate=org["matchRate"],
                 )
